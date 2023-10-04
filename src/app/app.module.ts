@@ -9,6 +9,15 @@ import { HeaderComponent } from './header/header.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
+import { UserBoxComponent } from './user-box/user-box.component';
+import { StatusBtnComponent } from './status-btn/status-btn.component';
+import { AchievementComponent } from './achievement/achievement.component';
+import { ActionsComponent } from './actions/actions.component';
+import { AgentsStatusComponent } from './agents-status/agents-status.component';
+import { AvatarComponent } from './avatar/avatar.component';
+import { PerfectScrollbarComponent } from './perfect-scrollbar/perfect-scrollbar.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +27,15 @@ import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
     HeaderComponent,
     PerformanceComponent,
     SearchBoxComponent,
-    MenuBurgerComponent
+    MenuBurgerComponent,
+    UserBoxComponent,
+    StatusBtnComponent,
+    AchievementComponent,
+    ActionsComponent,
+    AgentsStatusComponent,
+    AvatarComponent,
+    PerfectScrollbarComponent,
+    TasksListComponent,
   ],
   imports: [
     BrowserModule,
