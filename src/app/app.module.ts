@@ -17,6 +17,8 @@ import { AgentsStatusComponent } from './agents-status/agents-status.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { PerfectScrollbarComponent } from './perfect-scrollbar/perfect-scrollbar.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { SalesReportComponent } from './sales-report/sales-report.component';
+import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
     AvatarComponent,
     PerfectScrollbarComponent,
     TasksListComponent,
+    SalesReportComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
