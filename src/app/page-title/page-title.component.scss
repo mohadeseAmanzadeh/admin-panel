@@ -1,0 +1,10 @@
+.page-title-wrapper {
+    background: rgba(255, 255, 255, 0.45);
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .page-title-actions {
+        margin-left: auto;
+    }
+}

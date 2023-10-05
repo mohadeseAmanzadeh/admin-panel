@@ -1,0 +1,13 @@
+.icon-wrapper {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    .ronded-circle {
+        border-radius: 50%;
+        vertical-align: middle;
+        border-style: none;
+        width: 42px;
+    }
+}
