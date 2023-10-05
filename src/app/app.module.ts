@@ -19,6 +19,7 @@ import { PerfectScrollbarComponent } from './perfect-scrollbar/perfect-scrollbar
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
 import { OrdersComponent } from './orders/orders.component';
+import { ViewBtnComponent } from './view-btn/view-btn.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { OrdersComponent } from './orders/orders.component';
     TasksListComponent,
     SalesReportComponent,
     OrdersComponent,
+    ViewBtnComponent,
   ],
   imports: [
     BrowserModule,
