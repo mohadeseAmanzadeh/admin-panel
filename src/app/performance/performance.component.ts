@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-
+  interface listPortfoioInterface {
+    title: string
+    number: string
+    percent?: string
+    price?: string
+    titlePercent: string
+  }
 @Component({
   selector: 'app-performance',
   templateUrl: './performance.component.html',
@@ -21,7 +27,7 @@ export class PerformanceComponent {
     },
     {
       title: 'Capital Gains',
-      number: '$563',
+      price: '$563',
       percent: '7.35%',
       titlePercent: 'Increased by'
     }

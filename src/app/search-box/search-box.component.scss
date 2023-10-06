@@ -1,48 +1,48 @@
-.search-wrapper {
-    width: 330px;
-    .search-header {
-        width: 290px;
-        border-radius: 50px;
-        background: rgba(0, 0, 0, 0.05);
-        transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
-        .input-search {
-            width: 100%;
-        }
-        .open-input-search {
-            border-radius: 30px;
-            width: 42px;
-            height: 42px;
-            cursor: pointer;
-            float: right;
-            border: none;
-            background: rgba(0, 0, 0, 0.06);
-        }
-    }
-    .close {
-        opacity: .6;
-        transform: rotate(45deg);
-        transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
-        transition-delay: 0.5s;
-        width: 20px;
-        height: 20px;
-        position: absolute;
+// .search-wrapper {
+//     width: 330px;
+//     .search-header {
+//         width: 290px;
+//         border-radius: 50px;
+//         background: rgba(0, 0, 0, 0.05);
+//         transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+//         .input-search {
+//             width: 100%;
+//         }
+//         .open-input-search {
+//             border-radius: 30px;
+//             width: 42px;
+//             height: 42px;
+//             cursor: pointer;
+//             float: right;
+//             border: none;
+//             background: rgba(0, 0, 0, 0.06);
+//         }
+//     }
+//     .close {
+//         opacity: .6;
+//         transform: rotate(45deg);
+//         transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+//         transition-delay: 0.5s;
+//         width: 20px;
+//         height: 20px;
+//         position: absolute;
     
-        margin-top: -10pxs;
-        &::before, &::after {
-            position: absolute;
-            content: '';
-            width: 2px;
-            height: 20px;
-            background: #033c73;
-            border-radius: 2px;
-        }
-        &::before {
-            left: 9px;
-            top: 0;
-        }
-        &::after{
-            left: 0;
-            top: 9px;
-        }
-    }
-}
+//         margin-top: -10pxs;
+//         &::before, &::after {
+//             position: absolute;
+//             content: '';
+//             width: 2px;
+//             height: 20px;
+//             background: #033c73;
+//             border-radius: 2px;
+//         }
+//         &::before {
+//             left: 9px;
+//             top: 0;
+//         }
+//         &::after{
+//             left: 0;
+//             top: 9px;
+//         }
+//     }
+// }

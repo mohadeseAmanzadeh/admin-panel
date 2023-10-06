@@ -1,10 +1,12 @@
-<div class="menu-container">
+<!-- <div class="menu-container">
     <div class="menu-burger">
         <app-menu-burger></app-menu-burger>
     </div>
     <div class="v-sidebar-menu">
         <div class="menu"  *ngFor="let item of menuSide">
-            <div class="card-h" *ngFor="let menuTitleItem of item.menuTitle">{{menuTitleItem.item}}</div>
+            <div class="card-h" *ngFor="let menuTitleItem of item.menuTitle">
+                {{menuTitleItem.title}}
+            </div>
             <div class="card">
                 <div class="card-header" >
                     <div class="vsm-link">
@@ -27,6 +29,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div> -->
+<div class="app-sidebar sidebar-shadow">
+    <div class="app-header__logo">
+        <app-menu-burger></app-menu-burger>
+    </div>
+    <div class="app-sidebar-content">
+        <div class="app-sidebar-scroll">
+            <app-perfect-scrollbar></app-perfect-scrollbar>
         </div>
     </div>
 </div>

@@ -20,6 +20,9 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ViewBtnComponent } from './view-btn/view-btn.component';
+import { DropDownMenuComponent } from './drop-down-menu/drop-down-menu.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { ViewBtnComponent } from './view-btn/view-btn.component';
     SalesReportComponent,
     OrdersComponent,
     ViewBtnComponent,
+    DropDownMenuComponent,
+    AnalyticsComponent,
+   
   ],
   imports: [
     BrowserModule,
