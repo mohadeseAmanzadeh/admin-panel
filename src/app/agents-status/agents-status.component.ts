@@ -9,6 +9,7 @@ export class AgentsStatusComponent {
   public agnetsStatusTable = [
     {
       hashtag: '#54',
+      img: '/assets/images/1.jpg',
       name: 'Juan C.Cargill',
       company: 'Micro electronics',
       dd: '12Dec',

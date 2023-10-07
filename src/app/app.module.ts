@@ -22,6 +22,9 @@ import { OrdersComponent } from './orders/orders.component';
 import { ViewBtnComponent } from './view-btn/view-btn.component';
 import { DropDownMenuComponent } from './drop-down-menu/drop-down-menu.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
+import { BtnViewComponent } from './btn-view/btn-view.component';
+import { TechnicalSupportComponent } from './technical-support/technical-support.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 
@@ -47,6 +50,9 @@ import { AnalyticsComponent } from './analytics/analytics.component';
     ViewBtnComponent,
     DropDownMenuComponent,
     AnalyticsComponent,
+    BtnViewComponent,
+    TechnicalSupportComponent,
+    TimelineComponent,
    
   ],
   imports: [
