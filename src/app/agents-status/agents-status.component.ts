@@ -12,25 +12,25 @@ export class AgentsStatusComponent {
       img: '/assets/images/1.jpg',
       name: 'Juan C.Cargill',
       company: 'Micro electronics',
-      dd: '12Dec',
+      value: '12Dec',
     },
     {
       hashtag: '#55',
       name: 'Johnathan Phelan',
       company: 'Hatchwork',
-      dd: '12Dec',
+      value: '12Dec',
     },
     {
       hashtag: '#56',
       name: 'Darrel Lowe',
       company: 'Riddle Electronics',
-      dd: '12Dec',
+      value: '12Dec',
     },
     {
       hashtag: '#56',
       name: 'George T.Cottrell',
       company: 'Pixelcloud',
-      dd: '12Dec',
+      value: '12Dec',
     }
   ]
 }

@@ -1,4 +1,33 @@
-<div class="col-sm">
+<div class="colsm-12 col-lg-6">
+    <div class="card-hover-shadow-2x mb-3 card">
+        <div class="card-header-tab card-header">
+            <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+                <i class="heaader-icon lnr-database icon-gradient bg-malibu-beach"></i>
+                Tasks List
+            </div>
+            <div class="btn-actions-pane-right text-capitalize actions-icon-btn dropdown">
+                <button class="btn btn-icon btn-icon-only btn-link dropdown-toggle">
+                    <!-- <fa></fa> -->
+                    <i class="fa fa-th"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item" *ngFor="let item of menuDD">
+                        <i class="dropdown-icon" [ngClass]="item.type"></i>
+                        <span>{{item.title}}</span>
+                    </button>
+                    <div class="dropdown-divider" tabindex="-1"></div>
+                    <div class="p-1 text-right">
+                        <button class="mr-2 btn-shadow btn-sm btn btn-link"></button>
+                        <button class="mr-2 btn-shadow btn-sm btn btn-primary"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-area-lg"></div>
+        <div class="d-block text-right card-footer"></div>
+    </div>
+</div>
+<!-- <div class="col-sm">
     <div class="card-hover">
         <div class="card-header">
             <div class="card-header-title">Tasks List</div>
@@ -28,4 +57,4 @@
             </ul>
         </div>
     </div>
-</div>
+</div> -->

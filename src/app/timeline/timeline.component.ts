@@ -10,61 +10,69 @@ export class TimelineComponent {
     { 
       color: '#C71C22',
       title: 'All Hands Meeting',
-      type: 'danger'
+      type: 'dot-danger'
     },
     {
       color: '#DD5600',
       titleP: 'Yet another one,',
-      type: 'dots-danger',
+      type: 'dot-warning',
       time: '15:00 PM'
     },
     {
       color: '#73A839',
       title: 'Build the production releaseBuild',
-      type: 'warning',
+      type: 'dot-success',
       badge: ' NEW'
 
     },
     {
       color: '#033C73',
       title: 'Something not important',
-      type: 'success',
+      type: 'dot-primary',
     },
     {
       color: '#DD5600',
       titeP: 'Yet another one,',
-      time: '15:00 PM'
+      time: '15:00 PM',
+      type: 'dot-warning'
     },
     {
       color: '#73A839',
       title: 'Build the production releaseBuild',
-      badge: ' NEW'
+      badge: ' NEW',
+      type: 'dot-success'
     },
     {
       color: '#2FA4E7',
-      title: 'This dot has an info state'
+      title: 'This dot has an info state',
+      type: 'dot-info'
     },
     {
       color: '#343a40',
-      title: 'This dot has a dark state'
+      title: 'This dot has a dark state',
+      type: 'dot-dark'
     },
     {
       color: '#C71C22',
-      title: 'All Hands Meeting'
+      title: 'All Hands Meeting',
+      type: 'dot-danger'
     },
     {
       color: '#DD5600',
       titeP: 'Yet another one,',
-      time: '15:00 PM'
+      time: '15:00 PM',
+      type: 'dot-warning'
     },
     {
       color: '#73A839',
       title: 'Build the production release ',
-      badge: ' NEW'
+      badge: ' NEW',
+      type: 'dot-success'
     },
     {
       color: '#033C73',
-      title: 'Something not important'
+      title: 'Something not important',
+      type: 'dot-primary'
     }
   ]
 }

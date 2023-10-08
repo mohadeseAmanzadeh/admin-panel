@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks-list.component.scss']
 })
 export class TasksListComponent {
-  public subMenu = [
-    {title: 'Menus'},
-    {title: 'Settings'},
-    {title: 'Actions'},
+  public menuDD = [
+    { 
+      title: 'Menus',
+      type: 'lnr-indbox'
+    },
+    { 
+      title: 'Settings',
+      type: 'lnr-file-empty'
+    },
+    {
+      title: 'Actions',
+      type: 'lnr-book'
+    },
   ]
 }

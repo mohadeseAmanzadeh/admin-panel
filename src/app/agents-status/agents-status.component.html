@@ -47,7 +47,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngfor="let item of agnetsStatusTable">
+                <tr *ngFor="let item of agnetsStatusTable">
                     <td class="text-center text-muted">{{item.hashtag}}</td>
                     <td class="text-center">
                         <img class="rounded-circle" src="{{item.img}}" alt="">
@@ -56,16 +56,16 @@
                         <a href="">{{item.name}}</a>
                     </td>
                     <td class="text-center">
-                        <a href="">{{item.Company}}</a>
+                        <a href="">{{item.company}}</a>
                     </td>
                     <td class="text-center">
-                        <div class="badge badge-pill"></div>
+                        <app-status-btn></app-status-btn>
                     </td>
                     <td class="text-center">
                         <span class="pr-2 opacity-6">
                             <i class="fa fa-business-time"></i>
                         </span>
-                        {{item.dd}}
+                        {{item.value}}
                     </td>
                     <td class="text-center">
                         <app-achievement></app-achievement>
