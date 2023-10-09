@@ -1,0 +1,33 @@
+.btn-dark {
+    color: #fff;
+    background: #343a40 linear-gradient(180deg, #52585d, #343a40) repeat-x;
+    border-color: #343a40;
+}
+.btn-success {
+    color: #fff;
+    background: #73A839 linear-gradient(180deg, #88b557, #73A839) repeat-x;
+    border-color: #73A839;
+}
+.btn {
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.btn-primary {
+    color: #fff;
+    background: #033C73 linear-gradient(180deg, #295988, #033C73) repeat-x;
+    border-color: #033C73;
+}
+.btn-lg {
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+
+.btn-sm {
+    padding: .25rem .5rem;
+}

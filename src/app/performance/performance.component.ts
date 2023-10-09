@@ -29,6 +29,7 @@ export class PerformanceComponent {
       title: 'Capital Gains',
       price: '$563',
       percent: '7.35%',
+      type: 'text-success',
       titlePercent: 'Increased by'
     }
   ]

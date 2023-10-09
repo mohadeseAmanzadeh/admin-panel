@@ -14,8 +14,8 @@
                 </div>
                 <div class="widget-chart-content">
                     <div class="widget-subheading">{{item.title}}</div>
-                    <div class="widget-numbers">{{item.number}}
-                        <!-- <span>{{item.price}}</span> -->
+                    <div class="widget-numbers" [ngClass]="item.type">{{item.number}}
+                        <span>{{item.price}}</span>
                     </div>
                     <div class="widget-description opacity-8 text-focus">
                         <span class="text-warning pl-1">

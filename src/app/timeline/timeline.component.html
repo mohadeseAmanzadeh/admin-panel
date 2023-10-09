@@ -1,46 +1,44 @@
-<div class="col-sm-12 cl-lg-6">
-    <div class="card-hover-shadow-2x mb-3 card">
-        <div class="card-header-tab card-header">
-            <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
-                <i class="header-icon lnr-lighter icon-gradient bg-amy-crisp"></i>
-                Timeline Example
-            </div>
+<div class="card-hover-shadow-2x mb-3 card">
+    <div class="card-header-tab card-header">
+        <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+            <i class="header-icon lnr-lighter icon-gradient bg-amy-crisp"></i>
+            Timeline Example
         </div>
-        <div class="scroll-area-lg">
-            <div class="ps-show-limit">
-                <div class="ps ps--active-y">
-                    <div class="ps-content">
-                        <div class="p-4">
-                            <div class="vertical-time-simple vertical-withot-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
-                                <div 
-                                    class="vertical-timeline-element" 
-                                    [ngClass]="item.type"
-                                    *ngFor="let item of listPs">
-                                    <div>
-                                        <span class="vertical-timeline-element-icon bounce-in"></span>
-                                        <div class="vertical-timeline-element-content bounce-in">
-                                            <h4 class="time-title">{{item.title}}</h4>
-                                            <p *ngIf="item.type == 'warning'">
-                                                {{item.titleP}}
-                                                <span class="text-success">{{item.time}}</span>
-                                            </p>
-                                        </div>
+    </div>
+    <div class="scroll-area-lg">
+        <div class="ps-show-limit">
+            <div class="ps ps--active-y">
+                <div class="ps-content">
+                    <div class="p-4">
+                        <div class="vertical-time-simple vertical-withot-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                            <div 
+                                class="vertical-timeline-element" 
+                                [ngClass]="item.type"
+                                *ngFor="let item of listPs">
+                                <div>
+                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                    <div class="vertical-timeline-element-content bounce-in">
+                                        <h4 class="time-title">{{item.title}}</h4>
+                                        <p *ngIf="item.type == 'warning'">
+                                            {{item.titleP}}
+                                            <span class="text-success">{{item.time}}</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ps__rail-x" style="left: 0px; bottom: -90px;">
-                        <div class="ps__thumbs-x"></div>
-                    </div>
-                    <div class="ps__rail-y" style="top: 90px; height: 400px; right: 0px;">
-                        <div class="ps__thubs-y"></div>
-                    </div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: -90px;">
+                    <div class="ps__thumbs-x"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 90px; height: 400px; right: 0px;">
+                    <div class="ps__thubs-y"></div>
                 </div>
             </div>
         </div>
-        <div class="d-block text-center card-footer">
-            <button class="btn-shadow btn-wide btn-pill btn btn-focus">View All Message</button>
-        </div>
+    </div>
+    <div class="d-block text-center card-footer">
+        <button class="btn-shadow btn-wide btn-pill btn btn-focus">View All Message</button>
     </div>
 </div>

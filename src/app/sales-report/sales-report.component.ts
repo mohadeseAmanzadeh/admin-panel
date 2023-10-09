@@ -11,37 +11,37 @@ export class SalesReportComponent {
       price: '874',
       title: 'sales last month',
       type: 'card-shadow-success',
-      cl: 'border-success'
+      borderClass: 'border-success'
     },
     {
       price: '1283',
       title: 'Sales Income',
       type: 'card-shadow-primary',
-      cl: 'border-primary'
+      borderClass: 'border-primary'
     },
     {
       price: '1286',
       title: 'last month sales',
       type: 'card-shadow-warning',
-      cl: 'border-warning'
+      borderClass: 'border-warning'
     },
     {
       price: '564',
       title: 'total revenue',
       type: 'card-shadow-danger',
-      cl: 'border-danger'
+      borderClass: 'border-danger'
     },
     {
       price: '1283',
       title: 'Sales Income',
       type: 'card-shadow-info',
-      cl: 'border-info'
+      borderClass: 'border-info'
     },
     {
       price: '874',
       title: 'sales last month',
       type: 'card-shadow-warning',
-      cl: 'border-warning'
+      borderClass: 'border-warning'
     }
   ]
 }

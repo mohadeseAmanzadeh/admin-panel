@@ -1,0 +1,31 @@
+.text-center {
+    align-items: center;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text-left {
+    text-align: left
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-center {
+    text-align: center;
+}
+.text-danger {
+    color: #C71C22;
+}
+.text-muted {
+    color: #6c757d !important;
+}
+.text-success {
+    color: #73A839 !important;
+}
+.text-info {
+    color:#2FA4E7;
+}
+.text-warning {
+    color: #DD5600;
+}

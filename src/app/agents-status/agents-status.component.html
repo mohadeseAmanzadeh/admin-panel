@@ -1,33 +1,3 @@
-<!-- <table class="text-truncate">
-    <caption>Company Agents Status</caption>
-    <tr>
-        <th>#</th>
-        <th>Avatar</th>
-        <th>Name</th>
-        <th>Commpany</th>
-        <th>Stats</th>
-        <th>Due Date</th>
-        <th>Target Achievement</th>
-        <th>actions</th>
-    </tr>
-    <tr>
-        <td class="text-center text-muted"></td>
-        <td class="text-center"></td>
-        <td class="text-center">
-            <a href="#"></a>
-        </td>
-        <td class="text-center"></td>
-        <td class="text-center"></td>
-        <td class="text-center"></td>
-        <td class="text-center"></td>
-        <td class="text-center"></td>
-    </tr>
-    <tfoot>
-        <div class="d-block text-ceneter">
-            <button class="btn-pill btn-show btn-wide"></button>
-        </div>
-    </tfoot>
-</table> -->
 <div class="main-card mb-3 card">
     <div class="card-header">
         <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Company Agents Status</div>
@@ -48,9 +18,10 @@
             </thead>
             <tbody>
                 <tr *ngFor="let item of agnetsStatusTable">
-                    <td class="text-center text-muted">{{item.hashtag}}</td>
-                    <td class="text-center">
-                        <img class="rounded-circle" src="{{item.img}}" alt="">
+                    <td class="text-center text-muted" style="width: 80px;">{{item.hashtag}}</td>
+                    <td class="text-center" style="width: 80px;">
+                        <!-- <img class="rounded-circle" src="{{item.img}}" alt=""> -->
+                        <app-avatar [item]="item.avatarImg"></app-avatar>
                     </td>
                     <td class="text-center">
                         <a href="">{{item.name}}</a>
@@ -59,7 +30,7 @@
                         <a href="">{{item.company}}</a>
                     </td>
                     <td class="text-center">
-                        <app-status-btn></app-status-btn>
+                        <app-status-btn [item]="item.statusBtn"></app-status-btn>
                     </td>
                     <td class="text-center">
                         <span class="pr-2 opacity-6">
@@ -67,8 +38,8 @@
                         </span>
                         {{item.value}}
                     </td>
-                    <td class="text-center">
-                        <app-achievement></app-achievement>
+                    <td class="text-center" style="width: 200px;">
+                        <app-achievement [item]="item.achievement"></app-achievement>
                     </td>
                     <td class="text-center">
                         <app-actions></app-actions>
@@ -78,6 +49,11 @@
         </table>
     </div>
     <div class="d-block p-4 text-center card-footer">
-        
+        <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-dark btn-lg">
+            <span class="mr-2 opacity-7">
+                <i class="fa fa-cog fa-spin"></i>
+            </span>
+            <span class="mr-1">View Complete Report</span>
+        </button>
     </div>
 </div>

@@ -1,4 +1,17 @@
 
-.dot {
-    
+.dot-danger  {
+    .vertical-timeline-element-icon {
+        border: 3px solid #C71C22;
+    }
+}
+
+.dot-warning {
+    .vertical-timeline-element-icon {
+        border: 3px solid #DD5600;
+    }
+}
+.dot-succes {
+    .vertical-timeline-element-icon {
+        border: 3px solid #73A839;
+    }
 }

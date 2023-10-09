@@ -1,0 +1,20 @@
+.table {
+    width: 100%;
+    th {
+        vertical-align: bottom;
+    }
+    tr{
+        display: table-row;
+        border-color: inherit;
+        vertical-align: inherit; 
+        th,td {
+            padding: 0.55rem;
+            vertical-align: top;
+        }
+    }
+}
+.table-reponsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto
+}

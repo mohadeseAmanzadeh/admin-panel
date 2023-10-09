@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
   // interface statusBtnInerface {
   //   title: string
   // }
@@ -8,18 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./status-btn.component.scss']
 })
 export class StatusBtnComponent {
-  public statusBtn = [
-    { title: 'Cancel',
-      color: '#C71C22',
-    },
-    { title: 'On Hold',
-      color: '#2FA4E7'
-    },
-    { title: 'In Progress',
-      color: '#DD5600'
-    },
-    { title: ' Complated',
-      color: '#73A839'
-    }
-  ]
+
+  @Input() item : any = {};
+  // public statusBtn = [
+  //   { title: 'Cancele',
+  //     color: '#C71C22',
+  //   },
+  //   { title: 'On Hold',
+  //     color: '#2FA4E7'
+  //   },
+  //   { title: 'In Progress',
+  //     color: '#DD5600'
+  //   },
+  //   { title: ' Complated',
+  //     color: '#73A839'
+  //   }
+  // ]
 }

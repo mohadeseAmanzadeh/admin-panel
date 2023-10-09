@@ -9,28 +9,72 @@ export class AgentsStatusComponent {
   public agnetsStatusTable = [
     {
       hashtag: '#54',
-      img: '/assets/images/1.jpg',
       name: 'Juan C.Cargill',
       company: 'Micro electronics',
       value: '12Dec',
+      achievement: {
+        percent: '50%',
+        type: 'danger'
+      },
+      statusBtn : {
+        title: 'Canceled',
+        type: 'badge-danger'
+      },
+      avatarImg: {
+        img: '/assets/images/1.jpg',
+      }
     },
     {
       hashtag: '#55',
       name: 'Johnathan Phelan',
       company: 'Hatchwork',
       value: '12Dec',
+      achievement: {
+        percent: '90%',
+        type: 'warning'
+      },
+      statusBtn : {
+        title: 'On Hold',
+        type: 'badge-info'
+      },
+      avatarImg: {
+        img: '/assets/images/2 (1).jpg',
+      }
     },
     {
       hashtag: '#56',
       name: 'Darrel Lowe',
       company: 'Riddle Electronics',
       value: '12Dec',
+      achievement: {
+        percent: '35%',
+        type: 'success'
+      },
+      statusBtn : {
+        title: 'In Progress',
+        type: 'badge-warning'
+      },
+      avatarImg: {
+        img: '/assets/images/3.jpg',
+      }
     },
     {
       hashtag: '#56',
+      img: '/assets/images/4.jpg',
       name: 'George T.Cottrell',
       company: 'Pixelcloud',
       value: '12Dec',
+      achievement: {
+        percent: '63%',
+        type: 'info'
+      },
+      statusBtn : {
+        title: 'Completed',
+        type: 'badge-success'
+      },
+      avatarImg: {
+        img: '/assets/images/4.jpg',
+      }
     }
   ]
 }

@@ -1,0 +1,39 @@
+.btn-group, 
+.btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    > .btn {
+        position: relative;
+        flex: 1 1 auto;
+    }
+}
+
+.btn-group {
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) {
+    // margin-left: ;
+  }
+
+  > .btn:not(:last-child):not(.dropdown-toggle),
+  > .btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > .btn:nth-child(n + 3),
+  > :not(.btn-check) + .btn,
+  > .btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn {
+    font-size: .88rem;
+  }
+}
+
+.btn-group-sm {
+ > .btn {
+    padding: .25rem .5rem;
+ }
+}

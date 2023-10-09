@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-achievement',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./achievement.component.scss']
 })
 export class AchievementComponent {
+
+  @Input() item: any = {};
   // public progressBarList = [
   //   {
   //     perent: '71%',
