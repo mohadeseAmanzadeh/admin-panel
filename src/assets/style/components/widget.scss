@@ -46,6 +46,20 @@
             align-items: center;
             .widget-content-right {
                 margin-left: auto;
+                .widget-numbers {
+                    font-size: bold;
+                    font-size: 1.8rem;
+                    display: block;
+                }
+            }
+            .widget-content-left {
+                .widget-heading {
+                    font-weight: bold;
+                    opacity: .8;
+                }
+                .widget-subheading {
+                    opacity: .5;
+                }
             }
         }
     }
