@@ -17,20 +17,29 @@ export class PerformanceComponent {
       title: 'Cash Deposits',
       number: '1,7M',
       percent: '54.1%',
-      titlePercent: 'less earnings'
+      titlePercent: 'less earnings',
+      opacity: 'opacity-10',
+      background: 'bg-warning',
+      fontName: 'pe-7s-album'
     },
     {
       title: 'Invested Dividents',
       number: '9M',
       percent: '14.1%',
-      titlePercent: 'Grow Rate'
+      titlePercent: 'Grow Rate',
+      opacity: 'opacity-9',
+      background: 'bg-danger',
+      fontName: 'pe-7s-portfolio'
     },
     {
       title: 'Capital Gains',
       price: '$563',
       percent: '7.35%',
       type: 'text-success',
-      titlePercent: 'Increased by'
+      titlePercent: 'Increased by',
+      opacity: 'opacity-9',
+      background: 'bg-success',
+      fontName: 'pe-7s-light'
     }
   ]
 }

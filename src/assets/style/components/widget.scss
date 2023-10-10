@@ -1,14 +1,20 @@
-.widget-chart.text-left .icon-wrapper {
-    min-width: 54px;
-    margin: 0 1rem 0 0;
-}
-.widget-chart {
-    padding: 1rem;
-    position: relative;
-    .widget-subheading {
-        margin: -0.5rem;
-        display: block;
-        opacity: .6;
+
+.widget-chart.text-left{
+    flex-direction: row;
+    align-items: center;
+    .icon-wrapper {
+        min-width: 54px;
+        margin: 0 1rem 0 0;
+    }
+    .widget-chart-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        .widget-description {
+            align-self: flex-start;
+            max-width: 1rem 0 0;
+        }
     }
     .widget-numbers {
         font-size: bold;
@@ -16,23 +22,21 @@
         display: block;
         line-height: 1;
         margin: 1rem auto;
-    }
-}
-.widget-chart.text-left {
-    flex-direction: row;
-    align-items: center;
-    .widget-chart-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        position: relative;
-    }
-    .widget-numbers {
         margin-left: 0;
     }
 }
-.widget-content {
+.widget-chart {
     padding: 1rem;
+    position: relative;
+    .widget-subheading {
+        margin: -0.5rem 0 0;
+        display: block;
+        opacity: .6;
+    }
+   
+}
+.widget-content {
+    padding: $padding-spacer;
     flex-direction: row;
     align-items: center;
     .widget-content-outer {
@@ -54,7 +58,7 @@
             }
             .widget-content-left {
                 .widget-heading {
-                    font-weight: bold;
+                    font-weight: $font-bold;
                     opacity: .8;
                 }
                 .widget-subheading {
@@ -64,3 +68,34 @@
         }
     }
 }
+.widget-chart-2 {
+    .widget-content-outer {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .widget-content-wrapper {
+            display: flex;
+            flex: 1;
+            position: relative;
+            align-items: center;
+            .widget-content-right {
+                margin-left: auto;
+                .widget-numbers {
+                    font-size: bold;
+                    font-size: 1.8rem;
+                    display: block;
+                }
+            }
+            .widget-content-left {
+                .widget-heading {
+                    font-weight: $font-bold;
+                    opacity: .8;
+                }
+                .widget-subheading {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+

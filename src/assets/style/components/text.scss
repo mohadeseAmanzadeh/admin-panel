@@ -6,7 +6,10 @@
     text-overflow: ellipsis;
 }
 .text-left {
-    text-align: left
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
 }
 .text-capitalize {
     text-transform: capitalize;
@@ -28,4 +31,7 @@
 }
 .text-warning {
     color: #DD5600;
+}
+.text-focus {
+    color: #6610f2 !important;
 }

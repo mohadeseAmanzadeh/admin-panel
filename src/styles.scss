@@ -1,3 +1,11 @@
+
+
+$pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
+// @import "../node_modules/pe7-icon/dist/scss/pe-icon-7-stroke";
+
+// $pe-7s-font-path: "~pe7-icon/dist/fonts";
+// @import "~pe7-icon/dist/scss/pe-icon-7-stroke.scss";
+
 .app-theme-white .app-page-title{
     background: rgba(255, 255, 255, 0.45);
 }
@@ -53,6 +61,7 @@
     margin-left: -15px;
 }
 .no-gutters {
+    width: 100%;
     margin-right: 0;
     margin-left: 0;
 }
@@ -73,14 +82,14 @@
 .rounded-circle {
     border-radius: 50% !important;
 }
-
-// .bg-warning {
-//     background-color: #DD5600;
-// }
+.dropdown {
+    position: relative;
+}
 .align-middle {
     vertical-align: middle;
 }
 
+@import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";
 @import "/src/assets/style/components/helpers.scss";
@@ -97,6 +106,11 @@
 @import "/src/assets/style/components/font.scss";
 @import "/src/assets/style/components/background.scss";
 @import "/src/assets/style/components/btn-group.scss";
+@import "/src/assets/style/components/opacity.scss";
 @import "/src/assets/style/components/scroll.scss";
 @import "/src/assets/style/components/timeline.scss";
-@import "/src/assets/style/components/border.scss"
+@import "/src/assets/style/components/border.scss";
+@import "/src/assets/style/components/list-group.scss";
+@import "/src/assets/style/components/dropdown.scss";
+@import "/src/assets/style/components/type.scss"
+
