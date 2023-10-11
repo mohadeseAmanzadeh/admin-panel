@@ -32,7 +32,7 @@ export class TimelineComponent {
     },
     {
       color: '#DD5600',
-      titeP: 'Yet another one,',
+      titleP: 'Yet another one,',
       time: '15:00 PM',
       type: 'dot-warning'
     },
@@ -59,7 +59,7 @@ export class TimelineComponent {
     },
     {
       color: '#DD5600',
-      titeP: 'Yet another one,',
+      titleP: 'Yet another one,',
       time: '15:00 PM',
       type: 'dot-warning'
     },

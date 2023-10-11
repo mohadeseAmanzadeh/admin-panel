@@ -56,7 +56,6 @@ export class OrdersComponent {
           type: 'text-primary'
         }
       ]
-      
     },
 
   ]

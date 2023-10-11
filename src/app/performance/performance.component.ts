@@ -20,7 +20,9 @@ export class PerformanceComponent {
       titlePercent: 'less earnings',
       opacity: 'opacity-10',
       background: 'bg-warning',
-      fontName: 'pe-7s-album'
+      fontName: 'pe-7s-album',
+      text: 'text-danger',
+      padding: 'pr-1'
     },
     {
       title: 'Invested Dividents',
@@ -29,7 +31,10 @@ export class PerformanceComponent {
       titlePercent: 'Grow Rate',
       opacity: 'opacity-9',
       background: 'bg-danger',
-      fontName: 'pe-7s-portfolio'
+      fontName: 'pe-7s-portfolio',
+      text: 'text-info',
+      padding: 'pl-1'
+      
     },
     {
       title: 'Capital Gains',
@@ -39,7 +44,9 @@ export class PerformanceComponent {
       titlePercent: 'Increased by',
       opacity: 'opacity-9',
       background: 'bg-success',
-      fontName: 'pe-7s-light'
+      fontName: 'pe-7s-light',
+      text: 'text-warning',
+      padding: ''
     }
   ]
 }

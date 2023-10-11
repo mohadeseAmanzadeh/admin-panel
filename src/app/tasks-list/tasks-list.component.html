@@ -1,4 +1,4 @@
-<div class="col-sm-12 col-lg-6">
+<div class="task-list">
     <div class="card-hover-shadow-2x mb-3 card">
         <div class="card-header-tab card-header">
             <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
@@ -11,7 +11,7 @@
                     <i class="fa fa-th"></i>
                 </button>
                 <div class="dropdown-menu">
-                    <button class="dropdown-item" *ngFor="let item of menuDD">
+                    <button class="dropdown-item" *ngFor="let item of menuDropDown">
                         <i class="dropdown-icon" [ngClass]="item.type"></i>
                         <span>{{item.title}}</span>
                     </button>
@@ -23,41 +23,156 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-area-lg"></div>
+        <div class="scroll-area-lg">
+            <div class="ps-shadow-limits">
+                <div class="ps ps--active-y">
+                    <div class="ps-ontent">
+                        <ul class="todo-list-wrapper list-group list-group-flsh">
+                            <li class="list-group-item" *ngFor="let task of taskList">
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-2">
+                                            <div class="custom-checkbox custom-control">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox12">
+                                                <label for="exampleCustomCheckbox12" class="custom-control-label">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">
+                                                {{task.title}}
+                                                <app-status-btn *ngIf="task.statusBtn" [item]="task.statusBtn"></app-status-btn>
+                                            </div>
+                                            <div class="widget-subheading">
+                                                <i>{{task.desc}}</i>
+                                                <app-status-btn *ngIf="task.descStatusBtn" [item]="task.descStatusBtn"></app-status-btn>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <!-- <img class="rounded" src="" alt="" width="42"> -->
+                                                <app-avatar *ngIf="task. avatarImg" [item]="task. avatarImg" class="rounded"></app-avatar>
+                                            </div> 
+                                        </div>
+                                        <div class="widget-content-right widget-content-actions">
+                                            <button *ngIf="task.canConfirm" class="border-0 btn-tramsition btn btn-outeline-success">
+                                                <i class="fa fa-check"></i>
+                                            </button>
+                                            <button *ngIf="task.canDelete" class="border-0 btn-tramsition btn btn-outeline-danger">
+                                                <i class="fa fa-trash"></i>
+                                            </button>
+                                        </div>
+                                        <div *ngIf="task.actionStatusBtn" class="widget-content-right ml-3">
+                                            <app-status-btn [item]="task.actionStatusBtn"></app-status-btn>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="list-group-item">
+                                <div class="todo-indicator bg-focus"></div>
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-2">
+                                            <div class="custom-checkbox custom-control">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox12">
+                                                <label for="exampleCustomCheckbox12" class="custom-control-label">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Wash the car</div>
+                                            <div class="widget-subheading">
+                                                <div>
+                                                    Written by Bob
+                                                    <div class="badge badge-pill badge-info ml-2">NEW</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-right widget-content-actions">
+                                           <div class="d-inline-block show dropdown">
+                                                <button class="btn btn-icon btn-icon-only btn-link dropdown-toggle"></button>
+                                                <div class="dropdown-menu show">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item" [ngClass]="[item.divider, item.header]" *ngFor="let item of menuNav">
+                                                            {{item.title}}
+                                                            <a class="nav-link" href="">
+                                                                {{item.titleLink}}
+                                                                <div class="ml-auto badge badge-pill" [ngClass]="item.type">
+                                                                    {{item.text}}
+                                                                </div>
+                                                            </a>
+                                                            <button class="btn-widebtn-shadow btn btn-danger btn-sm">
+                                                                {{item.button}}
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li class="list-group-item">
+                                <div class="todo-indicator bg-focus"></div>
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-2">
+                                            <div class="custom-checkbox custom-control">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox12">
+                                                <label for="exampleCustomCheckbox12" class="custom-control-label">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left flex2">
+                                            <div class="widget-heading">Wash the car</div>
+                                            <div class="widget-subheading">hyyjty</div>
+                                        </div>
+                                        <div class="widget-content-right widget-content-actions">
+                                           <button class="border-0 btn-tramsition btn btn-outeline-success">
+                                            <i class="fa fa-check"></i>
+                                           </button>
+                                        </div>
+                                        <div class="widget-content-right ml-3">
+                                            <div class="badge badge-pill badge-success">Latest Task</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <!-- <li class="list-group-item">
+                                <div class="todo-indicator bg-focus"></div>
+                                <div class="widget-content p-0">
+                                    <div class="widget-content-wrapper">
+                                        <div class="widget-content-left mr-2">
+                                            <div class="custom-checkbox custom-control">
+                                                <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox12">
+                                                <label for="exampleCustomCheckbox12" class="custom-control-label">&nbsp;</label>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-left mr-3">
+                                            <div class="widget-content-left">
+                                                <img class="rounded" src="" alt="" width="42">
+                                            </div> 
+                                        </div>
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Wash the car</div>
+                                            <div class="widget-subheading">hyyjty</div>
+                                        </div>
+                                        <div class="widget-content-right widget-content-actions">
+                                           <button class="border-0 btn-tramsition btn btn-outeline-success">
+                                                <i class="fa fa-check"></i>
+                                           </button>
+                                           <button class="border-0 btn-tramsition btn btn-outeline-danger">
+                                            <i class="fa fa-trash"></i>
+                                           </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="ps__rail-x"></div>
+                    <div class="ps__rail-y"></div>
+                </div>
+            </div>
+        </div>
         <div class="d-block text-right card-footer">
             <button class="mr-2 btn btn-link btn-sm">Cancel</button>
             <button class="btn btn-primary">Add Task</button>
         </div>
     </div>
 </div>
-<!-- <div class="col-sm">
-    <div class="card-hover">
-        <div class="card-header">
-            <div class="card-header-title">Tasks List</div>
-            <div class="btn-actions-pane-right">
-                <button class="btn-icon">
-                    <i></i>
-                </button>
-                <div class="dropdown-menu">
-                    <button class="dropdown-item">
-                        <span></span>
-                    </button>
-                    <div class="dropdown-divider"></div>
-                    <div class="p-1">
-                        <button class="btn-shadow">View Details</button>
-                        <button class="btn-shadow">Action</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="scroll-area">
-        <div class="ps-content">
-            <ul class="todo-list-wrapper">
-                <li>
-                    <div class="w"></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div> -->

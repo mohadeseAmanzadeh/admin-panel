@@ -1,0 +1,33 @@
+.icon-wrapper {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    overflow: hidden;
+    max-width: 0 1rem 0 0;
+    display: flex;
+    align-items: center;
+    .icon-wrapper-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+    i {
+        margin: 0 auto;
+        font-size: 1.7rem;
+        position: relative;
+        z-index: 5;
+        &::before {
+            margin-top: -3px;
+        }
+    }
+}
+.pe-7s-album::before {
+    content: "";
+}
+.fa-angle-down:before {
+    content: "";
+}
+.pe-7s-light:before {
+    content: "";
+}
