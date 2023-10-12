@@ -51,9 +51,7 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
     }
     
 }
-//  .app-page-title, .page-title-wrapper {
-//     position: relative;
-// }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +84,10 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
     border-width: 0
 }
 .rounded-circle {
-    border-radius: 50% !important;
+    border-radius: 50%;
+}
+.rounded {
+    border-radius: .25rem !important;
 }
 .dropdown {
     position: relative;
@@ -118,5 +119,9 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 @import "/src/assets/style/components/border.scss";
 @import "/src/assets/style/components/list-group.scss";
 @import "/src/assets/style/components/dropdown.scss";
-@import "/src/assets/style/components/type.scss"
+@import "/src/assets/style/components/type.scss";
+@import "/src/assets/style/components/scroll-bar";
+@import "/src/assets/style/components/header";
+@import "/src/assets/style/components/search";
+@import "/src/assets/style/components/sidebar-menu.scss"
 

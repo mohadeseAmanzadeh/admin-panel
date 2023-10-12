@@ -1,52 +1,70 @@
 .vertical-time-simple {
     padding: .5rem 0;
-    .time-title {
-        text-transform: none;
-        font-weight: normal;
-        font-size: .99rem;
-        padding: 0;
-    }
-}
-
-.vertical-timeline {
     width: 100%;
     position: relative;
-}
-.vertical-without-time::before{
-    left: 11px;
-}
-.vertical-timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background: #e9ecef;
-    border-radius: .25rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 11px;
+        width: 4px;
+        height: 100%;
+        background: #e9ecef;
+        border-radius: .25rem;
+    }
+    &::before{
+        left: 11px;
+    }
+    .vertical-timeline-element {
+        margin: 0 0 .5rem !important;
+        position: relative;
+        .vertical-timeline-element-icon {
+            visibility: visible;
+            height: 14px;
+            width: 14px;
+            background: #e9ecef;
+            position: absolute;
+            left: 6px;
+            top: 2px;
+            display: block;
+            border-radius: 20px;
+            &::after {
+                content: '';
+                position: absolute;
+                background: #fff;
+                left: 50%;
+                top: 50%;
+                margin: -4px 0 0 -4px;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 20px;
+            }
+        }
+        .vertical-timeline-element-content {
+            visibility: visible;
+            margin-left: 36px;
+            position: relative;
+            font-size: .8rem;
+            &::after {
+                content: "";
+                display: table;
+                clear: both;   
+            }
+            .time-title {
+                text-transform: none;
+                font-weight: normal;
+                font-size: .99rem;
+                padding: 0;
+                margin: 0 0 .5rem;
+            }
+            p {
+                color: #868e96;
+                margin: 0 0 0.5rem;
+            }
+        }
+    }
+    
 }
 
-.vertical-timeline-element {
-    // margin: 0 0 0 1rem;
-    position: relative;
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-        
-    }
-    .vertical-timeline-element-icon {
-        visibility: visible;
-        height: 14px;
-        width: 14px;
-        // background: #e9ecef;
-        background: #fff;
-        position: absolute;
-        left: -5px;
-        top: 2px;
-        display: block;
-        border-radius: 20px;
-    }
-    .vertical-timeline-element-content {
-        margin-left: 22px;
-    }
-}
+

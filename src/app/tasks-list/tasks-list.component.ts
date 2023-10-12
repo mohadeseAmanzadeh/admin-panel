@@ -94,6 +94,7 @@ export class TasksListComponent {
       descStatusBtn : null,
       canConfirm: true,
       canDelete: false,
+      type: 'flex2',
       actionStatusBtn : {
         title: 'Latest Task',
         type: 'badge-success'

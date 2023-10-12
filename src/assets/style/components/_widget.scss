@@ -43,6 +43,12 @@
     padding: $padding-spacer;
     flex-direction: row;
     align-items: center;
+    &:hover {
+        .widget-content-right.widget-content-actions {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
     .widget-content-outer {
         display: flex;
         flex: 1;
@@ -54,6 +60,14 @@
             align-items: center;
             .widget-content-right {
                 margin-left: auto;
+                &.widget-content-actions {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: opacity .2s;
+                    &:hover {
+                        visibility: visible;
+                    }
+                }
                 .widget-numbers {
                     font-size: bold;
                     font-size: 1.8rem;
@@ -64,6 +78,9 @@
                 .widget-heading {
                     font-weight: $font-bold;
                     opacity: .8;
+                    &.pb-6 {
+                        padding-bottom: .5rem;
+                    }
                 }
                 .widget-subheading {
                     opacity: .5;

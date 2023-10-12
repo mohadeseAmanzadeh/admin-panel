@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class StatusBtnComponent {
 
+  @Input() className: string = '';
   @Input() item : any = {};
   // public statusBtn = [
   //   { title: 'Cancele',

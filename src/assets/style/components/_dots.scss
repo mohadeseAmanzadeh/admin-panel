@@ -1,17 +1,32 @@
 
 .dot-danger  {
     .vertical-timeline-element-icon {
-        border: 3px solid #C71C22;
+        background:  #C71C22 !important;
     }
 }
 
 .dot-warning {
     .vertical-timeline-element-icon {
-        border: 3px solid #DD5600;
+       background: #DD5600 !important;
     }
 }
-.dot-succes {
+.dot-success {
     .vertical-timeline-element-icon {
-        border: 3px solid #73A839;
+      background: #73A839 !important;
     }
+}
+.dot-primary {
+    .vertical-timeline-element-icon {
+       background: #033C73 !important;
+    }
+}
+.dot-info {
+    .vertical-timeline-element-icon {
+        background: #2FA4E7 !important;
+    }
+}
+.dot-dark {
+    .vertical-timeline-element-icon {
+        background: #343a40 !important;
+    }   
 }
