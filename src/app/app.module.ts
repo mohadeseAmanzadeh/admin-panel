@@ -26,6 +26,8 @@ import { BtnViewComponent } from './btn-view/btn-view.component';
 import { TechnicalSupportComponent } from './technical-support/technical-support.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
+import { RegisterBoxedComponent } from './register-boxed/register-boxed.component';
+import { StandardButtonsComponent } from './standard-buttons/standard-buttons.component';
 
 
 
@@ -55,6 +57,8 @@ import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
     TechnicalSupportComponent,
     TimelineComponent,
     LoginBoxedComponent,
+    RegisterBoxedComponent,
+    StandardButtonsComponent,
    
   ],
   imports: [

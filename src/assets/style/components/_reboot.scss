@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -12,6 +13,7 @@ html {
 
 body {
     font-size: .88rem;
+    // box-sizing: border-box;
     // line-height: 1.5;
     color: #495057;
     text-align: left;
