@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./standard-buttons.component.scss']
 })
 export class StandardButtonsComponent {
+<<<<<<< HEAD
  public btnContainer = [
   {
     title: 'Solid',
@@ -205,4 +206,7 @@ export class StandardButtonsComponent {
   },
   
  ]
+=======
+
+>>>>>>> d683653b1d09695ddd219e658de99797cc90fbe7
 }

@@ -1,44 +1,17 @@
-<!-- <div class="menu-container">
-    <div class="menu-burger">
-        <app-menu-burger></app-menu-burger>
-    </div>
-    <div class="v-sidebar-menu">
-        <div class="menu"  *ngFor="let item of menuSide">
-            <div class="card-h" *ngFor="let menuTitleItem of item.menuTitle">
-                {{menuTitleItem.title}}
-            </div>
-            <div class="card">
-                <div class="card-header" >
-                    <div class="vsm-link">
-                        <i></i>
-                        <span>{{item.title}}</span>
-                        <i></i>
-                    </div>
-                </div>
-                <div class="show">
-                    <div class="card-body" *ngFor="let subMenuItem of item.subMenu">
-                        <div class="vsm-dropdown">
-                           <div class="vsm-list">
-                            <div class="vsm-item">
-                                <a class="vsm-link" href="">
-                                    <span class="vsm-title">{{subMenuItem.title}}</span>
-                                </a>
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="app-sidebar sidebar-shadow">
     <div class="app-header__logo">
-        <app-menu-burger></app-menu-burger>
+        <div class="logo-src"></div>
+        <div class="header__pane ml-auto">
+            <button class="hamburger close-sidebar-btn hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
     </div>
     <div class="app-sidebar-content">
         <div class="app-sidebar-scroll">
-            <app-perfect-scrollbar></app-perfect-scrollbar>
+            <app-perfect-scrollbar class="ps-show-limits"></app-perfect-scrollbar>
         </div>
     </div>
 </div>
