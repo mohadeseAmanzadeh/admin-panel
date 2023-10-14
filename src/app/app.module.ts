@@ -26,6 +26,7 @@ import { TechnicalSupportComponent } from './technical-support/technical-support
 import { TimelineComponent } from './timeline/timeline.component';
 import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
 import { StandardButtonsComponent } from './standard-buttons/standard-buttons.component';
+import { RegisterBoxedComponent } from './register-boxed/register-boxed.component';
 
 
 
@@ -56,6 +57,7 @@ import { StandardButtonsComponent } from './standard-buttons/standard-buttons.co
     TimelineComponent,
     LoginBoxedComponent,
     StandardButtonsComponent,
+    RegisterBoxedComponent,
    
   ],
   imports: [
