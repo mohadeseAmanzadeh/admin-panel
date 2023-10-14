@@ -8,14 +8,13 @@ import { PageTitleComponent } from './page-title/page-title.component';
 import { HeaderComponent } from './header/header.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
-import { MenuBurgerComponent } from './menu-burger/menu-burger.component';
 import { UserBoxComponent } from './user-box/user-box.component';
 import { StatusBtnComponent } from './status-btn/status-btn.component';
 import { AchievementComponent } from './achievement/achievement.component';
 import { ActionsComponent } from './actions/actions.component';
 import { AgentsStatusComponent } from './agents-status/agents-status.component';
 import { AvatarComponent } from './avatar/avatar.component';
-import { PerfectScrollbarComponent } from './perfect-scrollbar/perfect-scrollbar.component';
+import { PerfectScrollbarComponent } from './side-menu-content/perfect-scrollbar.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
 import { OrdersComponent } from './orders/orders.component';
@@ -26,6 +25,7 @@ import { BtnViewComponent } from './btn-view/btn-view.component';
 import { TechnicalSupportComponent } from './technical-support/technical-support.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
+import { StandardButtonsComponent } from './standard-buttons/standard-buttons.component';
 
 
 
@@ -37,7 +37,7 @@ import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
     HeaderComponent,
     PerformanceComponent,
     SearchBoxComponent,
-    MenuBurgerComponent,
+  
     UserBoxComponent,
     StatusBtnComponent,
     AchievementComponent,
@@ -55,6 +55,7 @@ import { LoginBoxedComponent } from './login-boxed/login-boxed.component';
     TechnicalSupportComponent,
     TimelineComponent,
     LoginBoxedComponent,
+    StandardButtonsComponent,
    
   ],
   imports: [

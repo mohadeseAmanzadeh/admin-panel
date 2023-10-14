@@ -69,16 +69,18 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 .no-shadow {
     box-shadow: 0 0 0 transparent !important;
 }
-.app-main__inner {
-    padding: 30px 30px 0;
-    flex: 1
-}
+
 .app-main__outer {
     flex: 1;
     flex-direction: column;
+    padding: 60px 0 0 280px;
     display: flex;
     z-index: 8;
     transition: all .2s;
+    .app-main__inner {
+        padding: 30px 30px 0;
+        flex: 1
+    }
 }
 .rm-border {
     border-width: 0
@@ -123,5 +125,6 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 @import "/src/assets/style/components/scroll-bar";
 @import "/src/assets/style/components/header";
 @import "/src/assets/style/components/search";
-@import "/src/assets/style/components/sidebar-menu.scss"
+@import "/src/assets/style/components/sidebar-menu.scss";
+@import "/src/assets/style/components/burger-menu"
 

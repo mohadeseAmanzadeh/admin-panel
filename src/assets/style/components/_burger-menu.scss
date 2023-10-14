@@ -1,9 +1,3 @@
-
-.logo-src {
-    height: 23px;
-    width: 97px;
-    // background: ;
-}
 .hamburger {
     padding: 0px 0px;
     display: inline-block;
@@ -23,31 +17,26 @@
         height: 14px;
         display: inline-block;
         position: relative;
-        .hamburger-inner {
-            // margin-top: -1px;
-            display: block;
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
             width: 24px;
             height: 2px;
             background-color: #033C73;
             border-radius: 10px;
             position: absolute;
+            display: block;
+        }
+        .hamburger-inner {
+            // margin-top: -1px;
             top: 1px;
             transition-duration: 0.275s;
             transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            &::before, &::after {
-                content: '';
-                display: block;
-                width: 24px;
-                height: 2px;
-                background-color: #033C73;
-                border-radius: 10px;
-                position: absolute;
-            }
             &::before {
+                content: '';
                 top: 6px;
                 transition: opacity 0.125s 0.275s ease;
             }
             &::after {
+                content: '';
                 bottom: -6px;
                 top: 12px;
                 transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);

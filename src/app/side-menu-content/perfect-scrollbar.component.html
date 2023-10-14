@@ -1,0 +1,38 @@
+
+<div class="ps">
+    <div class="ps-content">
+        <div class="v-sidebar-menu vsm-default">
+            <div class="vsm-list" >
+                <div class="accordion" >
+                    <div *ngFor="let item of menuSide">
+                        <div class="vsm-header ">{{item.title}}</div>
+                        <div class="card" *ngFor="let subMenuItem of item.subMenu">
+                            <div class="card-header" id="ngb-panel-30-header">
+                                <button class="vsm-link collapsed " >
+                                    <i class="vsm-icon" [ngClass]="subMenuItem.type"></i>
+                                    <span class="vsm-title">{{subMenuItem.title}}</span>
+                                    <i class="vsm-arrow" (click)="subMenuItem.active = !subMenuItem.active"></i>
+                                </button>
+                            </div>
+                            <div class="collapse "
+                                [ngStyle]="{'height': subMenuItem.active ? subMenuItem.collapse+'px' : '0px'}"
+                                [ngClass]="{'active' : subMenuItem.active}">
+                                <div class="card-body">
+                                    <div class="vsm-dropdown ng-star-inserted" *ngFor="let child of subMenuItem.children ">
+                                        <div class="vsm-list">
+                                            <div class="vsm-item">
+                                                <a href="" class="vsm-link">
+                                                    <span class="vsm-title">{{child.title}}</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
