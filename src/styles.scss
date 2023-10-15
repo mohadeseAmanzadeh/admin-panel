@@ -82,6 +82,12 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
         flex: 1
     }
 }
+
+.app-logo-inverse {
+    height: 23px;
+    width: 97px;
+    background: url(/assets/images/logo.png);
+}
 .rm-border {
     border-width: 0
 }
@@ -97,7 +103,43 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 .align-middle {
     vertical-align: middle;
 }
-
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.d-block {
+    display:  block !important;
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 1px;
+    overflow: hidden;
+    background: #e9ecef;
+}
+.float-left {
+    float: left;
+    margin-right: .25rem; 
+}
+.float-right {
+    float: right;
+    margin-left: .25rem
+}
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";
@@ -126,5 +168,8 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 @import "/src/assets/style/components/header";
 @import "/src/assets/style/components/search";
 @import "/src/assets/style/components/sidebar-menu.scss";
-@import "/src/assets/style/components/burger-menu"
+@import "/src/assets/style/components/burger-menu";
+@import "/src/assets/style/components/modal";
+@import "/src/assets/style/components/form";
+@import "/src/assets/style/components/custom"
 

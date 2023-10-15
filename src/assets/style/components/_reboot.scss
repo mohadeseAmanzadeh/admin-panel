@@ -74,6 +74,10 @@ sup {
     line-height: 0;
     vertical-align: baseline;
 }
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
 
 a {
     color: #033C73;

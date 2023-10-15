@@ -1,33 +1,41 @@
 <div class="ng-star-inserted">
     <app-page-title></app-page-title>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6" *ngFor="let item of cardlist">
             <div class="main-card mb-3 card">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <button class="mb-2 mr-2 btn"></button>
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <app-buttons [item]="item.listButton" [className]="'btn-transition'"></app-buttons>
+                    <!-- <app-buttons [title]="'Secondary'" [className]="'btn-secondary'"></app-buttons>
+                    <app-buttons [title]="'Success'" [className]="'btn-success'"></app-buttons>
+                    <app-buttons [title]="'Info'" [className]="'btn-info'"></app-buttons>
+                    <app-buttons [title]="'Warning'" [className]="'btn-warning'"></app-buttons>
+                    <app-buttons [title]="'Danger'" [className]="'btn-danger'"></app-buttons>
+                    <app-buttons [title]="'Focus'" [className]="'btn-focus'"></app-buttons>
+                    <app-buttons [title]="'Alt'" [className]="'btn-alternate'"></app-buttons>
+                    <app-buttons [title]="'Light'" [className]="'btn-light'"></app-buttons>
+                    <app-buttons [title]="'Dark'" [className]="'btn-dark'"></app-buttons>
+                    <app-buttons [title]="'link'" [className]="'btn-link'"></app-buttons> -->
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-lg-6" >
             <div class="main-card mb-3 card">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
                     <div class="text-center">
-                        <div class="btn-group-sm btn-group btn-group-toggle" >
-                            <label class="btn">
+                        <div class="btn-group-sm btn-group btn-group-toggle" tekrar>
+                            <label class="btn" tekrar>
                                 <input type="checkbox">
                             </label>
                         </div>
-                        <div class="divider"></div>
-                        <div class="btn-group-toggle btn-group"></div>
-                        <div class="divider"></div>
-                        <div class="btn-group-lg btn-group btn-group-toggle"></div>
+                        <div class="divider" tekrar></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>

@@ -39,10 +39,40 @@
 .btn-link {
     font-weight: 400;
     color: #033C73;
-    background: #fff;
+    background: transparent;
 }
 .btn-focus {
     color: #fff;
     background: #560bd0 linear-gradient(180deg, #7030d7, #560bd0) repeat-x;
     border-color: #510bc4;
+}
+.btn-secondary {
+    color: #212529;
+    background: #ced4da linear-gradient(180deg, #d5dae0, #ced4da) repeat-x;
+    border-color: #ced4da;
+}
+.btn-info {
+    color: #fff;
+    background: #2FA4E7 linear-gradient(180deg, #4eb2eb, #2FA4E7) repeat-x;
+    border-color: #2FA4E7;
+}
+.btn-warning {
+    color: #fff;
+    background: #DD5600 linear-gradient(180deg, #e26f26, #DD5600) repeat-x;
+    border-color: #DD5600;
+}
+.btn-danger {
+    color: #fff;
+    background: #C71C22 linear-gradient(180deg, #cf3e43, #C71C22) repeat-x;
+    border-color: #C71C22;
+}
+.btn-alternate {
+    color: #fff;
+    background: #6f42c1 linear-gradient(180deg, #855eca, #6f42c1) repeat-x;
+    border-color: #6f42c1;
+}
+.btn-light {
+    color: #212529;
+    background: #d5d9eb linear-gradient(180deg, #dbdfee, #d5d9eb) repeat-x;
+    border-color: #d5d9eb;
 }
