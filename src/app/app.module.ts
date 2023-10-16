@@ -38,6 +38,7 @@ const routes : Routes = [
   { path: 'forgetPassword' , component : ForgotPasswordBoxedComponent}
 ]
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,11 +64,10 @@ const routes : Routes = [
     TechnicalSupportComponent,
     TimelineComponent,
     LoginBoxedComponent,
+    RegisterBoxedComponent,
+    StandardButtonsComponent,
     StandardButtonsComponent,
     RegisterBoxedComponent,
-    ForgotPasswordBoxedComponent,
-    ButtonsComponent,
-    
    
   ],
   imports: [
