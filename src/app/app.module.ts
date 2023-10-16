@@ -29,6 +29,7 @@ import { RegisterBoxedComponent } from './UserPages/register-boxed/register-boxe
 import { ForgotPasswordBoxedComponent } from './UserPages/forgot-password-boxed/forgot-password-boxed.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { DropDownBtnComponent } from './drop-down-btn/drop-down-btn.component';
 
 
 const routes : Routes = [
@@ -68,6 +69,8 @@ const routes : Routes = [
     StandardButtonsComponent,
     StandardButtonsComponent,
     RegisterBoxedComponent,
+    ButtonsComponent,
+    DropDownBtnComponent
    
   ],
   imports: [
