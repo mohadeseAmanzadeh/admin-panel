@@ -382,7 +382,7 @@ export class DropDownBtnComponent {
                   dropclass: 'dropdown-toggle'
                 },
               ],
-              divider: 'divider',
+              // divider
               subBtnGroup: [
                 {
                   title: 'Large',

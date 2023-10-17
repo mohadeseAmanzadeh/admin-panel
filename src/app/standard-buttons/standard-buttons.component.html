@@ -5,21 +5,10 @@
             <div class="main-card mb-3 card">
                 <div class="card-body">
                     <h5 class="card-title">{{item.title}}</h5>
-                    <app-buttons [item]="item.listButton"></app-buttons>
-                    <div class="text-center">
+                    <app-buttons [item]="btnItem" [className]="btnItem.className" *ngFor="let btnItem of item.listButton"></app-buttons>
+                    <div class="text-center"  *ngFor="let buttonItem of item.buttons">
                         <app-buttons *ngIf="item.buttons" [item]="item.buttons" className="mb-2 mr-2"></app-buttons>
                     </div>
-                    <!-- <app-buttons [title]="'Secondary'" [className]="'btn-secondary'"></app-buttons>
-                    <app-buttons [title]="'Success'" [className]="'btn-success'"></app-buttons>
-                    <app-buttons [title]="'Info'" [className]="'btn-info'"></app-buttons>
-                    <app-buttons [title]="'Warning'" [className]="'btn-warning'"></app-buttons>
-                    <app-buttons [title]="'Danger'" [className]="'btn-danger'"></app-buttons>
-                    <app-buttons [title]="'Focus'" [className]="'btn-focus'"></app-buttons>
-                    <app-buttons [title]="'Alt'" [className]="'btn-alternate'"></app-buttons>
-                    <app-buttons [title]="'Light'" [className]="'btn-light'"></app-buttons>
-                    <app-buttons [title]="'Dark'" [className]="'btn-dark'"></app-buttons>
-                    <app-buttons [title]="'link'" [className]="'btn-link'"></app-buttons> -->
-
                 </div>
             </div>
         </div>
@@ -35,8 +24,10 @@
                                 {{child.title}}
                                 <input type="checkbox">
                             </label>
+                            <div [ngClass]="subMenuItem.divider"></div>
                         </div>
-                        <div class="divider"></div>
+                        
+                        
                         <!-- <div class="btn-group btn-group-toggle">
                             <label class="btn-danger btn">
                                 <input type="checkbox">

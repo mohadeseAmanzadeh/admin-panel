@@ -13,45 +13,48 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-primary'
+          className: 'btn-primary mb-2 mr-2',
+        },
+        {
+          title: 'Secondary',
+          className: 'btn-secondary mb-2 mr-2'
         },
         {
           title: 'Success',
-          type: 'btn-success'
+          className: 'btn-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-info'
+          className: 'btn-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-warning'
+          className: 'btn-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-danger'
+          className: 'btn-danger mb-2 mr-2',
         },
         {
           title: 'Focus',
-          type: 'btn-focus'
+          className: 'btn-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-alternate'
+          className: 'btn-alternate mb-2 mr-2',
         },
         {
           title: 'Light',
-          type: 'btn-light'
+          className: 'btn-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-dark'
+          className: 'btn-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-link'
+          className: 'btn-link mb-2 mr-2'
         }
-        
       ] 
     },
     {
@@ -59,53 +62,47 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-outline-primary',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-primary mb-2 mr-2',
+        },
+        {
+          title: 'Secondary',
+          className: 'btn-transition btn-outline-secondary mb-2 mr-2'
         },
         {
           title: 'Success',
-          type: 'btn-outline-success',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-outline-info',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-outline-warning',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-outline-danger',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-danger mb-2 mr-2',
         },
         {
           title: 'Focus',
-          type: 'btn-outline-focus',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-outline-alternate',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-focus mb-2 mr-2',
         },
         {
           title: 'Light',
-          type: 'btn-outline-light',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-outline-dark',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-outline-link',
-          className: 'btn-transition'
+          className: 'btn-transition btn-outline-link mb-2 mr-2',
         }
         
       ] 
@@ -115,63 +112,47 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-outline-primary',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-primary mb-2 mr-2',
+        },
+        {
+          title: 'secondary',
+          className: 'btn-transition border-0 btn-outline-secondary mb-2 mr-2'
         },
         {
           title: 'Success',
-          type: 'btn-outline-success',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-outline-info',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-outline-warning',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-outline-danger',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-danger mb-2 mr-2'
         },
         {
           title: 'Focus',
-          type: 'btn-outline-focus',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-outline-alternate',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-alternate mb-2 mr-2'
         },
         {
           title: 'Light',
-          type: 'btn-outline-light',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-outline-dark',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-outline-link',
-          className: 'btn-transition',
-          borderClass: 'border-0'
+          className: 'btn-transition border-0 btn-outline-link mb-2 mr-2',
         }
         
       ] 
@@ -181,53 +162,47 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-primary',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-primary mb-2 mr-2',
+        },
+        {
+          title: 'secondary',
+          className: 'btn-hover-shine btn-secondary mb-2 mr-2'
         },
         {
           title: 'Success',
-          type: 'btn-success',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-info',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-warning',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-danger',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-danger mb-2 mr-2',
         },
         {
           title: 'Focus',
-          type: 'btn-focus',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-alternate',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-alternate mb-2 mr-2',
         },
         {
           title: 'Light',
-          type: 'btn-light',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-dark',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-link',
-          className: 'btn-hover-shine'
+          className: 'btn-hover-shine btn-link mb-2 mr-2',
         }
         
       ] 
@@ -237,55 +212,48 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-primary',
-          className: 'active'
+          className: 'active btn-primary mb-2 mr-2',
+        },
+        {
+          title: 'Secondary',
+          className: 'active btn-secondary mb-2 mr-2',
         },
         {
           title: 'Success',
-          type: 'btn-success',
-          className: 'active'
+          className: 'active btn-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-info',
-          className: 'active'
+          className: 'active btn-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-warning',
-          className: 'active'
+          className: 'active btn-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-danger',
-          className: 'active'
+          className: 'active btn-danger mb-2 mr-2',
         },
         {
           title: 'Focus',
-          type: 'btn-focus',
-          className: 'active'
+          className: 'active btn-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-alternate',
-          className: 'active'
+          className: 'active btn-alternate mb-2 mr-2',
         },
         {
           title: 'Light',
-          type: 'btn-light',
-          className: 'active'
+          className: 'active btn-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-dark',
-          className: 'active'
+          className: 'active btn-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-link',
-          className: 'active'
-        }
-        
+          className: 'active btn-link mb-2 mr-2',
+        }  
       ] 
     },
     {
@@ -293,53 +261,47 @@ export class StandardButtonsComponent {
       listButton:[
         {
           title: 'Primary',
-          type: 'btn-primary',
-          className: 'disabled'
+          className: 'disabled btn-primary mb-2 mr-2',
+        },
+        {
+          title: 'Secondary',
+          className: 'disabled btn-secondary mb-2 mr-2'
         },
         {
           title: 'Success',
-          type: 'btn-success',
-          className: 'disabled'
+          className: 'disabled btn-success mb-2 mr-2',
         },
         {
           title: 'Info',
-          type: 'btn-info',
-          className: 'disabled'
+          className: 'disabled btn-info mb-2 mr-2',
         },
         {
           title: 'Warning',
-          type: 'btn-warning',
-          className: 'disabled'
+          className: 'disabled btn-warning mb-2 mr-2',
         },
         {
           title: 'Danger',
-          type: 'btn-danger',
-          className: 'disabled'
+          className: 'disabled btn-danger mb-2 mr-2',
         },
         {
           title: 'Focus',
-          type: 'btn-focus',
-          className: 'disabled'
+          className: 'disabled btn-focus mb-2 mr-2',
         },
         {
           title: 'Alt',
-          type: 'btn-alternate',
-          className: 'disabled'
+          className: 'disabled btn-alternate mb-2 mr-2',
         },
         {
           title: 'Light',
-          type: 'btn-light',
-          className: 'disabled'
+          className: 'disabled btn-light mb-2 mr-2',
         },
         {
           title: 'Dark',
-          type: 'btn-dark',
-          className: 'disabled'
+          className: 'disabled btn-dark mb-2 mr-2',
         },
         {
           title: 'link',
-          type: 'btn-link',
-          className: 'disabled'
+          className: 'disabled btn-link mb-2 mr-2',
         }
         
       ] 
@@ -349,22 +311,15 @@ export class StandardButtonsComponent {
       listButton: [
         {
           title: 'Block Large',
-          type: 'btn-primary',
-          className: 'bt-lg',
-          class: 'btn-block'
-          // bt-block
+          className: 'btn-lg btn-block btn-primary mb-2 mr-2',
         },
         {
           title: 'Block Normal',
-          type: 'btn-primary',
-          className: 'btn-block'
+          className: 'btn-block btn-primary mb-2 mr-2',
         },
         {
           title: 'Block Small',
-          type: 'btn-primary',
-          className: 'btn-block',
-          class: 'btn-sm'
-          // btn-sm
+          className: 'btn-block btn-primary btn-sm mb-2 mr-2',
         }
       ]
 
@@ -426,11 +381,12 @@ export class StandardButtonsComponent {
               type: 'btn-primary'
             },
             {
-              tite: 'Three',
-              type: 'bt-primary'
-            }
-          ]
+              title: 'Three',
+              type: 'btn-primary'
+            },
+          ],
         },
+        {divider: 'divider', },
         {
           children: [
             {
@@ -442,11 +398,12 @@ export class StandardButtonsComponent {
               type: 'btn-danger'
             },
             {
-              tite: 'Three',
-              type: 'bt-danger'
-            } 
-          ]
+              title: 'Three',
+              type: 'btn-danger'
+            },
+          ],
         },
+        {divider: 'divider', },
         {
           children: [
             {
@@ -458,10 +415,10 @@ export class StandardButtonsComponent {
               type: 'btn-alternate'
             },
             {
-              tite: 'Three',
-              type: 'bt-alternate'
+              title: 'Three',
+              type: 'btn-alternate'
             } 
-          ]
+          ],
         },
       ]
     },
@@ -482,10 +439,10 @@ export class StandardButtonsComponent {
             {
               title: 'Right',
               type: 'btn-primary'
-            }
+            },
           ]
-
         },
+        {divider: 'divider'},
         {
           children: [
             {
@@ -494,20 +451,21 @@ export class StandardButtonsComponent {
             },
             {
               title: 'Middle',
-              type: 'btn-waring'
+              type: 'btn-warning'
             },
             {
               title: 'Right',
               type: 'btn-warning'
-            }
+            },
           ]
         },
+        {divider : 'divider'},
         {
           type: 'btn-group-lg',
           children: [
             {
               title: 'Left(pre-checked)',
-              type: 'btn-Focus'
+              type: 'btn-focus'
             },
             {
               title: 'Middle',
@@ -524,3 +482,4 @@ export class StandardButtonsComponent {
 
   ]
 }
+// 

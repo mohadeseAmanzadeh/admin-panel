@@ -18,6 +18,11 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
         padding: 0 !important;
         display: flex;  
         align-items: center;
+        .page-title-heading, 
+        .page-title-subheading {
+            padding: 0;
+            margin: 0;
+        }
         .page-title-heading {
             font-size: 1.25rem;
             font-weight: 400;
@@ -142,6 +147,9 @@ fieldset {
     margin: 0;
     border: 0;
 }
+.border-0 {
+    border: 0 !important
+}
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";
@@ -173,5 +181,6 @@ fieldset {
 @import "/src/assets/style/components/burger-menu";
 @import "/src/assets/style/components/modal";
 @import "/src/assets/style/components/form";
-@import "/src/assets/style/components/custom"
+@import "/src/assets/style/components/custom";
+@import "/src/assets/style/components/outline"
 

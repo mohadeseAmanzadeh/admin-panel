@@ -30,10 +30,16 @@ import { ForgotPasswordBoxedComponent } from './UserPages/forgot-password-boxed/
 import { Route, RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDownBtnComponent } from './drop-down-btn/drop-down-btn.component';
+import { IconsComponent } from './icons/icons.component';
 
 
 const routes : Routes = [
-  { path: '' , component : AnalyticsComponent},
+  { path: '' , component : AnalyticsComponent ,
+    children : [
+      { path: 'standardButtons' , component : StandardButtonsComponent},
+      { path: 'dropDownbtn' , component : DropDownBtnComponent} 
+    ]
+  },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
   { path: 'registerBoxed' , component : RegisterBoxedComponent},
   { path: 'forgetPassword' , component : ForgotPasswordBoxedComponent}
@@ -70,7 +76,8 @@ const routes : Routes = [
     StandardButtonsComponent,
     RegisterBoxedComponent,
     ButtonsComponent,
-    DropDownBtnComponent
+    DropDownBtnComponent,
+    IconsComponent
    
   ],
   imports: [
