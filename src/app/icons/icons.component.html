@@ -1,12 +1,22 @@
 <app-page-title></app-page-title> 
-<div class="row"> 
-    <div class="col-md-12">
+<div class="row mb-3"> 
+    <div class="col-md-12" *ngFor="let item of listIcon ">
         <div class="main-card mb-3 card">
             <div class="card-body">
-                <h5 class="card-title"></h5>
-                <div class="font-icon-wrapper font-icon-lg">
-                    <i class="icon-gradient"></i>
-                </div>
+               <div *ngIf="item.icons">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <div class="font-icon-wrapper font-icon-lg" *ngFor="let icon of item.icons">
+                        <i [className]="icon.className"></i>
+                    </div>
+               </div>
+               <div class="row" *ngIf="item.subIcon">
+                    <div class="col-md-2" *ngFor="let subIconItem of item.subIcon">
+                        <div class="font-icon-wrapper">
+                            <i [className]="subIconItem.className"></i>
+                            <p>{{subIconItem.desc}}</p>
+                        </div>
+                    </div>
+               </div>     
             </div>
         </div>
     </div>

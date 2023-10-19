@@ -55,7 +55,8 @@ export class StandardButtonsComponent {
           title: 'link',
           className: 'btn-link mb-2 mr-2'
         }
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Color Transition',
@@ -105,7 +106,8 @@ export class StandardButtonsComponent {
           className: 'btn-transition btn-outline-link mb-2 mr-2',
         }
         
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Color Transition No Borders',
@@ -155,7 +157,8 @@ export class StandardButtonsComponent {
           className: 'btn-transition border-0 btn-outline-link mb-2 mr-2',
         }
         
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Hover Shine',
@@ -205,7 +208,8 @@ export class StandardButtonsComponent {
           className: 'btn-hover-shine btn-link mb-2 mr-2',
         }
         
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Active State',
@@ -254,7 +258,8 @@ export class StandardButtonsComponent {
           title: 'link',
           className: 'active btn-link mb-2 mr-2',
         }  
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Disabled State',
@@ -304,7 +309,8 @@ export class StandardButtonsComponent {
           className: 'disabled btn-link mb-2 mr-2',
         }
         
-      ] 
+      ],
+      buttonGroup: null 
     },
     {
       title: 'Block Level',
@@ -321,49 +327,48 @@ export class StandardButtonsComponent {
           title: 'Block Small',
           className: 'btn-block btn-primary btn-sm mb-2 mr-2',
         }
-      ]
-
+      ],
+      buttonGroup: null
     },
     {
-      title: 'Wider',
       listButton: null,
-      buttons: [
-        {
-          title: 'Wider Large',
-          type: 'btn-primary',
-          className: 'btn-lg'
-        },
-        {
-          title: 'Wider Normal',
-          type: 'btn-primary',
-        },
-        {
-          title: 'Wider Small',
-          type: 'btn-primary',
-          className: 'btn-sm'
-        }
+      buttonGroup: [ 
+          {
+            title: 'Wider',
+            buttons: [
+              {
+                title: 'Wider Large',
+                className: 'btn-lg btn-primary btn-wide mb-2 mr-2'
+              },
+              {
+                title: 'Wider Normal',
+                className: 'btn-primary btn-wide mb-2 mr-2',
+              },
+              {
+                title: 'Wider Small',
+                className: 'btn-sm btn-primary btn-wide mb-2 mr-2'
+              }
+            ]
+          },
+          {
+            title: 'Sizing',
+            buttons: [
+              {
+                title: 'Large',
+                className: 'btn-lg btn-primary mb-2 mr-2'
+              },
+              {
+                title: 'Normal',
+                className: 'btn-primary mb-2 mr-2',
+              },
+              {
+                title: 'Small',
+                className: 'btn-sm btn-primary mb-2 mr-2'
+              }
+            ]
+          }
       ]
     },
-    {
-      title: 'Sizing',
-      listButton: null,
-      buttons: [
-        {
-          title: 'Large',
-          type: 'btn-primary',
-          className: 'btn-lg'
-        },
-        {
-          title: 'Normal',
-          type: 'btn-primary',
-        },
-        {
-          title: 'Small',
-          type: 'btn-primary',
-          className: 'btn-sm'
-        }
-      ]
-    }
   ] 
   public menu = [
     {
@@ -386,7 +391,7 @@ export class StandardButtonsComponent {
             },
           ],
         },
-        {divider: 'divider', },
+        {className: 'divider'},
         {
           children: [
             {
@@ -403,7 +408,7 @@ export class StandardButtonsComponent {
             },
           ],
         },
-        {divider: 'divider', },
+        {className: 'divider'},
         {
           children: [
             {
@@ -420,6 +425,7 @@ export class StandardButtonsComponent {
             } 
           ],
         },
+        {className: ''},
       ]
     },
     {
@@ -442,7 +448,7 @@ export class StandardButtonsComponent {
             },
           ]
         },
-        {divider: 'divider'},
+        {className: 'divider'},
         {
           children: [
             {
@@ -459,7 +465,7 @@ export class StandardButtonsComponent {
             },
           ]
         },
-        {divider : 'divider'},
+        {className: 'divider'},
         {
           type: 'btn-group-lg',
           children: [
@@ -476,7 +482,9 @@ export class StandardButtonsComponent {
               type: 'btn-focus'
             }
           ]
-        }
+        },
+        {className: ''},
+
       ]
     }
 

@@ -11,206 +11,170 @@ export class DropDownBtnComponent {
       children: [
         {
           title: 'Basic',
+          buttonGroup: null,
           listButton:[
             {
               title: 'Primary',
-              type: 'btn-primary',
+              className: 'btn-primary',
             },
             {
               title: 'Success',
-              type: 'btn-success'
+              className: 'btn-success'
             },
             {
               title: 'Info',
-              type: 'btn-info'
+              className: 'btn-info'
             },
             {
               title: 'Warning',
-              type: 'btn-warning'
+              className: 'btn-warning'
             },
             {
               title: 'Danger',
-              type: 'btn-danger'
+              className: 'btn-danger'
             },
             {
               title: 'Focus',
-              type: 'btn-focus'
+              className: 'btn-focus'
             },
             {
               title: 'Alt',
-              type: 'btn-alternate'
+              className: 'btn-alternate'
             },
             {
               title: 'Light',
-              type: 'btn-light'
+              className: 'btn-light'
             },
             {
               title: 'Dark',
-              type: 'btn-dark'
+              className: 'btn-dark'
             },
             {
               title: 'link',
-              type: 'btn-link'
+              className: 'btn-link'
             }
             
           ] 
         },
         {
           title: 'split Dropdowns',
+          buttonGroup: null,
           listButton:[
             {
               title: 'Primary',
-              type: 'btn-outline-primary',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-primary'
             },
             {
               title: 'Success',
-              type: 'btn-outline-success',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-success'
             },
             {
               title: 'Info',
-              type: 'btn-outline-info',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-info'
             },
             {
               title: 'Warning',
-              type: 'btn-outline-warning',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-warning'
             },
             {
               title: 'Danger',
-              type: 'btn-outline-danger',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-danger'
             },
             {
               title: 'Focus',
-              type: 'btn-outline-focus',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-focus'
             },
             {
               title: 'Alt',
-              type: 'btn-outline-alternate',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-alternate'
             },
             {
               title: 'Light',
-              type: 'btn-outline-light',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-light'
             },
             {
               title: 'Dark',
-              type: 'btn-outline-dark',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-dark'
             },
             {
               title: 'link',
-              type: 'btn-outline-link',
-              className: 'btn-transition'
+              className: 'btn-transition btn-outline-link'
             }
             
           ] 
         },
         {
           title: 'split Outline Dropdowns',
+          buttonGroup: null,
           listButton:[
             {
               title: 'Primary',
-              type: 'btn-outline-primary',
-              className: 'btn-transition',
-              borderClass: 'border-0'
-              // border-0
+              className: 'btn-transition border-0 btn-outline-primary',
     
             },
             {
               title: 'Success',
-              type: 'btn-outline-success',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-success',
             },
             {
               title: 'Info',
-              type: 'btn-outline-info',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-info',
             },
             {
               title: 'Warning',
-              type: 'btn-outline-warning',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-warning',
             },
             {
               title: 'Danger',
-              type: 'btn-outline-danger',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-danger',
             },
             {
               title: 'Focus',
-              type: 'btn-outline-focus',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-focus',
             },
             {
               title: 'Alt',
-              type: 'btn-outline-alternate',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-alternate',
             },
             {
               title: 'Light',
-              type: 'btn-outline-light',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-light',
             },
             {
               title: 'Dark',
-              type: 'btn-outline-dark',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-dark',
             },
             {
               title: 'link',
-              type: 'btn-outline-link',
-              className: 'btn-transition',
-              borderClass: 'border-0'
+              className: 'btn-transition border-0 btn-outline-link',
             }
             
           ] 
         },
         {
           title: 'Menu positions',
+          buttonGroup: null,
           listButton:[
             {
               title: 'Dropleft',
-              type: 'btn-primary',
-              className: 'btn-wite'
+              className: 'btn-wite btn-primary'
             },
             {
-              type: 'btn-primary',
-              className: 'dropdown-toggle-split',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle-split btn-primary dropdown-toggle',
             },
             {
               title: 'dropup',
-              type: 'btn-primary',
-              className: 'btn-wite'
+              className: 'btn-wite btn-primary'
             },
             {
-              type: 'btn-primary',
-              className: 'dropdown-toggle-split',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle-split dropdown-toggle btn-primary',
             },
             {
               title: 'dropright',
-              type: 'btn-primary',
-              className: 'btn-wite'
+              className: 'btn-wite btn-primary'
             },
             {
-              type: 'btn-primary',
-              className: 'dropdown-toggle-split',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle-split dropdown-toggle btn-primary',
             },
           ] 
         },
@@ -220,127 +184,102 @@ export class DropDownBtnComponent {
       children: [
         {
           title: 'Outline',
+          buttonGroup: null,
           listButton:[
             {
               title: 'Primary',
-              type: 'btn-outline-primary',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle btn-outline-primary'
             },
             {
               title: 'Success',
-              type: 'btn-outline-success',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle btn-outline-success'
             },
             {
               title: 'Info',
-              type: 'btn-outline-info',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle btn-outline-info'
             },
             {
               title: 'Warning',
-              type: 'btn-outline-warning',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle btn-outline-warning'
             },
             {
               title: 'Danger',
-              type: 'btn-outline-danger',
-              dropclass: 'dropdown-toggle'
+              className: 'btn-outline-danger dropdown-toggle',
+              dropclass: ''
             },
             {
               title: 'Focus',
-              type: 'btn-outline-focus',
-              dropclass: 'dropdown-toggle'
+              className: 'dropdown-toggle btn-outline-focus'
             },
             {
               title: 'Alt',
-              type: 'btn-outline-alternate',
-              dropclass: 'dropdown-toggle'
+              dropclass: 'dropdown-toggle btn-outline-alternate'
             },
             {
               title: 'Light',
-              type: 'btn-outline-light',
-              dropclass: 'dropdown-toggle'
+              dropclass: 'dropdown-toggle btn-outline-light'
             },
             {
               title: 'Dark',
-              type: 'btn-outline-dark',
-              dropclass: 'dropdown-toggle'
+              dropclass: 'dropdown-toggle btn-outline-dark'
             },
             {
               title: 'link',
-              type: 'btn-outline-link',
-              dropclass: 'dropdown-toggle'
+              dropclass: 'dropdown-toggle btn-outline-link'
             }
             
           ] 
         },
         {
           title: 'Sizing',
-          listButton:[
+          listButton: null,
+          buttonGroup:[
             {
               btnGroup: [
                 {
                   title: 'Large',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Normal',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite  btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Small',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
               ],
               divider: 'divider',
               subBtnGroup: [
                 {
                   title: 'Large',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Normal',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Small',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
               ]
             },   
@@ -348,71 +287,54 @@ export class DropDownBtnComponent {
         },
         {
           title: 'Wider',
-          listButton:[
+          listButton: null,
+          buttonGroup:[
             {
               btnGroup: [
                 {
                   title: 'Large',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Normal',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split dropdown-toggle btn-primary',
                 },
                 {
                   title: 'Small',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
               ],
               // divider
               subBtnGroup: [
                 {
                   title: 'Large',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Normal',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
                 {
                   title: 'Small',
-                  type: 'btn-primary',
-                  className: 'btn-wite'
+                  className: 'btn-wite btn-primary'
                 },
                 {
-                  type: 'btn-primary',
-                  className: 'dropdown-toggle-split',
-                  dropclass: 'dropdown-toggle'
+                  className: 'dropdown-toggle-split btn-primary dropdown-toggle',
                 },
               ]
             },   

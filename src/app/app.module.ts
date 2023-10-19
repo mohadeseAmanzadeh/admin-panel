@@ -31,13 +31,16 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDownBtnComponent } from './drop-down-btn/drop-down-btn.component';
 import { IconsComponent } from './icons/icons.component';
-
+// import { BaseLayoutComponent } from './layout/base-layout/base-layout.component';
+import { BaseLayoutComponent} from './Layout/base-layout/base-layout.component'
 
 const routes : Routes = [
-  { path: '' , component : AnalyticsComponent ,
+  { path: '' , component : BaseLayoutComponent,
     children : [
+      { path: 'analytics' , component : AnalyticsComponent},
       { path: 'standardButtons' , component : StandardButtonsComponent},
-      { path: 'dropDownbtn' , component : DropDownBtnComponent} 
+      { path: 'dropDownbtn' , component : DropDownBtnComponent},
+      { path: 'icons' , component: IconsComponent}, 
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -77,7 +80,8 @@ const routes : Routes = [
     RegisterBoxedComponent,
     ButtonsComponent,
     DropDownBtnComponent,
-    IconsComponent
+    IconsComponent,
+    BaseLayoutComponent
    
   ],
   imports: [

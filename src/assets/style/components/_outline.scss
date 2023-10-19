@@ -1,40 +1,90 @@
 .btn-outline-primary {
     border-color: #033c73;
     color: #033c73;
+    &:hover {
+        color: #fff;
+        background-color: #033C73;
+        border-color: #033C73;
+    }
 }
 .btn-outline-secondary {
     color: #ced4da;
     border-color: #ced4da;
+    &:hover {
+        color: #212529;
+        background-color: #ced4da;
+        border-color: #ced4da;
+    }
 }
 .btn-outline-success {
     color: #73A839;
     border-color: #73A839;
+    &:hover {
+        color: #fff;
+        background-color: #73A839;
+        border-color: #73A839;
+    }
 }
 .btn-outline-info {
     color: #2FA4E7;
     border-color: #2FA4E7;
+    &:hover {
+        color: #fff;
+        background-color: #2FA4E7;
+        border-color: #2FA4E7;
+    }
 }
 .btn-outline-warning {
     color: #DD5600;
     border-color: #DD5600;
+    &:hover {
+        color: #fff;
+        background-color: #DD5600;
+        border-color: #DD5600;
+    }
 }
 .btn-outline-danger {
     color: #C71C22;
     border-color: #C71C22;
+    &:hover {
+        color: #fff;
+        background-color: #C71C22;
+        border-color: #C71C22;
+    }
 }
 .btn-outline-focus {
     color: #6610f2;
     border-color: #6610f2;
+    &:hover {
+        color: #fff;
+        background-color: #6610f2;
+        border-color: #6610f2;
+    }
 }
 .btn-outline-alternate {
     color: #6f42c1;
     border-color: #6f42c1;
+    &:hover {
+        color: #fff;
+        background-color: #6f42c1;
+        border-color: #6f42c1;
+    }
 }
 .btn-outline-light {
     color: #d5d9eb;
     border-color: #d5d9eb;
+    &:hover {
+        color: #212529;
+        background-color: #d5d9eb;
+        border-color: #d5d9eb;
+    }
 }
 .btn-outline-dark {
     color: #343a40;
     border-color: #343a40;
+    &:hover {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #343a40;
+    }
 }

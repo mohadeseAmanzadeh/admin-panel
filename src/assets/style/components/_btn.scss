@@ -14,6 +14,9 @@
     &.disabled {
         opacity: .65;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
 .btn-lg {
     padding: .5rem 1rem;
@@ -35,16 +38,25 @@
     color: #fff;
     background: #033C73 linear-gradient(180deg, #295988, #033C73) repeat-x;
     border-color: #033C73;
-    &.active {
+    &:not(.disabled).active {
         background-color: #022241;
         background-image: none;
         border-color: #011c35;
+    }
+    &:hover {
+        color: #fff;
+        background: #02294e linear-gradient(180deg, #284968, #02294e) repeat-x;
+        border-color: #022241;
     }
 }
 .btn-link {
     font-weight: 400;
     color: #033C73;
     background: transparent;
+    &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
 }
 .btn-focus {
     color: #fff;
@@ -54,6 +66,11 @@
         background-color: #510bc4;
         background-image: none;
         border-color: #4c0ab8;
+    }
+    &:hover {
+        color: #fff;
+        background: #560bd0 linear-gradient(180deg, #7030d7, #560bd0) repeat-x;
+        border-color: #510bc4;
     }
 }
 .btn-secondary {
@@ -66,6 +83,11 @@
         background-image: none;
         border-color: #aab4bf;
     }
+    &:hover {
+        color: #212529;
+        background: #b8c1ca linear-gradient(180deg, #c3cad2, #b8c1ca) repeat-x;
+        border-color: #b1bbc4;
+    }
 }
 .btn-info {
     color: #fff;
@@ -75,6 +97,11 @@
         background-color: #178acc;
         background-image: none;
         border-color: #1682c0;
+    }
+    &:hover {
+        color: #fff;
+        background: #1992d7 linear-gradient(180deg, #3ba2dd, #1992d7) repeat-x;
+        border-color: #178acc;
     }
 }
 .btn-warning {
@@ -86,6 +113,11 @@
         background-image: none;
         border-color: #9d3d00;
     }
+    &:hover {
+        color: #fff;
+        background: #b74700 linear-gradient(180deg, #c26326, #b74700) repeat-x;
+        border-color: #aa4200;
+    }
 }
 .btn-danger {
     color: #fff;
@@ -95,6 +127,11 @@
         background-color: #9a161a;
         background-image: none;
         border-color: #8f1418;
+    }
+    &:hover {
+        color: #fff;
+        background: #a5171c linear-gradient(180deg, #b33a3e, #a5171c) repeat-x;
+        border-color: #9a161a;
     }
 }
 .btn-alternate {
@@ -106,6 +143,11 @@
         background-image: none;
         border-color: #533093;
     }
+    &:hover {
+        color: #fff;
+        background: #5e37a6 linear-gradient(180deg, #7655b4, #5e37a6) repeat-x;
+        border-color: #59339d;
+    }
 }
 .btn-light {
     color: #212529;
@@ -115,6 +157,11 @@
         background-color: #b2badb;
         background-image: none;
         border-color: #aab2d6;
+    }
+    &:hover {
+        color: #212529;
+        background: #bbc2df linear-gradient(180deg, #c5cbe4, #bbc2df) repeat-x;
+        border-color: #b2badb;
     }
 }
 .btn-success {
@@ -126,6 +173,11 @@
         background-image: none;
         border-color: #527829;
     }
+    &:hover {
+        color: #fff;
+        background: #5f8b2f linear-gradient(180deg, #779d4e, #5f8b2f) repeat-x;
+        border-color: #59822c;
+    }
 }
 .btn-dark {
     color: #fff;
@@ -135,5 +187,10 @@
         background-color: #1d2124;
         background-image: none;
         border-color: #171a1d;
+    }
+    &:hover {
+        color: #fff;
+        background: #23272b linear-gradient(180deg, #44474b, #23272b) repeat-x;
+        border-color: #1d2124;
     }
 }

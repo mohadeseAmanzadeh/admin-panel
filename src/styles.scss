@@ -9,6 +9,7 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 // .app-theme-white .app-page-title{
   
 // }
+
 .app-page-title {
     padding: 30px;
     margin-bottom: 30px;
@@ -79,6 +80,7 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 .app-main__outer {
     flex: 1;
     flex-direction: column;
+    background: #f1f4f6;
     // padding: 60px 0 0 280px;
     display: flex;
     z-index: 8;
@@ -149,6 +151,18 @@ fieldset {
 }
 .border-0 {
     border: 0 !important
+}
+[class^="pe-7s-"], [class*=" pe-7s-"] {
+    display: inline-block;
+    font-family: 'Pe-icon-7-stroke';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
 }
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";

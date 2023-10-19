@@ -111,21 +111,33 @@ export class PerfectScrollbarComponent {
         { 
           title: 'dashboard',
           type: 'pe-7s-rocket',
-          collapse: 40,
+          collapse: 50,
           active: false,
           children: [
-            {title: 'analytics'}
+            {
+              title: 'analytics',
+              link: 'analytics'
+            }
           ]
         },
         { 
           title: 'Pages',
           type: 'pe-7s-browser',
-          collapse: 120,
+          collapse: 130,
           active: false,
           children: [
-            {title: 'Login Boxed'},
-            {title: 'Register Boxed'},
-            {title: 'Forget Password Boxed'}
+            { 
+              title: 'Login Boxed',
+              link: 'loginBoxed'
+            },
+            { 
+              title: 'Register Boxed',
+              link: 'registerBoxed'
+            },
+            {
+              title: 'Forget Password Boxed',
+              link: 'forgetPassword'
+            }
           ]
         }
         ],
@@ -136,19 +148,25 @@ export class PerfectScrollbarComponent {
         { 
           title: 'Elements',
           type: 'pe-7s-diamond',
-          collapse: 160,
+          collapse: 170,
           active: false,
           children: [
-            {title: 'Standard Buttons'},
+            {
+              title: 'Standard Buttons',
+              link: 'standardButtons'
+            },
             {title: 'Dropdowns'},
-            {title: 'Icons'},
+            {
+              title: 'Icons',
+              link: 'icons'
+            },
             {title: 'Cards'}
             ]
         },
         { 
           title: 'Components',
           type: 'pe-7s-car',
-          collapse: 240,
+          collapse: 270,
           active: false,
           children: [
             {title: 'Tabs'},
@@ -163,7 +181,7 @@ export class PerfectScrollbarComponent {
         {
           title: 'Form Element',
           type: 'pe-7s-helm',
-          collapse: 80,
+          collapse: 90,
           active: false,
           children: [
               {title: 'Controls'},
@@ -174,7 +192,7 @@ export class PerfectScrollbarComponent {
           title: 'Tables',
           type: 'pe-7s-safe',
           active: false,
-          collapse: 40,
+          collapse: 50,
           children: [
             {title: 'Bootstrap 4 Tables'}
           ]
@@ -188,7 +206,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'Chart Boxes',
           type: 'pe-7s-graph2',
-          collapse: 40,
+          collapse: 50,
           active: false,
           children: [
             {title: 'Variation 3'}
@@ -202,7 +220,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'ChartJS',
           type: 'pe-7s-graph2',
-          collapse: 40,
+          collapse: 50,
           active: false,
           children: [
            

@@ -1,7 +1,7 @@
 .col-md-4 {
     flex: 0 0 33.33333333%;
 }
-.col-lg-6, .col-sm-12, .col-md-8, .col-md-6, .col-md-12 {
+.col-lg-6, .col-sm-12, .col-md-8, .col-md-6, .col-md-12 , .col-md-2{
     position: relative;
     width: 100%;
     padding-left: 15px;
@@ -21,6 +21,10 @@
 .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%
+}
+.col-md-2 {
+    flex: 1 1 16.66666667%;
+    max-width: 16.66666667%;
 }
 // .col-md-12 {
 //     flex: 0 0 100%;
