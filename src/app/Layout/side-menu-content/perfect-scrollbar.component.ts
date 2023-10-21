@@ -173,7 +173,10 @@ export class PerfectScrollbarComponent {
             {title: 'Accordions'},
             {title: 'Models'},
             {title: 'Progress Bar'},
-            {title: 'Tooltips & Popovers'},
+            { 
+              title: 'Tooltips & Popovers',
+              link: 'tooltips'
+            },
             {title: 'Carousel'},
             {title: 'Pagination'}
           ]
@@ -194,7 +197,10 @@ export class PerfectScrollbarComponent {
           active: false,
           collapse: 50,
           children: [
-            {title: 'Bootstrap 4 Tables'}
+            { 
+              title: 'Bootstrap 4 Tables',
+              link: 'bootstrapTable'
+            }
           ]
         },
       ],

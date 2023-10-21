@@ -31,8 +31,17 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDownBtnComponent } from './drop-down-btn/drop-down-btn.component';
 import { IconsComponent } from './icons/icons.component';
-// import { BaseLayoutComponent } from './layout/base-layout/base-layout.component';
-import { BaseLayoutComponent} from './Layout/base-layout/base-layout.component'
+import { BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
+import { TilmelineContentComponent } from './tilmeline-content/tilmeline-content.component';
+import { TimelinesComponent } from './timelines/timelines.component';
+import { CardsComponent } from './cards/cards.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TooltipsPopoversComponent } from './tooltips-popovers/tooltips-popovers.component';
+import { LayoutsComponent } from './layouts/layouts.component';
+import { BasicComponent } from './basic/basic.component';
+import { BootstrapTablesComponent } from './bootstrap-tables/bootstrap-tables.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+
 
 const routes : Routes = [
   { path: '' , component : BaseLayoutComponent,
@@ -41,6 +50,8 @@ const routes : Routes = [
       { path: 'standardButtons' , component : StandardButtonsComponent},
       { path: 'dropDownbtn' , component : DropDownBtnComponent},
       { path: 'icons' , component: IconsComponent}, 
+      { path: 'tooltips' , component: TooltipsPopoversComponent},
+      { path: 'bootstrapTable' , component : BootstrapTablesComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -50,6 +61,7 @@ const routes : Routes = [
 
 
 @NgModule({
+
   declarations: [
     AppComponent,
     SideMenuComponent,
@@ -81,7 +93,17 @@ const routes : Routes = [
     ButtonsComponent,
     DropDownBtnComponent,
     IconsComponent,
-    BaseLayoutComponent
+    BaseLayoutComponent,
+    TilmelineContentComponent,
+    TimelinesComponent,
+    CardsComponent,
+    TabsComponent,
+    TooltipsPopoversComponent,
+    LayoutsComponent,
+    BasicComponent,
+    BootstrapTablesComponent,
+    ActiveUsersComponent,
+ 
    
   ],
   imports: [

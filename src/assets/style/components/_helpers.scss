@@ -68,6 +68,9 @@
 .pb-1 {
     padding-bottom: .25rem !important;
 }
+.fsize-0 {
+    font-size: 100% !important;
+}
 .fsize-1 {
     font-size: .95rem !important;
 }
@@ -96,4 +99,12 @@
 }
 .h5 , h5{
     font-size: 1.25rem;
+}
+.inline-block {
+    position: absolute;
+    left: 12.5rem;
+    top: -1px;
+}
+.text-algin-left {
+    text-align: left;
 }

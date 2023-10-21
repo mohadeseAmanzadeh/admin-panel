@@ -19,12 +19,15 @@
                                     <span class="vertical-timeline-element-icon bounce-in"></span>
                                     <div class="vertical-timeline-element-content bounce-in">
                                         <h4 class="time-title">{{item.title}}</h4>
-                                        <p *ngIf="item.type == 'dot-warning'">
-                                            {{item.titleP}}
+                                        <div class="inline-block" *ngIf="item.descStatusBtn">
+                                            <app-status-btn [item]="item.descStatusBtn"  className="ml-2 fsize-0"></app-status-btn>
+                                        </div>
+                                        <p>
+                                            {{item.text}}
                                             <span class="text-success">{{item.time}}</span>
                                         </p>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -42,3 +45,4 @@
         <button class="btn-shadow btn-wide btn-pill btn btn-focus">View All Message</button>
     </div>
 </div>
+<!-- *ngIf="item.type == 'dot-warning'" -->
