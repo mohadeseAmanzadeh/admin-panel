@@ -81,7 +81,7 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
     flex: 1;
     flex-direction: column;
     background: #f1f4f6;
-    // padding: 60px 0 0 280px;
+    min-height: 100vh;
     display: flex;
     z-index: 8;
     transition: all .2s;
@@ -117,6 +117,9 @@ $pe-7s-font-path: "../node_modules/pe7-icon/dist/fonts" !default;
 }
 .justify-content-center {
     justify-content: center !important;
+}
+.position-relative {
+    position: relative !important;
 }
 .d-flex {
     display: flex !important;
@@ -161,9 +164,30 @@ fieldset {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
-
+    -webkit-font-smoothing: antialiased
 }
+.p {
+    margin-bottom: 1rem;
+    margin-top: 0
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.offset-sm-2 {
+    margin-left: 16.66666667%;
+}
+
+
+
+
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";

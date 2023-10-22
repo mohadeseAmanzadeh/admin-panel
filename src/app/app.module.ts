@@ -41,6 +41,12 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { BasicComponent } from './basic/basic.component';
 import { BootstrapTablesComponent } from './bootstrap-tables/bootstrap-tables.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
+import { ModalsComponent } from './modals/modals.component';
+import { FormComponent } from './form/form.component';
+import { GridRowsComponent } from './grid-rows/grid-rows.component';
+import { FormInlineComponent } from './form-inline/form-inline.component';
+import { FormGridComponent } from './form-grid/form-grid.component';
 
 
 const routes : Routes = [
@@ -51,7 +57,9 @@ const routes : Routes = [
       { path: 'dropDownbtn' , component : DropDownBtnComponent},
       { path: 'icons' , component: IconsComponent}, 
       { path: 'tooltips' , component: TooltipsPopoversComponent},
-      { path: 'bootstrapTable' , component : BootstrapTablesComponent}
+      { path: 'bootstrapTable' , component : BootstrapTablesComponent},
+      { path: 'progressBar' , component: ProgressbarComponent},
+      { path: 'Layouts' , component : LayoutsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -103,6 +111,12 @@ const routes : Routes = [
     BasicComponent,
     BootstrapTablesComponent,
     ActiveUsersComponent,
+    ProgressbarComponent,
+    ModalsComponent,
+    FormComponent,
+    GridRowsComponent,
+    FormInlineComponent,
+    FormGridComponent,
  
    
   ],

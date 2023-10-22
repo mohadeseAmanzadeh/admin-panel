@@ -86,3 +86,16 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, select {
+    text-transform: none;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
