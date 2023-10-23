@@ -14,7 +14,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'dashboard',
           type: 'pe-7s-rocket',
-          collapse: 50,
+          collapse: 40,
           active: false,
           children: [
             {
@@ -26,7 +26,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'Pages',
           type: 'pe-7s-browser',
-          collapse: 130,
+          collapse: 105,
           active: false,
           children: [
             { 
@@ -51,7 +51,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'Elements',
           type: 'pe-7s-diamond',
-          collapse: 170,
+          collapse: 210,
           active: false,
           children: [
             {
@@ -63,13 +63,18 @@ export class PerfectScrollbarComponent {
               title: 'Icons',
               link: 'icons'
             },
-            {title: 'Cards'}
+            {
+              title: 'Cards',
+              link: 'cards'
+            },
+            {title: 'List Group'},
+            {title: 'Timeline'}
             ]
         },
         { 
           title: 'Components',
           type: 'pe-7s-car',
-          collapse: 270,
+          collapse: 250,
           active: false,
           children: [
             {title: 'Tabs'},
@@ -90,7 +95,7 @@ export class PerfectScrollbarComponent {
         {
           title: 'Form Element',
           type: 'pe-7s-helm',
-          collapse: 90,
+          collapse: 70,
           active: false,
           children: [
               {title: 'Controls'},
@@ -104,7 +109,7 @@ export class PerfectScrollbarComponent {
           title: 'Tables',
           type: 'pe-7s-safe',
           active: false,
-          collapse: 50,
+          collapse: 40,
           children: [
             { 
               title: 'Bootstrap 4 Tables',
@@ -121,7 +126,7 @@ export class PerfectScrollbarComponent {
         { 
           title: 'Chart Boxes',
           type: 'pe-7s-graph2',
-          collapse: 50,
+          collapse: 40,
           active: false,
           children: [
             {title: 'Variation 3'}

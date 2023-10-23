@@ -59,7 +59,8 @@ const routes : Routes = [
       { path: 'tooltips' , component: TooltipsPopoversComponent},
       { path: 'bootstrapTable' , component : BootstrapTablesComponent},
       { path: 'progressBar' , component: ProgressbarComponent},
-      { path: 'Layouts' , component : LayoutsComponent}
+      { path: 'Layouts' , component : LayoutsComponent},
+      { path: 'cards' , component : CardsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},

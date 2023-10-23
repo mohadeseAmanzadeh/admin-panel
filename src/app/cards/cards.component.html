@@ -1,6 +1,79 @@
-<!-- <app-page-title></app-page-title>
-<div class="row">
-    <div class="col-md-4">
-
+<div>
+    <app-page-title></app-page-title>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of cardList">
+            <div *ngFor="let subMenuItem of item.subMenu" [className]="subMenuItem.className">
+                <div class="card-body" *ngIf="subMenuItem.desc">
+                    <h5 class="card-title">{{subMenuItem.title}}</h5>
+                    <h6 class="card-sumtitle" *ngIf="subMenuItem.subTitle">{{subMenuItem.subTitle}}</h6>
+                    <p>{{subMenuItem.desc}}</p>
+                </div>
+                    <h5 class="card-title" *ngIf="subMenuItem.titleP">{{subMenuItem.titleP}}</h5>
+                    {{subMenuItem.text}}
+                    <app-buttons [item]="subMenuItem.buttons" *ngIf="subMenuItem.buttons" className="w-100"></app-buttons>
+            </div>
+            <div>
+            <div *ngFor="let card of item.subCard" [className]="card.className">
+                <div class="card-header">{{card.head}}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{card.title}}</h5>
+                    {{card.text}}
+                    <app-buttons [item]="card.buttons"></app-buttons>
+                </div>
+                <div class="card-footer">{{card.footer}}</div>
+            </div>
+            </div>
+            <div *ngFor="let itemCard of item.cards" [className]="itemCard.className">
+                <img *ngIf="itemCard.img" src="{{itemCard.img}}" alt="Card image cap" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{itemCard.title}}</h5>
+                    <h6 *ngIf="itemCard.subTitle" class="subTitle">{{itemCard.subTitle}}</h6>
+                    {{itemCard.desc}}
+                    <br>
+                    <br>
+                    <small class="text-muted">{{itemCard.text}}</small>
+                    <app-buttons [item]="itemCard.button" *ngIf="itemCard.button"></app-buttons>
+                </div>
+                <img alt="Card image cap" class="card-img-bottom" src="{{itemCard.image}}" *ngIf="itemCard.image">
+            </div>
+            <div *ngFor="let cardItem of item.cardD" [className]="cardItem.className">
+                <div class="card-body">
+                    <h5 class="card-title">{{cardItem.title}}</h5>
+                    <h6 *ngIf="cardItem.subTitle" class="subTitle mb-0">{{cardItem.subTitle}}</h6>
+                </div>
+                <img *ngIf="cardItem.img" src="{{cardItem.img}}" alt="Card image cap" class="card-img-top">
+                <div class="card-body">
+                    {{cardItem.desc}}
+                    <br>
+                    <br>
+                    <a class="card-link" href="/architectui-angular-free/elements/cards">Card Link</a>
+                    <a class="card-link" href="/architectui-angular-free/elements/cards">Another Link</a>
+                </div>
+            </div>
+        </div>  
     </div>
-</div> -->
+    <div class="row" >
+        <div class="col-md-4" *ngFor="let item of menuCard">
+            <div class="mb-3 card text-white bg-primary" *ngFor="let card of item.cards">
+                <div class="card-header">{{card.title}}</div>
+                <div class="card-body">{{card.desc}}</div>
+                <div class="card-footer">{{card.text}}</div>
+            </div>
+            <div [className]="child.className"  *ngFor="let child of item.children">
+                <h5 class="card-title">{{child.title}}</h5>
+                {{child.desc}}
+            </div>
+            <div class="card mb-3 text-white" *ngFor="let itemMenu of item.menu">
+                <img src="{{itemMenu.img}}" alt="Card image cap" class="card-img">
+                <div class="card-img-overlay">
+                    <h5 class="text-white card-title">{{itemMenu.title}}</h5>
+                    {{itemMenu.desc}}
+                    <br>
+                    <br>
+                    <small class="text-white"></small>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
