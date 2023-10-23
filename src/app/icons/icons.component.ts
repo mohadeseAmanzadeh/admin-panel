@@ -56,7 +56,7 @@ export class IconsComponent {
           className: 'pe-7s-paint-bucket bg-grow-early icon-gradient'
         },
         {
-          className: 'pe-7s-diamond bg-strong-bliss icon-gradient'
+          className: 'pe-7s-diamond icon-gradient bg-strong-bliss'
         },
         {
           className: 'pe-7s-magic-wand bg-mixed-hopes icon-gradient'
