@@ -1,0 +1,411 @@
+<div>
+    <app-page-title></app-page-title>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="main-card card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Controls Types</h5>
+                    <form>
+                        <div class="position-relative form-group">
+                            <label for="exampleEmail">Email</label>
+                            <input type="text" name="email" class="form-control" id="exampleEmail" placeholder="with a placeholder">
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="examplePassword">Password</label>
+                            <input type="text" class="form-control" id="examplePassword" name="password" placeholder="password placeholder">
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="exampleSelect">Select</label>
+                            <select name="select" class="form-control" id="exampleSelect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="exampleSelectMultiple">Select Multiple</label>
+                            <select name="SelectMultiple" id="exampleSelectMultiple" class="form-control" multiple>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="exampleText">Text Area</label>
+                            <textarea name="text" id="exampleText" class="form-control"></textarea>
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="exampleFile">File</label>
+                            <input type="file" name="file" id="exampleFile" class="form-control-file">
+                            <small class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                        </div>
+                        <button class="btn btn-primary mt-1">Submit</button>
+                    </form>
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-6">
+            <div class="main-card card mb-3"> 
+                <div class="card-body">
+                    <h5 class="card-title">Sizing</h5>
+                    <form>
+                        <input type="text" class="form-control-lg form-control mb-2" placeholder="lg">
+                        <input type="text" class="form-control" placeholder="default">
+                        <input type="text" class="form-control form-control-sm" placeholder="sm">
+                        <div class="divider"></div> 
+                        <select name="" id="" class="form-control-lg form-control mb-2">
+                            <option>Large Select</option>
+                        </select>
+                        <select name="" id="" class="form-control">
+                            <option>Default Select</option>
+                        </select>
+                        <select name="" id="" class="form-control form-control-sm">
+                            <option>Small Select</option>
+                        </select>
+                    </form>
+                </div> 
+            </div>
+            <div class="main-card card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Checkboxes & Radios</h5>
+                    <form>
+                        <fieldset class="form-group position-relative">
+                            <div class="position-relative form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="radio1" class="form-check-input">
+                                    Option one is this and that—be sure to include why it's great
+                                </label>
+                            </div>
+                            <div class="position-relative form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="radio1" class="form-check-input">
+                                    Option two can be something else and selecting it will deselect option one
+                                </label>
+                            </div>
+                            <div class="position-relative form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" name="radio1" class="form-check-input" disabled>
+                                    Option three is disabled
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="position-relative form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Check me out
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main-card card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Checkboxes</h5>
+                        <div class="position-relative form-group">
+                            <div>
+                                <div class="custom-checbox custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox">
+                                    <label for="exampleCustomCheckbox" class="custom-control-label">
+                                        Check this custom checkbox
+                                    </label>
+                                </div>
+                                <div class="custom-checbox custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox2">
+                                    <label for="exampleCustomCheckbox2" class="custom-control-label">
+                                        Or this one
+                                    </label>
+                                </div>
+                                <div class="custom-checbox custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox3">
+                                    <label for="exampleCustomCheckbox3" class="custom-control-label">
+                                        But not this disabled one
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Inline</h5>
+                        <div class="position-relative form-group">
+                            <div>
+                                <div class="custom-checbox custom-control custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="exampleCustomInline">
+                                    <label for="exampleCustomInline" class="custom-control-label">
+                                        An inline custom input
+                                    </label>
+                                </div> 
+                                <div class="custom-checbox custom-control custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="exampleCustomInline">
+                                    <label for="exampleCustomInline" class="custom-control-label">
+                                        and another one
+                                    </label>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main-card card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Radios</h5>
+                        <div class="position-relative form-group">
+                            <div>
+                                <div class="custom-radio custom-control">
+                                    <input class="custom-control-input" id="exampleCustomRadio" name="customRadio" type="radio">
+                                    <label class="custom-control-label" for="exampleCustomRadio">Select this custom radio</label>
+                                </div>
+                                <div class="custom-radio custom-control">
+                                    <input class="custom-control-input" id="exampleCustomRadio2" name="customRadio" type="radio">
+                                    <label class="custom-control-label" for="exampleCustomRadio2">Or this one</label>
+                                </div>
+                                <div class="custom-radio custom-control">
+                                    <input class="custom-control-input" disabled="disabled" id="exampleCustomRadio3" type="radio">
+                                    <label class="custom-control-label" for="exampleCustomRadio3">But not this disabled one</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-card card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Form Select</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                    <label for="exampleCustomSelect">Custom Select</label>
+                                    <select class="custom-select" id="exampleCustomSelect" name="customSelect" type="select">
+                                        <option>Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </select>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="exampleCustomMutlipleSelect">Custom Multiple Select</label>
+                                    <select class="custom-select" id="exampleCustomMutlipleSelect" multiple="multiple" name="customSelect" type="select">
+                                        <option>Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="position-relative form-group">
+                                    <label for="exampleCustomSelectDisabled">Custom Select Disabled</label>
+                                    <select class="custom-select" disabled="disabled" id="exampleCustomSelectDisabled" name="customSelect" type="select">
+                                        <option>Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </select>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="exampleCustomMutlipleSelectDisabled">Custom Multiple Select Disabled</label>
+                                    <select class="custom-select" disabled="disabled" id="exampleCustomMutlipleSelectDisabled" multiple="multiple" name="customSelect" type="select">
+                                        <option>Select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                        <option>Value 4</option>
+                                        <option>Value 5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="main-card card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Input Groups</h5>
+                    <div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input class="form-control" placeholder="username" type="text">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <input aria-label="Checkbox for following text input" type="checkbox">
+                                </span>
+                            </div>
+                            <input class="form-control" placeholder="Check it out" type="text">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="username" type="text">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@example.com</span>
+                            </div>    
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input class="form-control" placeholder="Dolla dolla billz yo!" type="text">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                                <span class="input-group-text">$</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input class="form-control" placeholder="Amount" step="1" type="number">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Input Group Button Dropdown</h5>
+                    <div class="input-group" role="group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-info" type="button"> Button </button>
+                        </div><input class="form-control" type="text">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"> Button </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Input Group Button Shorthand</h5
+                        ><div><div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-secondary">To the Left!</button>
+                            </div><input class="form-control" type="text">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <input class="form-control" type="text">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary">To the Right!</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-danger">To the Left!</button>
+                            </div>
+                            <input class="form-control" placeholder="and..." type="text">
+                            <div class="input-group-append">
+                                <button class="btn btn-success">To the Right!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Input Group Sizing</h5>
+                    <div><div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@lg</span>
+                        </div>
+                        <input class="form-control" type="text">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@normal</span>
+                        </div>
+                        <input class="form-control" type="text">
+                    </div>
+                    <br>
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@sm</span>
+                        </div><input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Input Group Addon</h5>
+                <div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To the Left!</span>
+                        </div>
+                        <input class="form-control" type="text">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <input class="form-control" type="text">
+                        <div class="input-group-append">
+                            <span class="input-group-text">To the Right!</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To the Left!</span>
+                        </div>
+                        <input class="form-control" placeholder="and..." type="text">
+                        <div class="input-group-append">
+                            <span class="input-group-text">To the Right!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Input Group Button</h5>
+                <div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-secondary">I'm a button</button>
+                        </div><input class="form-control" type="text">
+                    </div>
+                    <br>
+                    <div class="input-group" role="group">
+                        <input class="form-control" type="text">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button"> Button </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

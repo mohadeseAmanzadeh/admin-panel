@@ -79,7 +79,10 @@ export class PerfectScrollbarComponent {
           children: [
             {title: 'Tabs'},
             {title: 'Accordions'},
-            {title: 'Models'},
+            {
+              title: 'Models',
+              link: 'Models'
+            },
             {
               title: 'Progress Bar',
               link: 'progressBar'
@@ -98,7 +101,10 @@ export class PerfectScrollbarComponent {
           collapse: 70,
           active: false,
           children: [
-              {title: 'Controls'},
+              {
+                title: 'Controls',
+                link: 'Controls'
+              },
               {
                 title: 'Layouts',
                 link: 'Layouts'

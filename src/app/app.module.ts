@@ -47,6 +47,8 @@ import { FormComponent } from './form/form.component';
 import { GridRowsComponent } from './grid-rows/grid-rows.component';
 import { FormInlineComponent } from './form-inline/form-inline.component';
 import { FormGridComponent } from './form-grid/form-grid.component';
+import { ControlsComponent } from './controls/controls.component';
+import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
 
 
 const routes : Routes = [
@@ -60,7 +62,9 @@ const routes : Routes = [
       { path: 'bootstrapTable' , component : BootstrapTablesComponent},
       { path: 'progressBar' , component: ProgressbarComponent},
       { path: 'Layouts' , component : LayoutsComponent},
-      { path: 'cards' , component : CardsComponent}
+      { path: 'cards' , component : CardsComponent},
+      { path: 'Models' , component : ModalsComponent},
+      { path: 'Controls' , component : ControlsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -118,6 +122,8 @@ const routes : Routes = [
     GridRowsComponent,
     FormInlineComponent,
     FormGridComponent,
+    ControlsComponent,
+    ModalDialogComponent,
  
    
   ],

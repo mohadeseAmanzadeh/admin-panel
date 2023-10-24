@@ -1,1 +1,17 @@
-
+<div>
+    <app-page-title></app-page-title>
+    <div class="row">
+        <div class="col-md-6" *ngFor="let item of cardList">
+            <div class="card main-card mb-3" *ngFor="let child of item.children">
+                <div class="card-header">{{child.title}}</div>
+                <div class="card-body">
+                    <span class="kt-section__sub" *ngIf="child.desc">
+                        <pre>{{child.desc}}</pre>
+                    </span>
+                    <div [ngClass]="child.className" *ngIf="child.className"></div>
+                    <app-buttons [item]="child.buutons"></app-buttons>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
