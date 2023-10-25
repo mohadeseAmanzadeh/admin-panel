@@ -49,6 +49,7 @@ import { FormInlineComponent } from './form-inline/form-inline.component';
 import { FormGridComponent } from './form-grid/form-grid.component';
 import { ControlsComponent } from './controls/controls.component';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+// import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
 
 const routes : Routes = [
@@ -129,6 +130,7 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
+    // ModalDialog,
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],

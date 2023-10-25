@@ -192,15 +192,23 @@ select {
 .input-group {
     position: relative;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+    input{ 
+        flex-grow: 2;
+    }
+    
 }
 .input-group-prepend {
     margin-right: -1px;
 }
 .input-group-prepend, .input-group-append {
     display: flex;
+    // height: 38px;
+    button {
+        flex-grow: 1;
+    }
 }
 
 

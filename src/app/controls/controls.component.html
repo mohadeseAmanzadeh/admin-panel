@@ -8,15 +8,15 @@
                     <form>
                         <div class="position-relative form-group">
                             <label for="exampleEmail">Email</label>
-                            <input type="text" name="email" class="form-control" id="exampleEmail" placeholder="with a placeholder">
+                            <input type="text" name="email" class="form-control w-100" id="exampleEmail" placeholder="with a placeholder">
                         </div>
                         <div class="position-relative form-group">
                             <label for="examplePassword">Password</label>
-                            <input type="text" class="form-control" id="examplePassword" name="password" placeholder="password placeholder">
+                            <input type="text" class="form-control w-100" id="examplePassword" name="password" placeholder="password placeholder">
                         </div>
                         <div class="position-relative form-group">
                             <label for="exampleSelect">Select</label>
-                            <select name="select" class="form-control" id="exampleSelect">
+                            <select name="select" class="form-control w-100" id="exampleSelect">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="position-relative form-group">
                             <label for="exampleSelectMultiple">Select Multiple</label>
-                            <select name="SelectMultiple" id="exampleSelectMultiple" class="form-control" multiple>
+                            <select name="SelectMultiple" id="exampleSelectMultiple" class="form-control w-100" multiple>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="position-relative form-group">
                             <label for="exampleText">Text Area</label>
-                            <textarea name="text" id="exampleText" class="form-control"></textarea>
+                            <textarea name="text" id="exampleText" class="form-control w-100"></textarea>
                         </div>
                         <div class="position-relative form-group">
                             <label for="exampleFile">File</label>
@@ -53,17 +53,17 @@
                 <div class="card-body">
                     <h5 class="card-title">Sizing</h5>
                     <form>
-                        <input type="text" class="form-control-lg form-control mb-2" placeholder="lg">
-                        <input type="text" class="form-control" placeholder="default">
-                        <input type="text" class="form-control form-control-sm" placeholder="sm">
+                        <input type="text" class="form-control-lg form-control mb-2 w-100" placeholder="lg">
+                        <input type="text" class="form-control w-100 mb-2" placeholder="default">
+                        <input type="text" class="form-control form-control-sm w-100" placeholder="sm">
                         <div class="divider"></div> 
-                        <select name="" id="" class="form-control-lg form-control mb-2">
+                        <select name="" id="" class="form-control-lg form-control w-100 mb-2">
                             <option>Large Select</option>
                         </select>
-                        <select name="" id="" class="form-control">
+                        <select name="" id="" class="form-control w-100 mb-2">
                             <option>Default Select</option>
                         </select>
-                        <select name="" id="" class="form-control form-control-sm">
+                        <select name="" id="" class="form-control w-100 form-control-sm">
                             <option>Small Select</option>
                         </select>
                     </form>
@@ -304,8 +304,9 @@
             </div>
             <div class="main-card mb-3 card">
                 <div class="card-body">
-                    <h5 class="card-title">Input Group Button Shorthand</h5
-                        ><div><div class="input-group">
+                    <h5 class="card-title">Input Group Button Shorthand</h5>
+                    <div>
+                        <div class="input-group">
                             <div class="input-group-prepend">
                                 <button class="btn btn-secondary">To the Left!</button>
                             </div><input class="form-control" type="text">
