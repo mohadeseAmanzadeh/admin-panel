@@ -51,6 +51,7 @@ import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
 import { ListGroupComponent } from './list-group/list-group.component';
 import { AccordionsComponent } from './accordions/accordions.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ChartJSComponent } from './chart-js/chart-js.component';
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
 
@@ -68,7 +69,8 @@ const routes : Routes = [
       { path: 'cards' , component : CardsComponent},
       { path: 'Models' , component : ModalsComponent},
       { path: 'Controls' , component : ControlsComponent},
-      { path: 'listGroup' , component : ListGroupComponent  }
+      { path: 'listGroup' , component : ListGroupComponent  },
+      { path: 'charts' , component : ChartJSComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -130,6 +132,7 @@ const routes : Routes = [
     ListGroupComponent,
     AccordionsComponent,
     CarouselComponent,
+    ChartJSComponent,
  
    
   ],

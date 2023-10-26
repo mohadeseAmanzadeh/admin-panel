@@ -8,7 +8,7 @@
                         <div class="vsm-header ">{{item.title}}</div>
                         <div class="card" *ngFor="let subMenuItem of item.subMenu">
                             <div class="card-header">
-                                <button class="vsm-link collapsed " >
+                                <button class="vsm-link collapsed">
                                     <i class="vsm-icon" [ngClass]="subMenuItem.type"></i>
                                     <span class="vsm-title">{{subMenuItem.title}}</span>
                                     <i class="vsm-arrow" (click)="subMenuItem.active = !subMenuItem.active"></i>

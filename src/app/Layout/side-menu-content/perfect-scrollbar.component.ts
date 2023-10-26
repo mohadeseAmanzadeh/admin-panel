@@ -148,11 +148,15 @@ export class PerfectScrollbarComponent {
       subMenu : [
         { 
           title: 'ChartJS',
+          link: 'charts',
           type: 'pe-7s-graph2',
           collapse: 50,
           active: false,
           children: [
-           
+           {
+            title: 'ChartJS',
+            link: 'charts',
+            }
           ]
         },
         ],
