@@ -9,9 +9,10 @@
                         <pre>{{child.desc}}</pre>
                     </span>
                     <div [ngClass]="child.className" *ngIf="child.className"></div>
-                    <!-- <app-buttons [item]="child.buutons" (click)="showDialog()"></app-buttons> -->
+                    <app-buttons [item]="child.buutons" (click)="showDialog(child)"></app-buttons>
                 </div>
             </div>
         </div>
     </div>
+    <app-modal-dialog></app-modal-dialog>
 </div>

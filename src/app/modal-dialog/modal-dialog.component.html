@@ -1,27 +1,26 @@
-<!-- <div class="modal d-block">
+<div class="modal d-block" *ngIf="modalService.modalData.isOpen">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">{{modal-title}}</h4>
-                <button aria-label="Close" class="close" type="button">
-                    <span aria-hidden="true"></span>
+                <h4 class="modal-title">{{modalService.modalData.title}}</h4>
+                <button aria-label="Close" class="close" type="button" (click)="closeDialog()">
+                    <span aria-hidden="true">×</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div>
                     <div class="ps">
                         <div class="ps-content">
-                            <p>{{modal.desc}}</p>
-                            <p>{{modal.desc}}</p>
-                            <p>{{modal.desc}}</p>
+                            <p>{{modalService.modalData.desc}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <app-buttons [item]></app-buttons>
-                <app-buttons [item] (click)="closeDialog()"></app-buttons>
+                <app-buttons [item]="modalService.modalData.CloseButton" (click)="closeDialog()"></app-buttons>
+                <app-buttons [item]="modalService.modalData.saveButton"></app-buttons>
             </div>
         </div>
     </div>
-</div> -->
+</div>
+<!-- {'title': 'Close', type: 'btn-secondary'} -->

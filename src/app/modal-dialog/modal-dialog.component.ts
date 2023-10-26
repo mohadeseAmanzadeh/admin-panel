@@ -5,10 +5,16 @@ import { ModalService } from '../services/modal.service';
   selector: 'app-modal-dialog',
   templateUrl: './modal-dialog.component.html',
   styleUrls: ['./modal-dialog.component.scss'],
-  providers: [ModalService]
 })
 export class ModalDialogComponent {
-  constructor( private modalService: ModalService) {
+
+  constructor(
+    public modalService: ModalService
+  ) {
     
+  }
+
+  closeDialog() {
+    this.modalService.closeModal();
   }
 }

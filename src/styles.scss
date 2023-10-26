@@ -192,13 +192,9 @@ select {
 .input-group {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: stretch;
-    width: 100%;
-    input{ 
-        flex-grow: 2;
-    }
-    
+    width: 100%;    
 }
 .input-group-prepend {
     margin-right: -1px;
@@ -206,9 +202,6 @@ select {
 .input-group-prepend, .input-group-append {
     display: flex;
     // height: 38px;
-    button {
-        flex-grow: 1;
-    }
 }
 
 
@@ -226,6 +219,19 @@ select {
     background-color: #e0f7ff;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
+}
+.close { 
+    border: 0;
+    background-color: transparent;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;    
+    padding: 1rem 1rem;
+    margin: -1rem -1rem -1rem auto
 }
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";

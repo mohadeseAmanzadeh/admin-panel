@@ -32,7 +32,6 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { DropDownBtnComponent } from './drop-down-btn/drop-down-btn.component';
 import { IconsComponent } from './icons/icons.component';
 import { BaseLayoutComponent} from './Layout/base-layout/base-layout.component';
-import { TilmelineContentComponent } from './tilmeline-content/tilmeline-content.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import { CardsComponent } from './cards/cards.component';
 import { TabsComponent } from './tabs/tabs.component';
@@ -49,6 +48,9 @@ import { FormInlineComponent } from './form-inline/form-inline.component';
 import { FormGridComponent } from './form-grid/form-grid.component';
 import { ControlsComponent } from './controls/controls.component';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+import { ListGroupComponent } from './list-group/list-group.component';
+import { AccordionsComponent } from './accordions/accordions.component';
+import { CarouselComponent } from './carousel/carousel.component';
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
 
@@ -65,7 +67,8 @@ const routes : Routes = [
       { path: 'Layouts' , component : LayoutsComponent},
       { path: 'cards' , component : CardsComponent},
       { path: 'Models' , component : ModalsComponent},
-      { path: 'Controls' , component : ControlsComponent}
+      { path: 'Controls' , component : ControlsComponent},
+      { path: 'listGroup' , component : ListGroupComponent  }
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -108,7 +111,6 @@ const routes : Routes = [
     DropDownBtnComponent,
     IconsComponent,
     BaseLayoutComponent,
-    TilmelineContentComponent,
     TimelinesComponent,
     CardsComponent,
     TabsComponent,
@@ -125,6 +127,9 @@ const routes : Routes = [
     FormGridComponent,
     ControlsComponent,
     ModalDialogComponent,
+    ListGroupComponent,
+    AccordionsComponent,
+    CarouselComponent,
  
    
   ],

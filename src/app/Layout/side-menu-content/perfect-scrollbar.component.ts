@@ -67,7 +67,10 @@ export class PerfectScrollbarComponent {
               title: 'Cards',
               link: 'cards'
             },
-            {title: 'List Group'},
+            {
+              title: 'List Group',
+              link: 'listGroup'
+            },
             {title: 'Timeline'}
             ]
         },
