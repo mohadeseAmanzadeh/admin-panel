@@ -22,6 +22,7 @@ export class AgentsStatusComponent {
       },
       avatarImg: {
         img: '/assets/images/1.jpg',
+        type: ''
       }
     },
     {
@@ -39,6 +40,7 @@ export class AgentsStatusComponent {
       },
       avatarImg: {
         img: '/assets/images/2 (1).jpg',
+        type: ''
       }
     },
     {
@@ -56,6 +58,7 @@ export class AgentsStatusComponent {
       },
       avatarImg: {
         img: '/assets/images/3.jpg',
+        type: ''
       }
     },
     {
@@ -74,6 +77,7 @@ export class AgentsStatusComponent {
       },
       avatarImg: {
         img: '/assets/images/4.jpg',
+        type: ''
       }
     }
   ]

@@ -1,25 +1,54 @@
+
 <!-- <div>
     <app-page-title></app-page-title>
     <div class="row">
-        <div class="col-md-6" *ngFor="let item of menu">
-            <div class="main-card card mb-3" *ngFor="let child of item.children">
+        <div class="col-md-6">
+            <div class="card main-card mb-3">   
+                <app-list-group-content></app-list-group-content>     
+            </div>
+            <div class="card main-card mb-3">
+                <app-tasks-list-content></app-tasks-list-content>
+            </div>    
+        </div>
+        <div class="col-md-6">
+            <div class="card main-card mb-3">
+                <app-list-group-content></app-list-group-content>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngFor="let column of menuCol">
+        <div class="col-md-6" *ngFor="let child of column.menuChild">
+            <div class="main-card card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">{{child.title}}</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item" *ngFor="let btn of child.buttons">
-                            <button class="list-group-item list-group-action">{{btn.title}}</button>
+                    <ul class="list-group" *ngIf="child.subMenu">
+                        <li class="list-group-item" *ngFor="let subMenuItem of child.subMenu">{{subMenuItem.title}}</li>
+                    </ul>
+                    <ul class="list-group" *ngIf="child.menu">
+                        <li class="list-group-item" *ngFor="let item of child.menu">
+                            {{item.title}}
+                            <span class="badge badge-pill badge-secondary">{{item.number}}</span>
                         </li>
-                        <li class="list-group-item" *ngFor="let li of child.items">
-                            {{li.title}}
-                            <span class="badge badge-secondary badge-pill" *ngIf="li.descBtn">{{li.descBtn}}</span>
+                    </ul>
+                    <div *ngIf="child.buttons">
+                        <ul class="list-group">
+                            <button class="list-group-item-action list-group-item" [ngClass]="btn.type" *ngFor="let btn of child.buttons">{{btn.title}}</button>
+                        </ul>
+                    </div>
+                    <ul class="list-group" *ngIf="child.listItem">
+                        <li class="list-group-item" *ngFor="let itemList of child.listItem" [ngClass]="itemList.type">{{itemList.title}}</li>
+                    </ul>
+                    <ul class="list-group" *ngIf="child.list">
+                        <li class="list-group-item" [ngClass]="items.type" *ngFor="let items of child.list">
+                            <h5 class="list-group-item-heading">{{items.title}}</h5>
+                            <p class="list-group-item-text" >{{items.desc}}</p>
                         </li>
-                        <li class="list-group-item" *ngFor="let subMenuItem of child.subMenu">
-                            <h5 class="list-group-item-heading">{{subMenuItem.title}}</h5>
-                            <p class="list-group-item-text">{{subMenuItem.desc}}</p>
-                        </li>
-                        <li class="list-group-item" *ngFor="let listItem of child.list">
-                            <a class="list-group-item">{{listItem.title}}</a>
-                        </li>
+                    </ul>
+                    <ul class="list-group" *ngIf="child.menuLink">
+                        <a class="list-group-item" *ngFor="let menuLinkItem of child.menuLink" [ngClass]="menuLinkItem.type">{{menuLinkItem.title}}</a>
+                    </ul>
+                    <ul class="list-group list-group-flush" *ngIf="child.menuLinkFlush">
+                        <a class="list-group-item" *ngFor="let menuLinkFlushItem of child.menuLinkFlush" [ngClass]="menuLinkFlushItem.type">{{menuLinkFlushItem.title}}</a>
                     </ul>
                 </div>
             </div>

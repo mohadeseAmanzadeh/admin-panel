@@ -12,6 +12,7 @@ export class ActiveUsersComponent {
       value: '#345',
       avatarImg: {
         img: '/assets/images/1.jpg',
+        type:''
       },
       title: 'John Doe',
       desc: 'Web Developer',
@@ -29,6 +30,7 @@ export class ActiveUsersComponent {
       value: '#347',
       avatarImg: {
         img: '/assets/images/1.jpg',
+        type: ''
       },
       title: 'Ruben Tillman',
       desc: 'Etiam sit amet orci eget',
@@ -46,6 +48,7 @@ export class ActiveUsersComponent {
       value: '#321',
       avatarImg: {
         img: '/assets/images/1.jpg',
+        type: ''
       },
       title: 'Elliot Huber',
       desc: 'Lorem ipsum dolor sic',
@@ -63,6 +66,7 @@ export class ActiveUsersComponent {
       value: '#345',
       avatarImg: {
         img: '/assets/images/1.jpg',
+        type: ''
       },
       title: 'Vinnie Wagstaff',
       desc: 'UI Designer',

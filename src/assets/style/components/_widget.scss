@@ -53,40 +53,48 @@
         display: flex;
         flex: 1;
         flex-direction: column;
-        .widget-content-wrapper {
-            display: flex;
-            flex: 1;
-            position: relative;
-            align-items: center;
-            .widget-content-right {
-                margin-left: auto;
-                &.widget-content-actions {
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: opacity .2s;
-                    &:hover {
-                        visibility: visible;
-                    }
-                }
-                .widget-numbers {
-                    font-size: bold;
-                    font-size: 1.8rem;
-                    display: block;
+       
+    }
+    .widget-content-wrapper {
+        display: flex;
+        flex: 1;
+        position: relative;
+        align-items: center;
+        .widget-content-right {
+            margin-left: auto;
+            &.widget-content-actions {
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity .2s;
+                &:hover {
+                    visibility: visible;
                 }
             }
-            .widget-content-left {
-                .widget-heading {
-                    font-weight: $font-bold;
-                    opacity: .8;
-                    &.pb-6 {
-                        padding-bottom: .5rem;
-                    }
+            .widget-numbers {
+                font-size: bold;
+                font-size: 1.8rem;
+                display: block;
+            }
+        }
+        .widget-content-left {
+            .widget-heading {
+                font-weight: $font-bold;
+                opacity: .8;
+                &.pb-6 {
+                    padding-bottom: .5rem;
                 }
-                .widget-subheading {
-                    opacity: .5;
-                }
+            }
+            .widget-subheading {
+                opacity: .5;
             }
         }
     }
+    .icon-wrapper[class*="border-"] {
+        border-width: 1px;
+        border-style: solid;
+    }
 }
-
+.widget-content:hover .widget-content-right.widget-content-actions {
+    visibility: visible;
+    opacity: 1;
+}

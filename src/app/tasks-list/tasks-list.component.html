@@ -26,55 +26,17 @@
         <div class="scroll-area-lg">
             <div class="ps-shadow-limits">
                 <div class="ps ps--active-y">
-                    <div class="ps-ontent">
-                        <ul class="todo-list-wrapper list-group list-group-flsh">
-                            <li class="list-group-item widget-content" *ngFor="let task of taskList">
-                                <div class="widget-content-outer p-0">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-2">
-                                            <div class="custom-checkbox custom-control">
-                                                <input type="checkbox" class="custom-control-input" id="exampleCustomCheckbox12">
-                                                <label for="exampleCustomCheckbox12" class="custom-control-label">&nbsp;</label>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left mr-3" *ngIf="task.avatarImg">
-                                            <!-- <img class="rounded" src="" alt="" width="42"> -->
-                                            <app-avatar  [item]="task.avatarImg" className="rounded"></app-avatar>
-                                        </div> 
-                                        <div class="widget-content-left" [ngClass]="task.type">
-                                            <div class="widget-heading pb-6">
-                                                {{task.title}}
-                                                <app-status-btn *ngIf="task.statusBtn" [item]="task.statusBtn" className="rounded ml-2"></app-status-btn>
-                                            </div>
-                                            <div class="widget-subheading">
-                                                <i>{{task.desc}}</i>
-                                                <app-status-btn *ngIf="task.descStatusBtn" [item]="task.descStatusBtn"  className="ml-2 badge-pill"></app-status-btn>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-right widget-content-actions">
-                                            <button *ngIf="task.canConfirm" class="border-0 btn-tramsition btn btn-outeline-success">
-                                                <i class="fa fa-check"></i>
-                                            </button>
-                                            <button *ngIf="task.canDelete" class="border-0 btn-tramsition btn btn-outeline-danger">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
-                                        </div>
-                                        <div *ngIf="task.actionStatusBtn" class="widget-content-right ml-3">
-                                            <app-status-btn [item]="task.actionStatusBtn"></app-status-btn>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-                        <div class="ps__thumbs-x" style="left: 0px; width: 0px;"></div>
-                    </div>
-                    <div class="ps__rail-y" style ="top: 0px; height: 400px; right: 0px;">
-                        <div class="ps__thubs-y" style="top: 0px; height: 297px;"></div>
+                    <div class="ps-ontent" >
+                        <app-tasks-list-content></app-tasks-list-content>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                            <div class="ps__thumbs-x" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style ="top: 0px; height: 400px; right: 0px;">
+                            <div class="ps__thubs-y" style="top: 0px; height: 297px;"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>         
         </div>
         <div class="d-block text-right card-footer">
             <button class="mr-2 btn btn-link btn-sm">Cancel</button>

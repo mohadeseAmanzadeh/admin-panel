@@ -52,6 +52,8 @@ import { ListGroupComponent } from './list-group/list-group.component';
 import { AccordionsComponent } from './accordions/accordions.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ChartJSComponent } from './chart-js/chart-js.component';
+import { TasksListContentComponent } from './tasks-list-content/tasks-list-content.component';
+import { ListGroupContentComponent } from './list-group-content/list-group-content.component';
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
 
@@ -133,6 +135,8 @@ const routes : Routes = [
     AccordionsComponent,
     CarouselComponent,
     ChartJSComponent,
+    TasksListContentComponent,
+    ListGroupContentComponent,
  
    
   ],

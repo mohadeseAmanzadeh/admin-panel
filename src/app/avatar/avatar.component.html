@@ -1,1 +1,7 @@
-<img src="{{item.img}}" class="rounded-circle" alt="" [ngClass]="className">
+<img 
+    src="{{item.img}}" 
+    class="rounded-circle" 
+    alt="" 
+    [ngClass]="[
+        item.type, className
+    ]">

@@ -1,0 +1,59 @@
+<!-- <div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let item of listGroup" >
+            <div class="widget-content p-0">
+                <div class="widget-content-wrapper">
+                    <div class="widget-content-left center-elem mr-2" *ngIf="item.iconName">
+                        <i class="text-muted fsize-2" [ngClass]="item.iconName"></i>
+                    </div>
+                    <div class="widget-content-left mr-3 img" *ngIf="item.avatarImg">
+                        <app-avatar [item]="item.avatarImg"></app-avatar>        
+                    </div>
+                    <div class="widget-content-left mr-3" *ngIf="item.icon">
+                        <div class="border-light rounded m-0 icon-wrapper">
+                            <div class="icon-wrapper-bg bg-light">
+                                <i class="icon-gradient" [ngClass]="item.icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content-left">
+                        <div class="widget-heading">{{item.title}}</div>
+                        <div class="widget-subheading" *ngIf="item.desc">{{item.desc}}</div>
+                    </div>
+                    <div class="widget-content-left flex2" *ngIf="item.total">
+                        <div class="widget-heading">{{item.head}}</div>
+                        <div class="widget-subheading opacity-10" >
+                            <span class="pr-2">43 Sales</span>
+                            <span>
+                                <b class="text-success">{{item.total}}</b>
+                                Totals
+                            </span>
+                        </div>
+                    </div>
+                    <div class="widget-content-right text-right mr-3" *ngIf="item.percent">
+                        <div>
+                            <b>{{item.percent}}</b>
+                        </div>
+                        YoY Growth
+                    </div>
+                    <div class="widget-content-right" *ngIf="item.right">
+                        <div *ngIf="item.actions">
+                            <app-actions></app-actions>
+                        </div>
+                        <button class="btn-icon btn-icon-only btn" *ngIf="item.link" [ngClass]="item.link">
+                            <i class="pe-7s-download fsize-2 btn-icon-wrapper"></i>
+                        </button>
+                        <app-status-btn [item]="item.statusBtn" *ngIf="item.statusBtn"></app-status-btn>
+                        <app-buttons [item]="item.buttons" *ngIf="item.buttons"></app-buttons>
+                        <div class="widget-numbers text-primary" *ngIf="item.text">
+                            <span class="count-up-wrapper">{{item.text}}</span>
+                        </div>
+                    </div>
+                    <div class="widget-content-right widget-content-actions" *ngIf="item.button">
+                        <app-buttons [item]="item.button"></app-buttons>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div> -->

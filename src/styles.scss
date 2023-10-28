@@ -233,6 +233,15 @@ select {
     padding: 1rem 1rem;
     margin: -1rem -1rem -1rem auto
 }
+.img {
+    width: 42px;
+    height: 42px;
+}
+.center-elem {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";
