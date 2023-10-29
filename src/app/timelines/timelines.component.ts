@@ -15,7 +15,7 @@ export class TimelinesComponent {
         type: 'dot-danger'
       },
       {
-        text: 'Yet another one,',
+        text: 'Yet another one, at',
         time: '15:00 PM',
         type: 'dot-warning',
       },
@@ -30,18 +30,43 @@ export class TimelinesComponent {
       {
         title: 'Something not important',
         type: 'dot-primary',
+        textType: ''
       },
       {
-        text: 'Yet another one,',
-        time: '15:00 PM',
-        type: 'dot-warning', 
-      },
+        title: 'This dot has an info state',
+        type: 'dot-info',
+      },  
       {
         title: 'This dot has a dark state',
         type: 'dot-dark',
       },
     ]
   },
-  {}
+  {
+    listPs: [
+      { 
+        title: 'All Hands Meeting',
+        type: ''
+      },
+      {
+        text: 'Yet another one, at',
+        time: '15:00 PM',
+        type: '',
+      },
+      {
+        title: 'Build the production release',
+        descStatusBtn : {
+          title: '',
+          type: ''
+        },
+        type: ''
+      },
+      {
+        title: 'Something not important',
+        type: '',
+        textType: 'text-success'
+      },
+    ]
+  }
  ]
 }

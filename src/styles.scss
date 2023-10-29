@@ -246,7 +246,6 @@ select {
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/table.scss";
 @import "/src/assets/style/components/helpers.scss";
-@import "/src/assets/style/components/widget.scss";
 @import "/src/assets/style/components/card.scss";
 @import "/src/assets/style/components/btn.scss";
 @import "/src/assets/style/components/col.scss";
@@ -275,5 +274,6 @@ select {
 @import "/src/assets/style/components/form";
 @import "/src/assets/style/components/custom";
 @import "/src/assets/style/components/outline";
-@import "/src/assets/style/components/tooltip"
+@import "/src/assets/style/components/tooltip";
+@import "/src/assets/style/components/widget.scss";
 

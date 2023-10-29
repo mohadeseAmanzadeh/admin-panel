@@ -54,6 +54,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ChartJSComponent } from './chart-js/chart-js.component';
 import { TasksListContentComponent } from './tasks-list-content/tasks-list-content.component';
 import { ListGroupContentComponent } from './list-group-content/list-group-content.component';
+import { VariationsComponent } from './variations/variations.component';
+import { OrderComponent } from './order/order.component';
+
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
 
@@ -72,7 +75,9 @@ const routes : Routes = [
       { path: 'Models' , component : ModalsComponent},
       { path: 'Controls' , component : ControlsComponent},
       { path: 'listGroup' , component : ListGroupComponent  },
-      { path: 'charts' , component : ChartJSComponent}
+      { path: 'charts' , component : ChartJSComponent},
+      { path: 'timelines' , component: TimelinesComponent},
+      { path: 'variations' , component: VariationsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -137,6 +142,8 @@ const routes : Routes = [
     ChartJSComponent,
     TasksListContentComponent,
     ListGroupContentComponent,
+    VariationsComponent,
+    OrderComponent,
  
    
   ],

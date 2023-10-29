@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 export interface ModalData {
   title: string;
   desc: string;
+  descTwo?: string;
+  descThree?: string;
+  className: string;
   isOpen: boolean;
   saveButton: {};
   CloseButton: {}
@@ -17,6 +20,7 @@ export class ModalService {
     title: '',
     desc: '',
     isOpen: false,
+    className: '',
     saveButton: {},
     CloseButton: {}
   };

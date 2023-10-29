@@ -1,18 +1,23 @@
 
-<!-- <div>
+<div>
     <app-page-title></app-page-title>
     <div class="row">
         <div class="col-md-6">
-            <div class="card main-card mb-3">   
-                <app-list-group-content></app-list-group-content>     
+            <div class="card main-card mb-3">
+                <app-list-group-content [listGroup]="listGroup"></app-list-group-content>     
             </div>
             <div class="card main-card mb-3">
+                <div class="card-header">ToDo List</div>
                 <app-tasks-list-content></app-tasks-list-content>
+                <div class="d-block text-right card-footer">
+                    <button class="mr-2 btn btn-link btn-sm">Cancel</button>
+                    <button class="btn btn-success btn-lg">Save</button>
+                </div>
             </div>    
         </div>
         <div class="col-md-6">
             <div class="card main-card mb-3">
-                <app-list-group-content></app-list-group-content>
+                <app-list-group-content [listGroup]="listGroup"></app-list-group-content>
             </div>
         </div>
     </div>
@@ -54,4 +59,4 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>

@@ -71,7 +71,10 @@ export class PerfectScrollbarComponent {
               title: 'List Group',
               link: 'listGroup'
             },
-            {title: 'Timeline'}
+            {
+              title: 'Timeline',
+              link: 'timelines'
+            }
             ]
         },
         { 
@@ -138,7 +141,10 @@ export class PerfectScrollbarComponent {
           collapse: 40,
           active: false,
           children: [
-            {title: 'Variation 3'}
+            {
+              title: 'Variation 3',
+              link: 'variations'
+            }
           ]
         },
       ], 

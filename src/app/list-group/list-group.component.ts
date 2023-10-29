@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-group.component.scss']
 })
 export class ListGroupComponent {
+
+
   public  listGroup = [
     {
       avatarImg: {
@@ -117,6 +119,119 @@ export class ListGroupComponent {
       link: 'btn-link'
     }
   ]
+
+  public listyGroup2 =  [
+    {
+      avatarImg: {
+        img: '/assets/images/1.jpg',
+        type: ''
+      },
+      title: 'Alina Mcloughlin',
+      desc: 'A short profile description',
+      statusBtn: null,
+      buttons: null,
+      actions: true,
+      right: true
+    },
+    {
+      avatarImg: {
+        img: '/assets/images/2 (1).jpg',
+        type: 'rounded'
+      },
+      title: 'Ruben Tillman',
+      desc: 'Etiam sit amet orci eget eros faucibus',
+      statusBtn: {
+          title: 'NEW',
+          type: 'badge-danger'
+      },
+      buttons: null, 
+      actions: false,
+      right: true
+    },
+    {
+      avatarImg: {
+        img: '/assets/images/2 (1).jpg',
+        type: ''
+      },
+      title: 'Vinnie Wagstaff',
+      statusBtn: null,
+      buttons: {
+        title: 'Details',
+        className: 'btn-pill btn-hover-shine btn-sm btn-focus'
+      },
+      actions: false,
+      right: true
+    },
+    {
+      avatarImg: {
+        img: '/assets/images/3.jpg',
+        type: ''
+      },
+      title: 'Ella-Rose Henry',
+      desc: 'Lorem ipsum dolor sit amet, consectetuer',
+      text  : '$377',
+      actions: false,
+      right: true
+    },
+    {
+      avatarImg: {
+        img: '/assets/images/3.jpg',
+        type: 'rounded'
+      },
+      title: 'Eliot Huber',
+      statusBtn: {
+        title: '43',  
+        type: 'badge-warning badge-pill ml-auto',
+      },
+      buttons: null,
+      actions: false,
+      right: true
+    },
+    {
+      avatarImg: {
+        img: '/assets/images/2 (1).jpg',
+        type: ''
+      },
+      head: 'Product Sales',
+      total: '$156,24',
+      statusBtn: null,
+      buttons: null,
+      actions: false,
+      percent: '52,5%',
+      right: false
+    },
+    {
+      title: 'Product Sales',
+      avatarImg: null,
+      statusBtn: null,
+      buttons:null,
+      actions: false,
+      right: true
+    },
+    { 
+      title: 'Hidden Actions Pane',
+      button: {
+        title: 'follow',
+        className: 'btn-outline-primary btn-pill',
+      },
+      avatarImg: null,
+      statusBtn: null,
+      actions: false,
+      right: false,
+      icon: 'bg-happy-itemo'
+    },
+    {
+      title: 'Example file 1',
+      avatarImg: null,
+      statusBtn: null,
+      buttons: null,
+      actions: false,
+      right: true,
+      iconName: 'pe-7s-file',
+      link: 'btn-link'
+    }
+  ]
+
   public  menuCol = [
     {
       menuChild: [

@@ -19,7 +19,7 @@ export class TimelineComponent {
       type: 'dot-danger'
     },
     {
-      text: 'Yet another one,',
+      text: 'Yet another one, at',
       time: '15:00 PM',
       type: 'dot-warning',
     },
@@ -36,7 +36,7 @@ export class TimelineComponent {
       type: 'dot-primary',
     },
     {
-      text: 'Yet another one,',
+      text: 'Yet another one, at',
       time: '15:00 PM',
       type: 'dot-warning', 
     },
@@ -61,7 +61,7 @@ export class TimelineComponent {
       type: 'dot-danger',
     },
     {
-      text: 'Yet another one,',
+      text: 'Yet another one, at',
       time: '15:00 PM',
       type: 'dot-warning',
     },
