@@ -165,6 +165,8 @@ export class VariationsComponent {
     }
   ];
 
+
+  
   getCards(orders: any) {
     return orders;
   }

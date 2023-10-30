@@ -56,6 +56,8 @@ import { TasksListContentComponent } from './tasks-list-content/tasks-list-conte
 import { ListGroupContentComponent } from './list-group-content/list-group-content.component';
 import { VariationsComponent } from './variations/variations.component';
 import { OrderComponent } from './order/order.component';
+import { TableLayoutComponent } from './table-layout/table-layout.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
@@ -77,7 +79,9 @@ const routes : Routes = [
       { path: 'listGroup' , component : ListGroupComponent  },
       { path: 'charts' , component : ChartJSComponent},
       { path: 'timelines' , component: TimelinesComponent},
-      { path: 'variations' , component: VariationsComponent}
+      { path: 'variations' , component: VariationsComponent},
+      { path: 'pagination' , component: PaginationComponent},
+      { path: 'carousel' , component : CarouselComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -144,6 +148,8 @@ const routes : Routes = [
     ListGroupContentComponent,
     VariationsComponent,
     OrderComponent,
+    TableLayoutComponent,
+    PaginationComponent,
  
    
   ],

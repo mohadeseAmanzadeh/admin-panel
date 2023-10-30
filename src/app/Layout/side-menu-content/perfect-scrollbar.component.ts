@@ -97,8 +97,14 @@ export class PerfectScrollbarComponent {
               title: 'Tooltips & Popovers',
               link: 'tooltips'
             },
-            {title: 'Carousel'},
-            {title: 'Pagination'}
+            {
+              title: 'Carousel',
+              link: 'carousel'
+            },
+            {
+              title: 'Pagination',
+              link: 'pagination'
+            }
           ]
         },
         {

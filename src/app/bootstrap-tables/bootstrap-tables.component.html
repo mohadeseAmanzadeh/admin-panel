@@ -7,4 +7,10 @@
         <app-active-users></app-active-users>
     </div>
     <app-agents-status></app-agents-status>
+    <div class="row">
+        <div class="col-lg-6" *ngFor="let item of menu">
+            <app-table-layout [menu]="item"></app-table-layout>
+        </div>
+        
+    </div>
 </div>

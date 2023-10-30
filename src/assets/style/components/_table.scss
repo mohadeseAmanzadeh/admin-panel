@@ -1,7 +1,7 @@
-.table {
+.table{  
     width: 100%;
     margin-bottom: 1rem;
-    background-color: transparent;
+    border-collapse: collapse;
     th {
         vertical-align: bottom;
     }
@@ -12,16 +12,17 @@
         th,td {
             padding: 0.55rem;
             vertical-align: top;
+            
         }
-    }
+    } 
 }
 .table-reponsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto
-}
-table {
-    border-collapse: collapse;
+    // display: block;
+    // width: 100%;
+    // overflow-x: auto;
+    th,td {
+        border-top: 1px solid #e9ecef;
+    }
 }
 .table-striped {
     thead {
@@ -30,13 +31,46 @@ table {
             border-bottom: 2px solid #e9ecef;
         }
     }
-    th,td {
-        border-top: 1px solid #e9ecef;
-    }
     tbody {
         tr:nth-of-type(odd) {
             background-color: rgba(0, 0, 0, 0.03);
         }
     }
 }
+.table-dark {
+    color: #fff;
+    background-color: #212529;
 
+}
+.table-hover{
+
+    tbody{
+        tr:hover {
+            background-color: #d1f3ff;
+        }
+    } 
+} 
+.table-sm {
+    td, th {
+        padding: 0.3rem !important;
+    }
+  
+}
+.border-top,
+.table-sm,
+.table-hover,
+.table-dark,
+.table-striped,
+.table-reponsive,
+.table-bordered {
+    th,td {
+        border-top: 1px solid #e9ecef;
+    }
+}
+.table-borderless {
+    tbody, thead{
+        th ,td {
+            border: 0; 
+        }    
+    }     
+}
