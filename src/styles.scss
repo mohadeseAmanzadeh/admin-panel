@@ -242,7 +242,12 @@ select {
     align-items: center;
     align-content: center;
 }
-
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+.flex-column {
+    flex-direction: column !important;
+}
 
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";

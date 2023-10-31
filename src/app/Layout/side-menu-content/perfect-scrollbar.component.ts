@@ -83,7 +83,10 @@ export class PerfectScrollbarComponent {
           collapse: 250,
           active: false,
           children: [
-            {title: 'Tabs'},
+            {
+              title: 'Tabs',
+              link: 'tabs'
+            },
             {title: 'Accordions'},
             {
               title: 'Models',

@@ -58,6 +58,8 @@ import { VariationsComponent } from './variations/variations.component';
 import { OrderComponent } from './order/order.component';
 import { TableLayoutComponent } from './table-layout/table-layout.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { TabContentComponent } from './tab-content/tab-content.component';
+import { AccordionContentComponent } from './accordion-content/accordion-content.component';
 
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
 
@@ -81,7 +83,8 @@ const routes : Routes = [
       { path: 'timelines' , component: TimelinesComponent},
       { path: 'variations' , component: VariationsComponent},
       { path: 'pagination' , component: PaginationComponent},
-      { path: 'carousel' , component : CarouselComponent}
+      { path: 'carousel' , component : CarouselComponent},
+      { path: 'tabs' , component: TabsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -150,6 +153,8 @@ const routes : Routes = [
     OrderComponent,
     TableLayoutComponent,
     PaginationComponent,
+    TabContentComponent,
+    AccordionContentComponent,
  
    
   ],
