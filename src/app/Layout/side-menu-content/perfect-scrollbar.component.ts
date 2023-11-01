@@ -87,7 +87,10 @@ export class PerfectScrollbarComponent {
               title: 'Tabs',
               link: 'tabs'
             },
-            {title: 'Accordions'},
+            {
+              title: 'Accordions',
+              link: 'accordions'
+            },
             {
               title: 'Models',
               link: 'Models'

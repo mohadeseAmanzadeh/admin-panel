@@ -24,7 +24,7 @@ export class TasksListContentComponent {
       desc: 'By Johnny',
       descStatusBtn : {
         title: 'New',
-        type: 'badge-info'
+        type: 'badge-info badge-pill'
       },
       canConfirm: false,
       canDelete: false
@@ -45,7 +45,7 @@ export class TasksListContentComponent {
       type: 'flex2',
       actionStatusBtn : {
         title: 'Latest Task',
-        type: 'badge-success'
+        type: 'badge-success badge-pill'
       },
     },
     {

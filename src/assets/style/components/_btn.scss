@@ -15,7 +15,7 @@
     &.disabled {
         opacity: .65;
     }
-    &:hover {
+    &:hover:not(.disabled) {
         cursor: pointer;
     }
 }
@@ -54,7 +54,7 @@
     font-weight: 400;
     color: #033C73;
     background: transparent;
-    &:hover {
+    &:hover:not(.disabled) {
         color: #0056b3;
         text-decoration: underline;
     }

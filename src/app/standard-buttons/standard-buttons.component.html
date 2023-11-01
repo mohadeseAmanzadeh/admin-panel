@@ -23,13 +23,15 @@
             <div class="main-card mb-3 card">
                 <div class="card-body">
                     <h5 class="card-title">{{item.title}}</h5>
-                    <div class="text-center">
-                        <div class="btn-group btn-group-toggle" *ngFor="let subMenuItem of item.subMenu" [ngClass]="subMenuItem.type">
-                            <label class="btn" *ngFor="let child of subMenuItem.children" [ngClass]="child.type">
-                                {{child.title}}
-                                <input type="checkbox">
-                            </label>  
-                            <div [className]="subMenuItem.className"></div>   
+                    <div class="text-center" >
+                        <div *ngFor="let subMenuItem of item.subMenu">
+                            <div class="btn-group btn-group-toggle" [ngClass]="subMenuItem.type"  >
+                                <label class="btn" *ngFor="let child of subMenuItem.children" [ngClass]="child.type">
+                                    {{child.title}}
+                                    <input type="checkbox">
+                                </label>    
+                            </div>
+                            <div [ngClass]="subMenuItem.divider" class="mt-2" *ngIf="subMenuItem.divider"></div> 
                         </div>
                     </div>
                 </div>

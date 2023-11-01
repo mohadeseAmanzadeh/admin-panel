@@ -84,7 +84,8 @@ const routes : Routes = [
       { path: 'variations' , component: VariationsComponent},
       { path: 'pagination' , component: PaginationComponent},
       { path: 'carousel' , component : CarouselComponent},
-      { path: 'tabs' , component: TabsComponent}
+      { path: 'tabs' , component: TabsComponent},
+      { path: 'accordions', component: AccordionsComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -155,6 +156,7 @@ const routes : Routes = [
     PaginationComponent,
     TabContentComponent,
     AccordionContentComponent,
+
  
    
   ],

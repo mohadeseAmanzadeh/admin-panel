@@ -1,12 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-//  interface type {
 
-//   justified: "",
-//   bordered: '',
-//   primary: ''
-
-// }
 @Component({
   selector: 'app-tab-content',
   templateUrl: './tab-content.component.html',
@@ -18,7 +12,6 @@ export class TabContentComponent implements OnInit {
   @Input() type: string = '';
 
   ngOnInit(): void {
-    console.log(this.type, 'type');
     
   }
 
@@ -27,7 +20,6 @@ export class TabContentComponent implements OnInit {
    if(item.disabled) {
     return;
    }
-    console.log('item', item);
     console.log('itemsitemsitems', this.items);
     this.items.forEach((value:any, key:number)=>{
       value.active = ( item.id == value.id);

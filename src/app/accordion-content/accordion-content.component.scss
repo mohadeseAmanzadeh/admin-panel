@@ -1,0 +1,29 @@
+.accordion {
+    .card{ 
+        margin-bottom: -2px;
+        overflow: hidden;
+        :first-of-type {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:first-of-type) {
+            .card-header:not(:first-child) {
+                border-radius: 0;
+            }
+        }
+        .card-header {
+            margin-bottom: -2px;
+            &:first-child {
+                border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+            }
+            .btn-link {
+                &.disabled {
+                    color: #6c757d;
+                    background-color: transparent;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+

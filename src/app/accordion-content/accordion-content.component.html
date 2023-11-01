@@ -1,14 +1,15 @@
-<div>
+<div class="accordion" *ngFor="let item of items">
     <div class="card">
         <div class="card-header">
-            <button class="btn btn-link collapsed">
-                <span class="card-header--title">{{item.btnTitle}}</span>
+            <button class="btn btn-link" [ngClass]="{'disabled': item.disabled}" (click)="changeView(item)">
+                <span class="card-header--title">{{item.title}}</span>
             </button>
         </div>
-        <div class="collapsed show">
+        <div class="collapsed" [ngClass]="{'active': item.active}">
             <div class="card-body">
-                {{item.desc}}
+                {{item.text}}
             </div>
         </div>
     </div>
 </div>
+

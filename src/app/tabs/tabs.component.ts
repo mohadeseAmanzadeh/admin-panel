@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class TabsComponent {
 
+  // type: 'justify-content-start'
+  // type: 'justify-content-center'
+  // type: 'justify-content-end'
+  // type: 'nav-fill'
+  // type: 'nav-justified'
   public list = [
     {
       children: [
@@ -70,7 +75,14 @@ export class TabsComponent {
       children: [
         {
           title: 'Tabset',
-          classType: 'nav-justified nav-tabs',
+          classType: ' nav-tabs',
+          buttons: [
+            {title: 'Start',},
+            {title: 'Center',},
+            {title: 'End', },
+            {title: 'Fill',},
+            {title: 'Justified',}
+          ],
           data: [
             {
               id: 1,
@@ -96,8 +108,12 @@ export class TabsComponent {
           ]
         },
         {
-          title: 'Pills',
+          title: 'Orientation',
           classType: 'nav-pills',
+          // buttons: [
+          //   {title: 'Horizontal'},
+          //   {title: 'Vertical'}
+          // ],
           data: [
             {
               id: 1,

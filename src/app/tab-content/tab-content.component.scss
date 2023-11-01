@@ -8,11 +8,15 @@
     &.nav-tabs {
         border-bottom: 1px solid #dee2e6 !important;   
     }
+    &.nav-fill {
+        .nav-item {
+            flex: 1 1 auto;
+            align-items: center;
+        }
+    }
     &.nav-justified {
         .nav-item {
-            flex-basis: 0;
-            flex-grow: 1 ;
-            flex-shrink: 0 ;
+            flex: 1 0 0;
         }
     }
     &.nav-pills {
@@ -37,11 +41,11 @@
                 background-color: #fff;
                 border-color: #dee2e6 #dee2e6 #fff;
             }
-            // &.disabled {
-            //     color: #6c757d;
-            //     background-color: transparent;
-            //     border-color: transparent;
-            // }
+                &.disabled {
+                    color: #6c757d;
+                    background-color: transparent;
+                    border-color: transparent;
+                }
         }
     }
     

@@ -376,6 +376,7 @@ export class StandardButtonsComponent {
       subMenu: [
         {
           type: 'btn-group-sm',
+          divider: 'divider',
           children: [
             { 
               title: 'One',
@@ -391,8 +392,8 @@ export class StandardButtonsComponent {
             },
           ],
         },
-        {className: 'divider'},
         {
+          divider: 'divider',
           children: [
             {
               title: 'One',
@@ -408,8 +409,8 @@ export class StandardButtonsComponent {
             },
           ],
         },
-        {className: 'divider'},
         {
+          type: 'btn-group-lg',
           children: [
             {
               title: 'One',
@@ -425,7 +426,6 @@ export class StandardButtonsComponent {
             } 
           ],
         },
-        {className: ''},
       ]
     },
     {
@@ -433,6 +433,7 @@ export class StandardButtonsComponent {
       subMenu: [
         {
           type: 'btn-group-sm',
+          divider: 'divider',
           children: [
             {
               title: 'Left(pre-checked)',
@@ -448,8 +449,9 @@ export class StandardButtonsComponent {
             },
           ]
         },
-        {className: 'divider'},
         {
+          type: '',
+          divider: 'divider',
           children: [
             {
               title: 'Left(pre-checked)',
@@ -465,7 +467,6 @@ export class StandardButtonsComponent {
             },
           ]
         },
-        {className: 'divider'},
         {
           type: 'btn-group-lg',
           children: [
@@ -483,8 +484,6 @@ export class StandardButtonsComponent {
             }
           ]
         },
-        {className: ''},
-
       ]
     }
 

@@ -6,14 +6,18 @@
             <div class="card-body">
                 <app-tab-content [type]="child.classType" [items]="child.data"></app-tab-content>   
             </div>
-            <!-- <div class="divider"></div>
-            <div class="text-center">
-                <div class="btn-group btn-group-toggle">
-                    <label class="btn-outeline-primary btn-sm btn">
-                        <input type="checkbox">
-                    </label>
+            <div *ngIf="child.buttons">
+                <div class="divider"></div>
+                <div class="text-center">
+                    <div class="btn-group btn-group-toggle">
+                        <label class="btn-outline-primary btn-sm btn" 
+                        *ngFor="let btn of child.buttons"> 
+                            <input type="radio">
+                            {{btn.title}}
+                        </label>
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </div>

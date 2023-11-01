@@ -66,5 +66,40 @@
     }
     
 }
-
+.vertical-timeline--animate {
+    .vertical-timeline-element-icon.bounce-in {
+        visibility: visible;
+        animation: cd-bounce-1 .8s;
+    }
+    @keyframes cd-bounce-1 {
+        0% {
+            opacity: 0;
+            transform: scale(.5);
+        }
+        60% {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .vertical-timeline-element-content.bounce-in {
+        visibility: visible;
+        animation: cd-bounce-2 .6s;
+    } 
+    @keyframes cd-bounce-2 {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        60% {
+            opacity: 1;
+            transform: translateX(20px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
 

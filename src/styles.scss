@@ -245,12 +245,25 @@ select {
 .justify-content-start {
     justify-content: flex-start !important;
 }
+.justify-content-center {
+    justify-content: center !important;
+}
+.justify-content-end {
+    justify-content: flex-end !important;
+}
 .flex-column {
     flex-direction: column !important;
 }
 
+.collapsed {
+    display: none;
+     &.active {
+         display: block;
+     }
+ }
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
+@import "/src/assets/style/components/sidebar-menu.scss";
 @import "/src/assets/style/components/card.scss";
 @import "/src/assets/style/components/btn.scss";
 @import "/src/assets/style/components/col.scss";
@@ -275,7 +288,6 @@ select {
 @import "/src/assets/style/components/scroll-bar";
 @import "/src/assets/style/components/header";
 @import "/src/assets/style/components/search";
-@import "/src/assets/style/components/sidebar-menu.scss";
 @import "/src/assets/style/components/burger-menu";
 @import "/src/assets/style/components/modal";
 @import "/src/assets/style/components/form";
