@@ -20,11 +20,37 @@ export class AccordionContentComponent implements OnInit{
       return;
     }
 
-    if(this.type == 1) {
-      item.active = !item.active;
+    if( item.type ) {
+      if( item.type == 1 ) {
+        item.active = !item.active;
+      }
+    }else{
+      if( this.type == 1 ) {
+        item.active = !item.active;
+      }
     }
   
-    if(this.type == 2) {
+    if(item.type ) {
+      if( item.type == 2) {
+        this.items.forEach((value:any, key:number) => {
+          // value.active = (item.id == value.id); 
+          if(item.id == value.id) {
+            value.active = !value.active
+          } else {
+            value.active = false
+          }
+        })
+      }
+      // this.items.forEach((value:any, key:number) => {
+      //   // value.active = (item.id == value.id); 
+      //   if(item.id == value.id) {
+      //     value.active = !value.active
+      //   } else {
+      //     value.active = false
+      //   }
+      // })
+    } else{
+    if (this.type == 2) {
       this.items.forEach((value:any, key:number) => {
         // value.active = (item.id == value.id); 
         if(item.id == value.id) {
@@ -32,13 +58,14 @@ export class AccordionContentComponent implements OnInit{
         } else {
           value.active = false
         }
-      })
+      }) 
     }
-
-    if(this.type == 3) {  
-      
-    }
-
   }
 
+    if(item.type) {  
+      if(item.type == 3) {
+        item.active = !item.active;
+      }
+    }
+  }
 }

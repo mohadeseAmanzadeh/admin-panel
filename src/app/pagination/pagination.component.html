@@ -2,20 +2,41 @@
     <app-page-title></app-page-title>
     <div class="row">
         <div class="col-md-6">
-            <div class="main-card card mb-3" *ngFor="let item of pageList">
+            <div class="main-card card mb-3" *ngFor="let item of list">
                 <div class="card-header">{{item.title}}</div>
                 <div class="card-body">
                     <div *ngFor="let child of item.children">
                         <h6 *ngIf="child.title">{{child.title}}</h6>
-                        <ul class="pagination" *ngIf="child.list">
-                            <li class="page-item" *ngFor="let listItem of child.list" [ngClass]="listItem.type">
+                        <app-page-list [items]="child.pageList"></app-page-list>
+                        <!-- <ul class="pagination" *ngIf="child.list">
+                            <li class="page-item    ">
+                                <a class="page-link">
+                                    <span>««</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link">
+                                    <span>«</span>
+                                </a>
+                            </li>
+                            <li class="page-item" *ngFor="let listItem of child.list">
                                 <a class="page-link">
                                     <span>{{listItem.text}}</span>
                                 </a>
                             </li>
-                        </ul>
+                            <li class="page-item">
+                                <a class="page-link">
+                                    <span>»</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link">
+                                    <span>»»</span>
+                                </a>
+                            </li>
+                        </ul> -->
                         <div [ngClass]="child.type"></div>
-                        <pre *ngIf="child.desc">{{child.desc}}</pre>
+                        <!-- <pre *ngIf="child.desc">{{child.desc}}</pre> -->
                     </div>   
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { elements } from 'chart.js';
 
 @Component({
   selector: 'app-carousel',
@@ -7,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class CarouselComponent {
 
-  public slides = [
+ public slides = [
     {
       id: 1,
       img: '/assets/images/flower.jpg',
       title: 'First slide label',
-      desc: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+      desc: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
     },
     {
       id: 2,
@@ -27,27 +28,28 @@ export class CarouselComponent {
       // desc: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
     }
   ]
-
+ 
 
 
 
   
-  currentIndex: number = 0;
+  // currentIndex: number = 0;
 
 
-  goToPrevious(): void {
-    const isFirstSlide = this.currentIndex === 0;
-    const newIndex = isFirstSlide
-      ? this.slides.length - 1
-      : this.currentIndex - 1;
+  // goToPrevious(): void {
+  //   const isFirstSlide = this.currentIndex === 0;
+  //   const newIndex = isFirstSlide
+  //     ? this.slides.length - 1
+  //     : this.currentIndex - 1;
   
-    this.currentIndex = newIndex;
-  }
+  //   this.currentIndex = newIndex;
+  // }
 
-  goToNext(): void {
-    const isLastSlide = this.currentIndex === this.slides.length - 1;
-    const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
+  // goToNext(): void {
+  //   const isLastSlide = this.currentIndex === this.slides.length - 1;
+  //   const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
   
-    this.currentIndex = newIndex;
-  }
+  //   this.currentIndex = newIndex;
+  // }
+
 }

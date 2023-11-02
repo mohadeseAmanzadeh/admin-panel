@@ -70,15 +70,15 @@ export class AccordionsComponent {
         {
           title: 'Toggle Panels',
           type: 1,
-          buttons: {
-            title: 'Toggle first',
-            className: 'mr-2 btn-primary'
-          },
-          divClass: 'divider',
-          buttonToggle: {
-            title: 'Toggle second',
-            className: 'bnt-info'
-          },
+          // buttons: {
+          //   title: 'Toggle first',
+          //   className: 'mr-2 btn-primary'
+          // },
+          // divClass: 'divider',
+          // buttonToggle: {
+          //   title: 'Toggle second',
+          //   className: 'bnt-info'
+          // },
           data: [
             {
               id: 1,
@@ -98,7 +98,7 @@ export class AccordionsComponent {
         },
         {
           title: 'Prevent panel toggle',
-          type: 1,
+          // type: 1,
           data: [
             {
               id: 1,
@@ -125,16 +125,16 @@ export class AccordionsComponent {
             }   
           ]
         }, 
-        {
-          type: 1,
-          itemList: [
-            {
-              title: 'Collapse',         
-              active: false,
-              desc: 'You can collapse this card by clicking Toggle'
-            }
-          ]
-        } 
+        // {
+        //   type: 1,
+        //   itemList: [
+        //     {
+        //       title: 'Collapse',         
+        //       active: false,
+        //       desc: 'You can collapse this card by clicking Toggle'
+        //     }
+        //   ]
+        // } 
       ]
     }
   ]

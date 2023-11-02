@@ -1,6 +1,17 @@
 
 .carousel {
     position: relative;
+    // height: 0;
+    // animation: showCarousel .4s ease .1s infinite;
+    // @keyframes showCarousel {
+    //     0% {
+    //         height: 0;
+    //     }        
+    //     100% {
+    //         height: auto;
+    //     }
+    // }
+    // transition: height .4s ease .1s;
     .carousel-indicators {
         position: absolute;
         right: 0;
@@ -44,6 +55,17 @@
             transition: trasform .6s ease-in-out;
             img {
                 width: 100% !important; 
+                // display: none;
+                // animation: imageShow .5s ease .2s infinite;
+                // @keyframes imageShow {
+                //     0% {
+                //         height: 0;
+                //     }
+                //     100% {
+                //         height: 100%;
+                //         display: block;
+                //     }
+                // }
             }
         }
         .carousel-caption {
@@ -106,5 +128,6 @@
         display: inline-block;
     }
 }
+
 
 

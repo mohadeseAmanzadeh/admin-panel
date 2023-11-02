@@ -1,15 +1,18 @@
 <div>
     <app-page-title></app-page-title>
+
     <div class="card mb-3 main-card">
         <div class="card-body">
             <h5 class="card-title">Tooltips</h5>
             <div class="text-center">
-                <button class="btn-primary btn mr-2" *ngFor="let item of menu">{{item.title}}</button>
-                <div class="tooltip" *ngFor="let tooltip of tooltipMenu" [ngClass]="tooltip.type">
-                    <div class="arrow"></div>
-                    <div class="tooltip-inner" *ngFor="let child of tooltip.children">{{child.text}}</div>
-                </div>
+                <button appTooltip [title]="item.title" class="btn-primary btn mr-2 tooltipBtn" *ngFor="let item of menu">{{item.title}}</button>
+                <!-- <app-tooltip [tooltips]="tooltipMenu"></app-tooltip> -->
             </div>
         </div>
     </div>
-</div>
+</div>  
+
+
+
+
+

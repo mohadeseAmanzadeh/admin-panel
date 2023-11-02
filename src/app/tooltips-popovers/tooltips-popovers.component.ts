@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tooltips-popovers',
   templateUrl: './tooltips-popovers.component.html',
   styleUrls: ['./tooltips-popovers.component.scss']
 })
-export class TooltipsPopoversComponent {
+export class TooltipsPopoversComponent implements OnInit{
   public menu = [
     { 
       title: 'Tooltip on top',
@@ -20,38 +20,29 @@ export class TooltipsPopoversComponent {
       title: 'Tooltip on left',
     },
   ]
-  public tooltipMenu = [
-    {
-      type: 'bs-tooltip-top',
-      children: [
-        {
-          text: 'Tooltip on top',
-        }
-      ]
-    },
-    {
-      type: 'bs-tooltip-right',
-      children: [
-        {
-          text: 'Tooltip on right',
-        }
-      ]
-    },
-    {
-      type: 'bs-tooltip-bottom',
-      children: [
-        {
-          text: 'Tooltip on bottom',
-        }
-      ]
-    },
-    {
-      type: 'bs-tooltip-left',
-      children: [
-        {
-          text: 'Tooltip on left',
-        }
-      ]
-    }
-  ]
+  // public tooltipMenu = [
+  //   {
+  //     type: 'bs-tooltip-top',
+  //     text: 'Tooltip on top',
+  //     active: false
+  //   },
+  //   {
+  //     type: 'bs-tooltip-right',
+  //     text: 'Tooltip on right',
+  //     active: false
+  //   },
+  //   {
+  //     type: 'bs-tooltip-bottom',
+  //     text: 'Tooltip on bottom',
+  //     active: false
+  //   },
+  //   {
+  //     type: 'bs-tooltip-left',
+  //     text: 'Tooltip on left',
+  //     active: false
+  //   }
+  // ]
+ ngOnInit(): void {
+
+ }
 }

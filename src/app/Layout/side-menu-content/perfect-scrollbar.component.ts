@@ -58,7 +58,7 @@ export class PerfectScrollbarComponent {
               title: 'Standard Buttons',
               link: 'standardButtons'
             },
-            {title: 'Dropdowns'},
+            // {title: 'Dropdowns'},
             {
               title: 'Icons',
               link: 'icons'

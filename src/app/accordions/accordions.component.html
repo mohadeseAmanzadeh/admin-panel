@@ -5,8 +5,8 @@
            <div *ngFor="let child of item.children">
             <h6 class="mb-3 mt-3">{{child.title}}</h6>
             <app-accordion-content [items]="child.data" [type]="child.type"></app-accordion-content>
-            <div [ngClass]="child.divClass" *ngIf="child.divClass"></div>
-            <div class="card mb-3 mt-3" *ngFor="let data of child.itemList">
+            <!-- <div [ngClass]="child.divClass" *ngIf="child.divClass"></div> -->
+            <!-- <div class="card mb-3 mt-3" *ngFor="let data of child.itemList">
                 <div class="card-header">{{data.title}}</div>
                 <div class="card-body">
                     <button  class="btn-primary btn">Toggle</button>
@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
            </div>
         </div>
     </div>
