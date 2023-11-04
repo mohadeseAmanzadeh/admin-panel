@@ -11,10 +11,12 @@ export class PageListComponent implements OnInit{
   public last: any = {};
   ngOnInit(): void {
     console.log('items' , this.items)
+  }
+
+  change(item: any) {
     this.items.forEach((value:any, key:number) => {
       this.last = value
     });
     console.log("last" , this.last)
-
   }
 }

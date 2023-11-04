@@ -65,6 +65,7 @@ export class AccordionContentComponent implements OnInit{
     if(item.type) {  
       if(item.type == 3) {
         item.active = !item.active;
+
       }
     }
   }

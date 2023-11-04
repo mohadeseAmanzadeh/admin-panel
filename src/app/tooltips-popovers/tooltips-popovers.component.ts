@@ -6,18 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tooltips-popovers.component.scss']
 })
 export class TooltipsPopoversComponent implements OnInit{
-  public menu = [
+  public menuTooltip = [
     { 
       title: 'Tooltip on top',
+      className: 'bs-tooltip-top',
+      placement: 'top'
+
     },
     { 
       title: 'Tooltip on right',
+      className: 'bs-tooltip-right',
+      placement: 'right'
     },
     {
       title: 'Tooltip on bottom',
+      className: 'bs-tooltip-bottom',
+      placement: 'bottom'
     },
     {
       title: 'Tooltip on left',
+      className: 'bs-tooltip-left',
+      placement: 'left'
     },
   ]
   // public tooltipMenu = [

@@ -9,7 +9,7 @@
             <span>«</span>
         </a>
     </li>
-    <li class="page-item" *ngFor="let item of items">
+    <li class="page-item" *ngFor="let item of items" (click)="change(item)">
         <a class="page-link">
             <span>{{item.text}}</span>
         </a>

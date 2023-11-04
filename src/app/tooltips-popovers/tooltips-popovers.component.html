@@ -5,14 +5,8 @@
         <div class="card-body">
             <h5 class="card-title">Tooltips</h5>
             <div class="text-center">
-                <button appTooltip [title]="item.title" class="btn-primary btn mr-2 tooltipBtn" *ngFor="let item of menu">{{item.title}}</button>
-                <!-- <app-tooltip [tooltips]="tooltipMenu"></app-tooltip> -->
+                <button appTooltip [placement]="item.placement"  [tooltipClass]="item.className" [title]="item.title"class="btn-primary btn mr-2 tooltipBtn" *ngFor="let item of menuTooltip">{{item.title}}</button>
             </div>
         </div>
     </div>
 </div>  
-
-
-
-
-

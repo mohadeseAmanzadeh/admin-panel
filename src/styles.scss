@@ -261,6 +261,9 @@ select {
          display: block;
      }
  }
+ .d-inline-block {
+    display: inline-block
+ }
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/sidebar-menu.scss";

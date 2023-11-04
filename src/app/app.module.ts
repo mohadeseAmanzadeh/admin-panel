@@ -61,8 +61,8 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { TabContentComponent } from './tab-content/tab-content.component';
 import { AccordionContentComponent } from './accordion-content/accordion-content.component';
 import { PageListComponent } from './page-list/page-list.component';
+import { TooltipDirective } from './tooltips-popovers/tooltip.directive';
 import { TooltipComponent } from './tooltip/tooltip.component';
-import { TooltipDirective } from './tooltip/tooltip.directive';
 
 
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
@@ -161,8 +161,8 @@ const routes : Routes = [
     TabContentComponent,
     AccordionContentComponent,
     PageListComponent,
-    TooltipComponent,
     TooltipDirective,
+    TooltipComponent,
 
 
 
