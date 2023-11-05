@@ -50,7 +50,7 @@ import { ControlsComponent } from './controls/controls.component';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
 import { ListGroupComponent } from './list-group/list-group.component';
 import { AccordionsComponent } from './accordions/accordions.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './slider/carousel/carousel.component';
 import { ChartJSComponent } from './chart-js/chart-js.component';
 import { TasksListContentComponent } from './tasks-list-content/tasks-list-content.component';
 import { ListGroupContentComponent } from './list-group-content/list-group-content.component';
@@ -63,6 +63,7 @@ import { AccordionContentComponent } from './accordion-content/accordion-content
 import { PageListComponent } from './page-list/page-list.component';
 import { TooltipDirective } from './tooltips-popovers/tooltip.directive';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { SlidesComponent } from './slider/slides/slides.component';
 
 
 // import { ModalDialog } from './modal-dialog/modal-dialog.module';
@@ -89,7 +90,8 @@ const routes : Routes = [
       { path: 'pagination' , component: PaginationComponent},
       { path: 'carousel' , component : CarouselComponent},
       { path: 'tabs' , component: TabsComponent},
-      { path: 'accordions', component: AccordionsComponent}
+      { path: 'accordions', component: AccordionsComponent},
+      { path: 'Dropdowns', component: DropDownBtnComponent}
     ]
   },
   { path: 'loginBoxed' , component : LoginBoxedComponent},
@@ -163,6 +165,7 @@ const routes : Routes = [
     PageListComponent,
     TooltipDirective,
     TooltipComponent,
+    SlidesComponent,
 
 
 

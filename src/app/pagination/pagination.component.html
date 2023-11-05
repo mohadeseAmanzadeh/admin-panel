@@ -8,34 +8,7 @@
                     <div *ngFor="let child of item.children">
                         <h6 *ngIf="child.title">{{child.title}}</h6>
                         <app-page-list [items]="child.pageList"></app-page-list>
-                        <!-- <ul class="pagination" *ngIf="child.list">
-                            <li class="page-item    ">
-                                <a class="page-link">
-                                    <span>««</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link">
-                                    <span>«</span>
-                                </a>
-                            </li>
-                            <li class="page-item" *ngFor="let listItem of child.list">
-                                <a class="page-link">
-                                    <span>{{listItem.text}}</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link">
-                                    <span>»</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link">
-                                    <span>»»</span>
-                                </a>
-                            </li>
-                        </ul> -->
-                        <div [ngClass]="child.type"></div>
+                        <div [ngClass]="child.class"></div>
                         <!-- <pre *ngIf="child.desc">{{child.desc}}</pre> -->
                     </div>   
                 </div>

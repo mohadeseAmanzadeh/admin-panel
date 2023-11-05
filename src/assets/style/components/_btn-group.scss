@@ -1,7 +1,7 @@
 .btn-group, 
 .btn-group-vertical {
     position: relative;
-    display: block;
+    display: inline-flex;
     vertical-align: middle;
     > .btn {
         position: relative;

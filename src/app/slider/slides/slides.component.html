@@ -1,0 +1,21 @@
+<ol class="carousel-indicators">
+    <li *ngFor="let item of list; let slideIndex = index" (click)="gotoSlide(slideIndex)"></li>
+</ol>
+<div  *ngFor="let item of slides">  
+    <div class="carousel-item" *ngIf="item.id == currentIndex">
+        <img src="{{item.img}}" alt="">
+        <!-- <div [ngStyle]="{'background-image': getCurrentSliderUrl()}"></div> -->
+        <div class="carousel-caption">
+            <h3>{{item.title}}</h3>
+            <p>{{item.desc}}</p>
+        </div>    
+    </div>
+</div>
+<a class="carousel-control-prev " role="button">
+    <span aria-hidden="true" class="carousel-control-prev-icon" (click)="goToPrevious()"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" role="button">
+    <span aria-hidden="true" class="carousel-control-next-icon" (click)="goToNext()"></span>
+    <span class="sr-only">Next</span>
+</a>

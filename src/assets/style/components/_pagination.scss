@@ -19,6 +19,13 @@
                 color: #fff;
                 background-color: #033C73;
                 border-color: #007bff;
+                &:hover {
+                    z-index: 2;
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #033C73;
+                    border-color: #dee2e6;
+                }
             }
         }
         .page-link {
@@ -41,7 +48,7 @@
                 outline: 0;
                 box-shadow: none;
             }
-        }
+        }       
         &:first-child {
             .page-link {
                 margin-left: 0;
@@ -56,4 +63,5 @@
             }
         }
     }
+    
 }

@@ -194,14 +194,47 @@ select {
     display: flex;
     // flex-wrap: wrap;
     align-items: stretch;
-    width: 100%;    
+    width: 100%;
+    > .form-control {
+        position: relative;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+        &:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    
+    > .input-group-prepend {
+        > .btn {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    > .input-group-append {
+        > .btn {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
 }
 .input-group-prepend {
     margin-right: -1px;
+   
 }
 .input-group-prepend, .input-group-append {
     display: flex;
     // height: 38px;
+    .btn {
+        z-index: 2;
+        position: relative;
+    }
 }
 
 
@@ -268,6 +301,7 @@ select {
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/sidebar-menu.scss";
 @import "/src/assets/style/components/card.scss";
+@import "/src/assets/style/components/dropdown.scss";
 @import "/src/assets/style/components/btn.scss";
 @import "/src/assets/style/components/col.scss";
 @import "/src/assets/style/components/text.scss";
@@ -286,7 +320,6 @@ select {
 @import "/src/assets/style/components/timeline.scss";
 @import "/src/assets/style/components/border.scss";
 @import "/src/assets/style/components/list-group.scss";
-@import "/src/assets/style/components/dropdown.scss";
 @import "/src/assets/style/components/type.scss";
 @import "/src/assets/style/components/scroll-bar";
 @import "/src/assets/style/components/header";
@@ -298,6 +331,7 @@ select {
 @import "/src/assets/style/components/outline";
 @import "/src/assets/style/components/tooltip";
 @import "/src/assets/style/components/widget.scss";
-@import "/src/assets/style/components/_pagination"
+@import "/src/assets/style/components/pagination";
+@import "/src/assets/style/components/carousel"
 
 

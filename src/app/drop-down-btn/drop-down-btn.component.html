@@ -1,20 +1,23 @@
-<!-- <div>
+<div>
     <app-page-title></app-page-title>
-    <div class="row" *ngFor="let item of menu">
-        <div class="col-lg-6" *ngFor="let child of item.children">
-            <div class="main-card mb-3 card" *ngFor="let buttons of child.listButton">
-                <div class="card-body">
-                    <h5 class="card-title">{{buttons.title}}</h5>
-                    <div class="dropDown d-inline-block">
-                        <app-buttons [item]="child.listButton" [className]="buttons.className"></app-buttons> 
-                    </div>
-                    <div class="text-center">
-                        <div class="mr-2 mb-2 btn-group drodown">
-                            <app-buttons [item]=""></app-buttons>
-                        </div>
+    <div class="row">
+        <div class="col-lg-6" *ngFor="let item of menu">
+            <div class="card main-card mb-3" *ngFor="let child of item.children">
+                <div class="card-body" *ngIf="child.buttons">
+                    <h5 class="card-title">{{child.title}}</h5>
+                    <button class="mb-2 mr-2 btn opacity-10 dropdown-toggle" *ngFor="let btn of child.buttons" [ngClass]="btn.className">{{btn.title}}</button>
+                </div>
+                <div class="card-body" *ngIf="child.buttonList">
+                    <h5 class="card-title">{{child.title}}</h5>
+                    <div class="mb-2 mr-2 btn-group dropdown" *ngFor="let button of child.buttonList">
+                        <button class="btn"  [ngClass]="button.className">{{button.title}}</button>
+                        <button aria-haspopup="true" class="dropdown-toggle-split btn dropdown-toggle opacity-10" ngbdropdowntoggle="" type="button" aria-expanded="false" [ngClass]="button.className">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-lg-6"></div>
     </div>
-</div> -->
+</div>
