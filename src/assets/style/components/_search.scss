@@ -1,6 +1,36 @@
 .search-wrapper {
     position: relative;
     margin-left: .66rem;
+    &.active {
+        width: 330px;
+        .input-holder {
+            width: 290px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.05);
+            transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+            .search-input {
+                opacity: 1;
+                -webkit-transform: translate(0, 11px);
+                transform: translate(0, 11px);
+            }
+            .search-icon {
+                width: 42px;
+                height: 42px;
+                margin: 0;
+                border-radius: 30px;
+                span {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .close {
+            left: 300px;
+            opacity: .6 !important;
+            transform: rotate(45deg);
+            transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
+            transition-delay: 0.5s;
+        }
+    }
     .input-holder {
         height: 42px;
         width: 42px;

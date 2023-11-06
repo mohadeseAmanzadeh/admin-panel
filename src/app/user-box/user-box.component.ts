@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user-box',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class UserBoxComponent {
 
+  @Input() activeMenu: boolean;
+  showMenu() {
+    this.activeMenu = !this.activeMenu
+  }
 }

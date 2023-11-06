@@ -19,9 +19,7 @@ export class SlidesComponent implements OnInit{
   }
   currentIndex: number = 1;
   goToNext() {
-
     console.log('inja');
-
     const isLastSlide = this.currentIndex === this.slides.length;
     const newIndex = isLastSlide ? 1 : this.currentIndex + 1;
     this.currentIndex = newIndex
@@ -34,8 +32,7 @@ export class SlidesComponent implements OnInit{
   }
 
   gotoSlide(slideIndex: number) {
-    console.log('ddd',slideIndex);
-    
+    console.log('ddd',slideIndex);   
     this.currentIndex = slideIndex;
   }
 

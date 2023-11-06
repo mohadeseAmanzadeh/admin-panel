@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./accordions.component.scss']
 })
 export class AccordionsComponent {
+
+  heading = 'Accordions';
+  subHeading = 'Accordions represent collapsable component with extended functionality.';
+  icon = 'pe-7s-diamond';
+
+
+
   public list = [ 
     {
       children: [

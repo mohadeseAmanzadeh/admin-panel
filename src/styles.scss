@@ -297,6 +297,9 @@ select {
  .d-inline-block {
     display: inline-block
  }
+ .ps--scroll-y {
+    overflow-y: scroll
+ }
 @import "/src/assets/variables/variables";
 @import "/src/assets/style/components/dots.scss";
 @import "/src/assets/style/components/sidebar-menu.scss";

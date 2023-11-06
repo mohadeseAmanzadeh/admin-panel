@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <div *ngFor="let child of item.children">
                         <h6 *ngIf="child.title">{{child.title}}</h6>
-                        <app-page-list [items]="child.pageList"></app-page-list>
+                        <app-page-list [items]="child.pageList" [type]="child.type"></app-page-list>
                         <div [ngClass]="child.class"></div>
                         <!-- <pre *ngIf="child.desc">{{child.desc}}</pre> -->
                     </div>   
@@ -15,4 +15,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>  

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class SearchBoxComponent {
 
+  active: boolean = false;
+
+  open() {
+    this.active = !this.active
+  }
+
+  close(event:any) {
+    console.log(event, 'event');
+    this.active = !this.active
+  }
 }

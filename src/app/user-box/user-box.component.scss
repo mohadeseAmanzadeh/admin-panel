@@ -11,3 +11,16 @@
 //         width: 42px;
 //     }
 // }
+.header-btn-lg {
+    .dropdown-toggle::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        right: 13px;
+
+    }
+}
+.w-70 {
+    width: 70px;
+    height: 70px;
+}

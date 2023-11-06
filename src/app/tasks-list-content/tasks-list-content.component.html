@@ -24,12 +24,19 @@
                         </div>
                     </div>
                     <div class="widget-content-right widget-content-actions">
+                       <div *ngIf="task.canConfirm == true">
                         <button *ngIf="task.canConfirm" class="border-0 btn-tramsition btn btn-outline-success">
                             <i class="fa fa-check"></i>
                         </button>
                         <button *ngIf="task.canDelete" class="border-0 btn-tramsition btn btn-outline-danger">
                             <i class="fa fa-trash"></i>
                         </button>
+                       </div>
+                       <div class="d-inline-block dropdown" *ngIf="task.canConfirm == false">
+                        <button class="btn btn-icon btn-icon-only btn-link dropdown-toggle">
+                            <i class="btn-icon-wrapper pe-7s-menu"></i>
+                        </button>
+                       </div>
                     </div>
                     <div *ngIf="task.actionStatusBtn" class="widget-content-right ml-3">
                         <app-status-btn [item]="task.actionStatusBtn"></app-status-btn>

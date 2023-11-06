@@ -1,9 +1,9 @@
-<div class="search-wrapper">
+<div class="search-wrapper" [ngClass]="{'active': active}">
     <div class="input-holder">
         <input type="text" class="search-input" placeholder="type to search">
-        <button class="search-icon">
+        <button class="search-icon" (click)="open()">
           <span></span>
         </button>
     </div>
-    <button class="close"></button>
+    <button class="close" (click)="close($event)"></button>
 </div>

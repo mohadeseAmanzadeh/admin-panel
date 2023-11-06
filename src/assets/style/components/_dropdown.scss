@@ -31,6 +31,7 @@
     left: 0;
     z-index: 1000;
     display: none;
+    // transition: opacity .2s ease;
     float: left;
     min-width: 15rem;
     padding: 0.65rem 0;
@@ -43,6 +44,10 @@
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
+    &.active {
+        display: block;
+        // opacity: 1;
+    }
     .dropdown-item {
         display: block;
         width: 100%;

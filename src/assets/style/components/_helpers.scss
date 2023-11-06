@@ -41,6 +41,9 @@
 .ml-3 {
     margin-left: 1rem !important;
 }
+.mt-10 {
+    margin-top: .3rem !important;
+}
 .ml-auto, .mx-auto {
     margin-left: auto !important;
 }
@@ -77,6 +80,9 @@
 .pl-3 {
     padding-left: 1rem;
 }
+.pl-10 {
+    padding-left: 1.5rem !important;
+}
 .pt-3  {
     padding-top: 1rem;
 }
@@ -91,6 +97,9 @@
 }
 .fsize-sm {
     font-size: .8rem !important;
+}
+.fsize-sm2 {
+    font-size: .88rem !important;
 }
 .fsize-4 {
     font-size: 2rem;
@@ -133,6 +142,9 @@ h3, .h3 {
 }
 .text-algin-left {
     text-align: left;
+}
+.left-10 {
+    left: -10rem;
 }
 // .n-wrap {
 //     word-break: nowrap !important;

@@ -6,11 +6,11 @@
                 Tasks List
             </div>
             <div class="btn-actions-pane-right text-capitalize actions-icon-btn dropdown">
-                <button class="btn btn-icon btn-icon-only btn-link dropdown-toggle">
+                <button class="btn btn-icon btn-icon-only btn-link dropdown-toggle" (click)="showMenu()">
                     <!-- <fa></fa> -->
                     <i class="fa fa-th"></i>
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu" [ngClass]="{'active': activeMenu}">
                     <button class="dropdown-item" *ngFor="let item of menuDropDown">
                         <i class="dropdown-icon" [ngClass]="item.type"></i>
                         <span>{{item.title}}</span>

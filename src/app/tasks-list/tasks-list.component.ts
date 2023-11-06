@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   
 })
 export class TasksListComponent {
-  
+  activeMenu: boolean = false;
+  showMenu() {
+    this.activeMenu = !this.activeMenu
+  }
   
   public menuDropDown = [
     { 

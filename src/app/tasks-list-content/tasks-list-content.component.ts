@@ -28,12 +28,6 @@ export class TasksListContentComponent {
       },
       canConfirm: false,
       canDelete: false
-    // btnNew: 'NEW',
-    // backgrondType: 'bg-focus',
-    // typeDanger: 'badge-info',
-    // typebtnDanger: 'btn-outeline-danger',
-    // typeBtnSuccess: 'btn-outeline-success',
-    // marginLeftType: 'ml-2'
     },
     {
       title: 'Badge on the right task',
@@ -60,5 +54,7 @@ export class TasksListContentComponent {
         type: 'szdfgdfsd',
       }
     }
-]
+  ]
+
+
 }
