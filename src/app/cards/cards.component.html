@@ -1,5 +1,5 @@
 <div>
-    <app-page-title></app-page-title>
+    <app-page-title [heading]="heading" [subHeading]="subHeading" [icon]="icon"></app-page-title>
     <div class="row">
         <div class="col-md-4" *ngFor="let item of cardList">
             <div *ngFor="let subMenuItem of item.subMenu" [className]="subMenuItem.className">

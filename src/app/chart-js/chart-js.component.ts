@@ -7,6 +7,9 @@ import Chart from 'chart.js/auto';
   styleUrls: ['./chart-js.component.scss']
 })
 export class ChartJSComponent implements OnInit {
+  heading = 'ChartJS'; 
+  subHeading = 'Huge selection of charts created with the Vue ChartJS Plugin';
+  icon = 'pe-7s-bandaid bg-amy-crisp'
 
   ngOnInit(): void {
 

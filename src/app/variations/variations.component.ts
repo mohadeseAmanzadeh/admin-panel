@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class VariationsComponent {
 
+  heading = 'Chart Boxes III';
+  subHeading = 'Highly configurable boxes best used for showing numbers in an user friendly way.';
+  icon = 'pe-7s-wallet bg-plum-plate'
   
   public menu = [
     {

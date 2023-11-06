@@ -9,7 +9,7 @@ export class BootstrapTablesComponent {
 
   heading = 'Bootstrap 4 Tables';
   subHeading = 'Tables are the backbone of almost all web applications.';
-  icon = 'pe-7s-drawer'
+  icon = 'pe-7s-drawer bg-sunny-morning'
 
 
   public menu = [

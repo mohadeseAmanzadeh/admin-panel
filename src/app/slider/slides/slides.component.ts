@@ -17,17 +17,17 @@ export class SlidesComponent implements OnInit{
   ngOnInit(): void {
     
   }
-  currentIndex: number = 1;
+  currentIndex: number = 0;
   goToNext() {
     console.log('inja');
-    const isLastSlide = this.currentIndex === this.slides.length;
-    const newIndex = isLastSlide ? 1 : this.currentIndex + 1;
+    const isLastSlide = this.currentIndex === this.slides.length - 1;
+    const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
     this.currentIndex = newIndex
   }
 
   goToPrevious() {
-    const isFirstSlide = this.currentIndex === 1;
-    const newIndex = isFirstSlide ? this.slides.length : this.currentIndex - 1;
+    const isFirstSlide = this.currentIndex === 0;
+    const newIndex = isFirstSlide ? this.slides.length - 1 : this.currentIndex - 1;
     this.currentIndex = newIndex;
   }
 

@@ -8,6 +8,9 @@ import { ModalService } from '../services/modal.service';
 })
 export class ModalsComponent {
 
+  heading = 'Modals';
+  subHeading = 'Wide selection of modal dialogs styles and animations available.';
+  icon = 'pe-7s-phone bg-premium-dark'
   constructor(
     public modalService: ModalService
   ) {

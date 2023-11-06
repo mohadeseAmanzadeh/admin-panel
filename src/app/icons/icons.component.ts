@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./icons.component.scss']
 })
 export class IconsComponent {
+
+  heading = 'Icons';
+  subHeading = 'Wide icons selection including from flag icons to FontAwesome and other icons libraries.';
+  icon = 'pe-7s-phone bg-night-fade '
   public listIcon = [
     {
       title: 'Gradient Icons',

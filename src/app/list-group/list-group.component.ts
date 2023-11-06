@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ListGroupComponent {
 
-  
+  heading = 'List Groups';
+  subHeading = 'These can be used with other components and elements to create stunning and unique new elements for your UIs.';
+  icon = 'pe-7s-paint bg-sunny-morning'
 
   public  listGroup = [
     {

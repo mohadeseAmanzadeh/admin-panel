@@ -23,6 +23,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./progressbar.component.scss']
 })
 export class ProgressbarComponent {
+
+  heading = 'Progress Bar';
+  subHeading = 'You can use the progress bars on their own or in combination with other widgets.';
+  icon = 'pe-7s-filter bg-grow-early'
   public progressbar: progressbarInterface[] = [
     {
       subMenu: [

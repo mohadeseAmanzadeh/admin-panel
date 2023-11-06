@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PaginationComponent implements OnInit {
 
   heading = 'Pagination';
-  subheading = 'Basic and dynamic pagination for use in your next awesome application.';
-  icon = 'pe-7s-notebook icon-gradient bg-mixed-hopes';
+  subHeading = 'Basic and dynamic pagination for use in your next awesome application.';
+  icon = 'pe-7s-notebook bg-mixed-hopes';
 
 
   public list = [

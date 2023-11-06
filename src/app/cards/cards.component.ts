@@ -22,6 +22,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent {
+
+  heading = 'Cards';
+  subHeading = 'Wide selection of cards with multiple styles, borders, actions and hover effects.';
+  icon = 'pe-7s-stopwatch bg-amy-crisp'
   public cardList = [
     {
       subMenu: [

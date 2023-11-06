@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./drop-down-btn.component.scss']
 })
 export class DropDownBtnComponent {
+
+  heading = 'Dropdowns';
+  subHeading = 'Multiple styles, actions and effects are available for the ArchutectUI dropdown buttons.';
+  icon = 'pe-7s-umbrella bg-sunny-morning'
   public menu = [
     {
       children : [

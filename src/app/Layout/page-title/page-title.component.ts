@@ -7,6 +7,9 @@ import { Component, Input, Output } from '@angular/core';
 })
 export class PageTitleComponent {
 
+  @Input() heading: string = '';
+  @Input() subHeading: string = '';
+  @Input() icon: string = '';
   public titlePage = [
 
     {

@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tooltips-popovers.component.scss']
 })
 export class TooltipsPopoversComponent implements OnInit{
+  heading = 'Tooltips & Popovers';
+  subHeading = 'These Vue components are used to add interaction or extra information for your apps content.';
+  icon = 'pe-7s-note2 bg-happy-fisher'
   public menuTooltip = [
     { 
       title: 'Tooltip on top',

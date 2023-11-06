@@ -9,5 +9,5 @@ export class AnalyticsComponent {
 
   heading = 'Analytics Dashboard';
   subHeading = 'This is an example dashboard created using build-in elements and components.';
-  icon = 'pe-7s-plane'
+  icon = 'pe-7s-plane bg-tempting-azure'
 }

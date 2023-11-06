@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class StandardButtonsComponent {
 
+
+  heading = 'Standard Buttons';
+  subHeading = 'Wide selection of buttons that feature different styles for backgrounds, borders and hover options!';
+  icon = 'pe-7s-plane bg-tempting-azure'
+
   public cardList = [
     {
       title: 'Solid',

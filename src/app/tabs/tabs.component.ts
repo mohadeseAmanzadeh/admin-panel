@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TabsComponent {
 
+  heading = 'Tabs';
+  subHeading = 'Tabs are used to split content between multiple sections. Wide variety available.';
+  icon = 'pe-7s-drawer bg-happy-itmeo'
   // type: 'justify-content-start'
   // type: 'justify-content-center'
   // type: 'justify-content-end'

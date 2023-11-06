@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./timelines.component.scss']
 })
 export class TimelinesComponent {
+
+  heading = 'Timelines';
+  subHeading = 'Timelines are used to show lists of notifications, tasks or actions in a beautiful way.';
+  icon = 'pe-7s-light bg-malibu-beach'
  public menu = [
   {
     title: 'Colorful Dots',

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LayoutsComponent {
 
+  heading = 'Form Layouts';
+  subHeading = 'Build whatever layout you need with our ArchitectUI framework.';
+  icon = 'pe-7s-graph   '
 }

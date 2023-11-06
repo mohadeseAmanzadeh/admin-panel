@@ -117,6 +117,3 @@ export class PageListComponent implements OnInit{
   }
 }
 
-
-
-
