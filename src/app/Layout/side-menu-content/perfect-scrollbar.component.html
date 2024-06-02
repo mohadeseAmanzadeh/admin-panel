@@ -18,10 +18,10 @@
                                 [ngStyle]="{'height': subMenuItem.active ? subMenuItem.collapse+'px' : '0px'}"
                                 [ngClass]="{'active' : subMenuItem.active}">
                                 <div class="card-body">
-                                    <div class="vsm-dropdown" *ngFor="let child of subMenuItem.children ">
+                                    <div class="vsm-dropdown">
                                         <div class="vsm-list">
-                                            <div class="vsm-item">
-                                                <a class="vsm-link" [routerLink]="child.link">
+                                            <div class="vsm-item"  *ngFor="let child of subMenuItem.children ">
+                                                <a class="vsm-link child" [routerLink]="child.link">
                                                     <span class="vsm-title">{{child.title}}</span>
                                                 </a>
                                             </div>

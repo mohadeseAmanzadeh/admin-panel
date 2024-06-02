@@ -72,6 +72,7 @@ import { SlidesComponent } from './slider/slides/slides.component';
 const routes : Routes = [
   { path: '' , component : BaseLayoutComponent,
     children : [
+      { path : '' , component : AnalyticsComponent},
       { path: 'analytics' , component : AnalyticsComponent},
       { path: 'standardButtons' , component : StandardButtonsComponent},
       { path: 'dropDownbtn' , component : DropDownBtnComponent},

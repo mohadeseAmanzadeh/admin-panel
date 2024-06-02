@@ -30,7 +30,7 @@
         }
         &::after {
             position: absolute;
-            top: 0.16rem;
+            top: 0.1rem;
             left: -1.5rem;
              display: block;
             width: 1rem;
@@ -71,4 +71,17 @@
     height: auto;
     padding-right: 0.75rem;
     background-image: none;
+}
+.custom-control-input:checked {
+    ~ .custom-control-label::before {
+        color: #fff;
+    border-color: #007bff;
+    background: #033C73 linear-gradient(180deg, #295988, #033C73) repeat-x;
+    }
+    // color: #fff;
+    // border-color: #007bff;
+    // background: #033C73 linear-gradient(180deg, #295988, #033C73) repeat-x;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url(https://icongr.am/material/check.svg?size=16&color=ffffff);
 }

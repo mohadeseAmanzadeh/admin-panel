@@ -120,6 +120,11 @@
             border-top-left-radius: 0.25rem;
             border-top-right-radius: 0.25rem;
         }
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
         &.active {
             z-index: 2;
             color: #fff;
@@ -160,4 +165,7 @@
         border-left: 0;
         border-radius: 0;
     }
+}
+.list-group-flush:first-child .list-group-item:first-child {
+    border-top: 0;
 }

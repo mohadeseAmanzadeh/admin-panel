@@ -18,7 +18,7 @@ export class AgentsStatusComponent {
       },
       statusBtn : {
         title: 'Canceled',
-        type: 'badge-danger'
+        type: 'badge-danger badge-pill'
       },
       avatarImg: {
         img: '/assets/images/1.jpg',
@@ -36,7 +36,7 @@ export class AgentsStatusComponent {
       },
       statusBtn : {
         title: 'On Hold',
-        type: 'badge-info'
+        type: 'badge-info badge-pill'
       },
       avatarImg: {
         img: '/assets/images/2 (1).jpg',
@@ -54,7 +54,7 @@ export class AgentsStatusComponent {
       },
       statusBtn : {
         title: 'In Progress',
-        type: 'badge-warning'
+        type: 'badge-warning badge-pill'
       },
       avatarImg: {
         img: '/assets/images/3.jpg',
@@ -73,7 +73,7 @@ export class AgentsStatusComponent {
       },
       statusBtn : {
         title: 'Completed',
-        type: 'badge-success'
+        type: 'badge-success badge-pill'
       },
       avatarImg: {
         img: '/assets/images/4.jpg',

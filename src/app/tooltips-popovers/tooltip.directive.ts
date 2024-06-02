@@ -19,7 +19,7 @@ export class TooltipDirective {
 
   @HostListener('mouseenter') onMouseEnter() {
     this.show();        
-}
+  }
 
   @HostListener('mouseleave') onMouseLeave() {
     this.hide();         

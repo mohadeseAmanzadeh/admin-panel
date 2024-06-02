@@ -51,18 +51,15 @@
                             width: auto !important;
                             padding: 0 1.5rem 1.5rem;
                             .vsm-link {
-                                font-weight: normal;
-                                display: block;
-                                position: relative;
-                                border-radius: .25rem;
                                 color: #495057;
+
+                                display: block;
+                                line-height: 2rem;
+                                height: 2rem;
+                                padding: 0 1rem ;
+                                border-radius: 0.25rem;
                                 white-space: nowrap;
                                 transition: all .2s;
-                                text-decoration: none;
-                                background: #ffffff;
-                                border: 0;
-                                width: 100%;
-                                text-align: left;
                                 cursor: pointer;
                                 &:hover {
                                     background: #d1f3ff;
@@ -70,116 +67,110 @@
                                 }
                             }
                             .vsm-list {
-                                .accordion {
-                                    .vsm-header {
-                                        text-transform: uppercase;
-                                        font-size: .8rem;
-                                        margin: .75rem 0;
-                                        font-weight: bold;
-                                        color: #033C73;
-                                        white-space: nowrap;
-                                        position: relative;
+                                
+                                .vsm-header {
+                                    text-transform: uppercase;
+                                    font-size: .8rem;
+                                    margin: .75rem 0;
+                                    font-weight: bold;
+                                    color: #033C73;
+                                    white-space: nowrap;
+                                    position: relative;
+                                }
+                                .card {
+                                    box-shadow: 0 0 0  transparent;
+                                    border: 0;
+                                    background: transparent;
+                                    position: relative;
+                                    display: block;
+                                    padding: .1rem 0;
+                                    overflow: hidden;
+                                    &:first-of-type {
+                                        border-bottom-left-radius: 0;
+                                        border-bottom-right-radius: 0;
                                     }
-                                    .card {
-                                        box-shadow: 0 0 0  transparent;
+                                    .card-header {
+                                        padding: 0;
+                                        margin: 0;
+                                        border-radius: 0;
                                         border: 0;
                                         background: transparent;
-                                        position: relative;
-                                        display: block;
-                                        padding: .1rem 0;
-                                        overflow: hidden;
-                                        // border-radius: .25rem;
-                                        &:first-of-type {
-                                            border-bottom-left-radius: 0;
-                                            border-bottom-right-radius: 0;
+                                        height: auto;
+                                        &:hover {
+                                            background: #d1f3ff;
+                                            color: #033C73;
+                                            border-radius: .25rem;
                                         }
-                                        .card-header {
-                                            padding: 0;
-                                            margin: 0;
-                                            border-radius: 0;
+                                        .vsm-link { 
+                                            display: block;
+                                            line-height: 2rem;
+                                            height: 2rem;
+                                            position: relative;
+                                            border-radius: 0.25rem;
+                                            color: #495057;
+                                            white-space: nowrap;
+                                            transition: all .2s;
+                                            text-decoration: none;
                                             border: 0;
                                             background: transparent;
-                                            height: auto;
-                                            &:hover {
-                                                background: #d1f3ff;
-                                                color: #033C73;
-                                                border-radius: .25rem;
+                                            width: 100%;
+                                            text-align: left;
+                                            cursor: pointer;
+                                            padding: 0 1.5rem 0 45px;
+                                            .vsm-icon, .vsm-arrow {
+                                                text-align: center;
+                                                width: 34px;
+                                                height: 34px;
+                                                line-height: 34px;
+                                                position: absolute;
+                                                top: 50%;
+                                                margin-top: -17px;
+                                                font-size: 1.5rem;
+                                                opacity: .3;
+                                                transition: color 300ms;
                                             }
-                                            .vsm-link { 
-                                                line-height: 2.4rem;
-                                                padding: 0 1.5rem 0 45px;
-                                                .vsm-icon, .vsm-arrow {
-                                                    text-align: center;
-                                                    width: 34px;
-                                                    height: 34px;
-                                                    line-height: 34px;
+                                            .vsm-icon {
+                                                left: 5px;
+                                            }
+                                            .vsm-arrow {
+                                                right: 5px;
+                                                transform: rotate(0deg);
+                                                font-weight: bold;
+                                                font-style: normal;
+                                                &::after {
+                                                    content: '\e688';
+                                                    font-family: 'Pe-icon-7-stroke';
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .collapse {
+                                        transition: all .5s ease;
+                                        overflow: hidden;
+                                        &.active {
+                                            max-height: 600px;                                         
+                                        }
+                                        .card-body {
+                                            padding: 0;
+                                            .vsm-dropdown {
+                                                position: relative;
+                                                &::before {
+                                                    content: '';
+                                                    height: 100%;
+                                                    width: 3px;
+                                                    background: #d1f3ff;
                                                     position: absolute;
-                                                    top: 50%;
-                                                    margin-top: -17px;
-                                                    font-size: 1.5rem;
-                                                    opacity: .3;
-                                                    transition: color 300ms;
+                                                    left: 20px;
+                                                    top: 0;
+                                                    border-radius: 15px;
                                                 }
-                                                .vsm-icon {
-                                                    left: 5px;
-                                                }
-                                                .vsm-arrow {
-                                                    right: 5px;
-                                                    transform: rotate(0deg);
-                                                    font-weight: bold;
-                                                    &::after {
-                                                        content: '\e688';
-                                                        font-family: 'Pe-icon-7-stroke';
-                                                    }
+                                                .vsm-list {
+                                                    font-size: .84rem;
+                                                    padding: .75rem 0 .75rem 2.25rem;
                                                 }
                                             }
                                         }
-                                        .collapse {
-                                            // transform: scaleY(0);
-                                            // transform-origin: top;
-                                            transition: all .5s ease;
-                                            // height: 0;
-                                            overflow: hidden;
-                                            &.active {
-                                                // transform: scaleY(1);
-                                                // height: auto;
-                                                max-height: 600px;
-                                              
-                                            }
-                                            .card-body {
-                                                padding: 0;
-                                              
-                                                .vsm-dropdown {
-                                                    position: relative;
-                                                    &::before {
-                                                        content: '';
-                                                        height: 100%;
-                                                        width: 3px;
-                                                        background: #d1f3ff;
-                                                        position: absolute;
-                                                        left: 20px;
-                                                        top: 0;
-                                                        border-radius: 15px;
-                                                    }
-                                                    .vsm-list {
-                                                        font-size: .84rem;
-                                                        // padding: .75rem 0 .75rem 2.25rem;
-                                                        padding: 0.4rem 0 0.5rem 3rem;
-                                                        .vs-item {
-                                                            // line-height: 2.5 !important;
-                                                            .vsm-link {
-                                                                padding: 0 1rem;
-                                                                height: .3rem;
-                                                                line-height: 1.9rem;
-                                                                .vsm-title {
-                                                                    // padding-inline-start: 0.5rem;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        
                                     }
                                 }
                             }
