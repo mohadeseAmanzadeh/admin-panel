@@ -21,7 +21,7 @@ export class TabContentComponent implements OnInit {
     return;
    }
     console.log('itemsitemsitems', this.items);
-    this.items.forEach((value:any, key:number)=>{
+    this.items.forEach((value:any)=>{
       value.active = ( item.id == value.id);
     });
   }
